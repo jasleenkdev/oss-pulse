@@ -25,13 +25,15 @@ const size = (bytes) => `${(bytes / 1e9).toFixed(2)} GB`;
 
 ## Rows kept per partition
 
-Each cell is one hourly partition. A red cross marks an hour that is missing or corrupt. The pale
-and dark pair on November 1 is upstream: when US daylight saving ended, GitHub stamped comment and
-fork events from 08:00 UTC as 09:00.
+Each cell is one hourly partition. A red cross marks an hour that is missing or corrupt. Volume
+here reflects the feed as much as GitHub: whole days shift when creation events arrive in bursts,
+and a dark cell is a single hour of unusually broad capture, spread across thousands of
+repositories. On November 1, when US daylight saving ended, GitHub stamped comment and fork events
+from 08:00 UTC as 09:00.
 
 ```js
 Plot.plot({
-  height: 40 + 7 * 34,
+  height: 40 + new Set(partitions.map((d) => d.partition_date)).size * 18,
   marginLeft: 90,
   padding: 0.06,
   color: {type: "linear", scheme: "blues", legend: true, label: "Rows kept"},

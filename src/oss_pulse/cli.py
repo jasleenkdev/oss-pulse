@@ -105,7 +105,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub = parser.add_subparsers(dest="command", required=True)
 
     backfill = sub.add_parser("backfill", help="Ingest hourly partitions into bronze")
-    backfill.add_argument("--days", type=int, default=7, help="Complete days to ingest")
+    backfill.add_argument("--days", type=int, default=30, help="Complete days to ingest")
     backfill.add_argument("--end-date", help="Last day to ingest, YYYY-MM-DD (default: auto)")
     backfill.add_argument("--workers", type=int, default=4)
     backfill.add_argument("--force", action="store_true", help="Re-ingest existing partitions")
@@ -117,7 +117,7 @@ def build_parser() -> argparse.ArgumentParser:
     backfill.set_defaults(func=cmd_backfill)
 
     enrich_parser = sub.add_parser("enrich", help="Fetch repo metadata from the REST API")
-    enrich_parser.add_argument("--top-n", type=int, default=500)
+    enrich_parser.add_argument("--top-n", type=int, default=900)
     enrich_parser.set_defaults(func=cmd_enrich)
 
     sub.add_parser("check-contract", help="Validate the FirstPR export").set_defaults(
@@ -127,7 +127,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("report", help="Write docs/data_quality.md").set_defaults(func=cmd_report)
 
     prune = sub.add_parser("prune", help="Delete partitions older than the retention window")
-    prune.add_argument("--keep-days", type=int, default=7)
+    prune.add_argument("--keep-days", type=int, default=30)
     prune.set_defaults(func=cmd_prune)
     return parser
 

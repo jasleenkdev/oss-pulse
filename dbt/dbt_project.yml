@@ -15,7 +15,7 @@ flags:
 
 vars:
   # Length of the rolling metric window. The end comes from the newest ingested date.
-  window_days: 7
+  window_days: 30
 
 seeds:
   oss_pulse:

@@ -149,7 +149,7 @@ def top_repos(settings: Settings, top_n: int) -> list[tuple[int, str]]:
         connection.close()
 
 
-def enrich(settings: Settings, top_n: int = 500) -> EnrichResult:
+def enrich(settings: Settings, top_n: int = 900) -> EnrichResult:
     token = os.environ.get("GITHUB_TOKEN")
     result = EnrichResult()
     if os.environ.get("OSS_PULSE_OFFLINE"):

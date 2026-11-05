@@ -3,7 +3,7 @@ DBT := $(abspath .venv/bin/dbt)
 export OSS_PULSE_DATA_DIR ?= $(CURDIR)/data
 export DBT_PROFILES_DIR := $(CURDIR)/dbt
 
-DAYS ?= 7
+DAYS ?= 30
 END ?=
 END_FLAG := $(if $(END),--end-date $(END),)
 FORCE ?=
@@ -27,7 +27,7 @@ backfill:
 build:
 	cd dbt && $(DBT) seed --quiet
 	cd dbt && $(DBT) build --select tag:staging tag:silver
-	$(PYTHON) -m oss_pulse.cli enrich --top-n 500
+	$(PYTHON) -m oss_pulse.cli enrich --top-n 900
 	cd dbt && $(DBT) build
 	$(PYTHON) -c "from oss_pulse.reports import record_dbt_tests; record_dbt_tests()"
 	$(PYTHON) -m oss_pulse.cli check-contract

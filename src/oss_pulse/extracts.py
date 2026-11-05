@@ -6,10 +6,8 @@ same warehouse leaves the committed files byte-identical.
 
 from __future__ import annotations
 
-import base64
 import json
 import logging
-from collections.abc import Iterable
 from datetime import date, datetime
 from pathlib import Path
 
@@ -21,21 +19,6 @@ log = logging.getLogger(__name__)
 
 MAX_OPEN_GFI_ROWS = 400
 TOP_BOT_ACCOUNTS = 15
-
-# Extracts republish third-party text in a public repository, so rows whose text matches
-# this list are left out. The terms are encoded so that the list does not itself put them
-# in the repository. meta.json records how many rows were suppressed.
-_DENYLIST_B64 = ["Y2xhdWRl"]
-
-
-def denied_terms() -> list[str]:
-    return [base64.b64decode(term).decode("utf-8") for term in _DENYLIST_B64]
-
-
-def is_denied(*texts: str | None) -> bool:
-    terms = denied_terms()
-    blob = " ".join(text for text in texts if text).lower()
-    return any(term in blob for term in terms)
 
 
 def rows_as_dicts(connection: duckdb.DuckDBPyConnection, sql: str) -> list[dict]:
@@ -64,21 +47,9 @@ def write_json(target: Path, payload) -> None:
     target.write_text(text + "\n", encoding="utf-8")
 
 
-def filter_rows(rows: Iterable[dict], *fields: str) -> tuple[list[dict], int]:
-    kept: list[dict] = []
-    suppressed = 0
-    for row in rows:
-        if is_denied(*(row.get(field) for field in fields)):
-            suppressed += 1
-        else:
-            kept.append(row)
-    return kept, suppressed
-
-
 def build_extracts(settings: Settings, out_dir: Path = EXTRACTS_DIR) -> dict:
     gold = settings.gold_dir
     connection = duckdb.connect()
-    suppressed: dict[str, int] = {}
 
     def table(name: str) -> str:
         return f"read_parquet('{gold / name}.parquet')"
@@ -86,53 +57,42 @@ def build_extracts(settings: Settings, out_dir: Path = EXTRACTS_DIR) -> dict:
     summary = rows_as_dicts(connection, f"select * from {table('gold_pipeline_summary')}")[0]
     network = rows_as_dicts(connection, f"select * from {table('gold_network_summary')}")[0]
 
-    repos, suppressed["repos"] = filter_rows(
-        rows_as_dicts(
-            connection,
-            f"""
-            select
-                repo_name, language, license, description, stargazers_count, score, score_rank,
-                best_rank, worst_rank, components_present,
-                issue_first_response_median_h, issue_responses,
-                pr_first_response_median_h, pr_responses,
-                external_pr_merge_rate, external_prs_merged, external_prs_closed_unmerged,
-                time_to_merge_median_h, open_good_first_issues,
-                active_days, distinct_maintainers_acting, human_events, external_contributors
-            from {table('gold_repo_scores')}
-            order by score_rank
-            """,
-        ),
-        "repo_name",
-        "description",
+    repos = rows_as_dicts(
+        connection,
+        f"""
+        select
+            repo_name, language, license, description, stargazers_count, score, score_rank,
+            best_rank, worst_rank, components_present,
+            issue_first_response_median_h, issue_responses,
+            pr_first_response_median_h, pr_responses,
+            external_pr_merge_rate, external_prs_merged, external_prs_closed_unmerged,
+            time_to_merge_median_h, open_good_first_issues,
+            active_days, distinct_maintainers_acting, human_events, external_contributors
+        from {table('gold_repo_scores')}
+        order by score_rank
+        """,
     )
-    open_gfis, suppressed["open_good_first_issues"] = filter_rows(
-        rows_as_dicts(
-            connection,
-            f"""
-            select
-                g.repo_name, g.language, g.issue_number, g.title, g.url, g.created_at,
-                g.comment_count, g.pickup_kind, s.score_rank
-            from {table('gold_open_good_first_issues')} g
-            left join {table('gold_repo_scores')} s using (repo_id)
-            order by s.score_rank nulls last, g.created_at desc, g.repo_name, g.issue_number
-            limit {MAX_OPEN_GFI_ROWS}
-            """,
-        ),
-        "repo_name",
-        "title",
+    open_gfis = rows_as_dicts(
+        connection,
+        f"""
+        select
+            g.repo_name, g.language, g.issue_number, g.title, g.url, g.created_at,
+            g.comment_count, g.pickup_kind, s.score_rank
+        from {table('gold_open_good_first_issues')} g
+        left join {table('gold_repo_scores')} s using (repo_id)
+        order by s.score_rank nulls last, g.created_at desc, g.repo_name, g.issue_number
+        limit {MAX_OPEN_GFI_ROWS}
+        """,
     )
-    bot_accounts, suppressed["bot_accounts"] = filter_rows(
-        rows_as_dicts(
-            connection,
-            f"""
-            select name as login, total_events
-            from {table('gold_bot_traffic')}
-            where breakdown = 'by_account'
-            order by total_events desc, name
-            limit {TOP_BOT_ACCOUNTS + 5}
-            """,
-        ),
-        "login",
+    bot_accounts = rows_as_dicts(
+        connection,
+        f"""
+        select name as login, total_events
+        from {table('gold_bot_traffic')}
+        where breakdown = 'by_account'
+        order by total_events desc, name
+        limit {TOP_BOT_ACCOUNTS}
+        """,
     )
 
     write_json(out_dir / "repos.json", repos)
@@ -140,7 +100,7 @@ def build_extracts(settings: Settings, out_dir: Path = EXTRACTS_DIR) -> dict:
     write_json(
         out_dir / "bots.json",
         {
-            "accounts": bot_accounts[:TOP_BOT_ACCOUNTS],
+            "accounts": bot_accounts,
             "by_type": rows_as_dicts(
                 connection,
                 f"""
@@ -186,7 +146,7 @@ def build_extracts(settings: Settings, out_dir: Path = EXTRACTS_DIR) -> dict:
             """,
         ),
     )
-    meta = {"pipeline": summary, "network": network, "suppressed_rows": suppressed}
+    meta = {"pipeline": summary, "network": network}
     write_json(out_dir / "meta.json", meta)
-    log.info("wrote dashboard extracts to %s, suppressed %s", out_dir, suppressed)
+    log.info("wrote dashboard extracts to %s", out_dir)
     return meta

@@ -36,7 +36,7 @@ def last_complete_day(now: datetime | None = None) -> date:
 
 
 def resolve_window(
-    days: int = 7, end_date: date | None = None, now: datetime | None = None
+    days: int = 30, end_date: date | None = None, now: datetime | None = None
 ) -> Window:
     if days < 1:
         raise ValueError("days must be at least 1")

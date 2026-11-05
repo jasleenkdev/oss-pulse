@@ -3,16 +3,16 @@
 # Additive changes (new nullable columns) bump the minor version. Removing or renaming a
 # column, changing a type or tightening semantics needs firstpr_export_v2.yml.
 contract: firstpr_export
-version: "1.0.0"
+version: "1.1.0"
 owner: oss-pulse
 consumer: firstpr
 artifact: gold/firstpr_export.parquet
 grain: one row per repository
 refresh: daily, after the previous day's 24 hours are ingested
 rows: every scored repository, plus any active non-archived repository with an open good first issue
-window: rolling 7 complete UTC days, stated in window_start and window_end
+window: rolling 30 complete UTC days, stated in window_start and window_end
 caveats:
-  - GH Archive captures roughly 1.4% of events, so per-repo samples are small. Use the sample-size columns.
+  - GH Archive captures roughly 1.2% of events, so per-repo samples are small. Use the sample-size columns.
   - Response times are first observed responses, so they are upper bounds on the true first response.
   - Merge rates are not corrected for under-captured closes. See reports/fallback_validation.json.
 columns:
@@ -41,7 +41,7 @@ columns:
   - {name: time_to_merge_median_h, type: DOUBLE, nullable: true, min: 0, description: Median hours from creation to merge for human PRs merged in the window}
   - {name: gfi_pickup_median_h, type: DOUBLE, nullable: true, min: 0, description: Median hours from labelling to first contributor action}
   - {name: gfi_pickups, type: BIGINT, nullable: false, min: 0, description: Sample size for the pickup median}
-  - {name: stars_gained, type: BIGINT, nullable: false, min: 0, description: Observed stars in the window. About 1.4% of the true count.}
+  - {name: stars_gained, type: BIGINT, nullable: false, min: 0, description: Observed stars in the window. About 1.2% of the true count.}
   - {name: forks_gained, type: BIGINT, nullable: false, min: 0, description: Observed forks in the window}
   - {name: active_days, type: BIGINT, nullable: false, min: 1, description: Days with non-bot activity}
   - {name: distinct_maintainers_acting, type: BIGINT, nullable: false, min: 0, description: Bus factor proxy}

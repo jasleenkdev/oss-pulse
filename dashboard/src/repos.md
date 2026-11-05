@@ -6,8 +6,6 @@ title: Friendliest repos
 import {hours, percent} from "./components.js";
 const repos = await FileAttachment("data/repos.json").json();
 const sensitivity = await FileAttachment("data/sensitivity.json").json();
-const meta = await FileAttachment("data/meta.json").json();
-const withheld = meta.suppressed_rows.repos;
 const languages = ["All languages", ...d3.sort(new Set(repos.map((d) => d.language ?? "Unknown")))];
 ```
 
@@ -15,7 +13,6 @@ const languages = ["All languages", ...d3.sort(new Set(repos.map((d) => d.langua
 
 The score combines response speed, outside merge rate, time to merge, good first issue supply and
 activity health, as percentiles among ranked repositories. Weights live in a seed file.
-${withheld > 0 ? `${withheld} of the ${meta.pipeline.repos_scored} ranked repositories are withheld from this public page by a text filter, so rank numbers can skip. They remain in the FirstPR export.` : ""}
 
 ```js
 const language = view(Inputs.select(languages, {label: "Language"}));

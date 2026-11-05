@@ -10,7 +10,7 @@ from pathlib import Path
 import duckdb
 
 from oss_pulse.config import DBT_DIR, REPO_ROOT, REPORTS_DIR, Settings
-from oss_pulse.extracts import is_denied, rows_as_dicts
+from oss_pulse.extracts import rows_as_dicts
 from oss_pulse.window import Window
 
 RUN_SUMMARY = REPORTS_DIR / "run_summary.json"
@@ -157,20 +157,6 @@ def write_data_quality_report(settings: Settings, target: Path = QUALITY_REPORT)
         order by total_events desc
         """,
     )
-    accounts = [
-        row
-        for row in rows_as_dicts(
-            connection,
-            f"""
-            select name, total_events
-            from {table('gold_bot_traffic')}
-            where breakdown = 'by_account'
-            order by total_events desc, name
-            limit 15
-            """,
-        )
-        if not is_denied(row["name"])
-    ][:10]
     tests = load_json(TEST_SUMMARY)
     validation = load_json(REPORTS_DIR / "fallback_validation.json")
 
@@ -243,9 +229,7 @@ def write_data_quality_report(settings: Settings, target: Path = QUALITY_REPORT)
             ],
         ),
         "",
-        "Busiest automation accounts:",
-        "",
-        _table(accounts, [("name", "Account"), ("total_events", "Events")]),
+        "Per-account volumes are on the dashboard overview, not in this report.",
         "",
         "## Fallback validation",
         "",

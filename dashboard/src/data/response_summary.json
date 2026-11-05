@@ -1,22 +1,22 @@
 [
  {
-  "exact_items": 749,
-  "exact_median_h": 6.243,
-  "items": 28843,
-  "items_with_response": 3921,
+  "exact_items": 2666,
+  "exact_median_h": 9.606,
+  "items": 111819,
+  "items_with_response": 19446,
   "kind": "issue",
-  "median_h": 8.805,
-  "observed_response_share": 0.1359,
-  "p90_h": 62.126
+  "median_h": 18.699,
+  "observed_response_share": 0.1739,
+  "p90_h": 197.2
  },
  {
-  "exact_items": 14,
-  "exact_median_h": 4.958,
-  "items": 7409,
-  "items_with_response": 201,
+  "exact_items": 77,
+  "exact_median_h": 6.946,
+  "items": 32069,
+  "items_with_response": 1337,
   "kind": "pr",
-  "median_h": 6.717,
-  "observed_response_share": 0.0271,
-  "p90_h": 55.607
+  "median_h": 17.254,
+  "observed_response_share": 0.0417,
+  "p90_h": 188.633
  }
 ]

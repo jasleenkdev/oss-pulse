@@ -199,7 +199,7 @@ def main() -> int:
             select * from read_parquet('{DATA}/silver/issue_comments.parquet');
         create temp view stg as select event_id, pr_number from staging.stg_events;
         create temp view maintainers as select * from staging.int_maintainers;
-        create temp view prs as select * from gold.int_pr_facts;
+        create temp view prs as select * from staging.int_pr_facts;
         """
     )
     report = {

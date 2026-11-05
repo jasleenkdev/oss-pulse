@@ -1,6 +1,6 @@
 -- One row per pull request, assembled from every event that mentions it.
 --
--- The feed captures about one event in seventy, so one PR rarely has both its
+-- The feed captures about one event in eighty, so one PR rarely has both its
 -- `opened` and `merged` events. Fields therefore come from whichever source has them:
 --   author      legacy payload, `opened` actor, comment snapshot, then `merged` actor
 --               (validated against REST: the merged actor is the author, not the merger)

@@ -18,7 +18,7 @@ function lines(keys, colors, {label, format = integer}) {
     height: 240,
     marginLeft: 60,
     color: {domain: names, range: colors},
-    x: {type: "utc", label: null, ticks: "day", tickFormat: "%b %d"},
+    x: {type: "utc", label: null, ticks: "week", tickFormat: "%b %d"},
     y: {label, grid: true, zero: true},
     marks: [
       Plot.lineY(series(keys).filter((d) => d.value != null), {
@@ -54,6 +54,10 @@ Daily totals across the feed. Each chart uses one axis, and every series starts 
 display(legend([["Human events", blue], ["Bot events", orange]]));
 display(lines([["human_events", "Human events"], ["bot_events", "Bot events"]], [blue, orange], {label: "Events"}));
 ```
+
+Most of the swing here is the feed, not GitHub. Branch and tag creation events arrive in bursts:
+absent on some days, and the bulk of all events on others. Pull request, issue and comment events
+are steadier, so the charts below are the better guide to activity.
 
 ## Pull requests
 

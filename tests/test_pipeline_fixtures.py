@@ -107,13 +107,26 @@ def test_external_means_a_fork_from_a_non_maintainer(pipeline):
     connection = duckdb.connect(str(pipeline.warehouse_path), read_only=True)
     rows = connection.execute(
         """select author_login, is_fork, is_external
-           from gold.int_pr_facts
+           from staging.int_pr_facts
            where repo_id = 101 and pr_number between 100 and 131"""
     ).fetchall()
     connection.close()
     assert rows
     for author, is_fork, is_external in rows:
         assert is_external == (is_fork and author.startswith("ext-"))
+
+
+def test_repos_that_can_rank_are_enriched_first(pipeline):
+    connection = duckdb.connect(str(pipeline.warehouse_path), read_only=True)
+    rows = connection.execute(
+        """select activity_rank, meets_min_activity and evidence_points >= 5
+           from staging.int_enrichment_candidates"""
+    ).fetchall()
+    connection.close()
+    can_rank = [rank for rank, passes in rows if passes]
+    others = [rank for rank, passes in rows if not passes]
+    assert can_rank and others
+    assert max(can_rank) < min(others)
 
 
 def test_merged_prs_get_their_author_from_the_merged_event(query):

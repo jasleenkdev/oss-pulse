@@ -198,7 +198,6 @@ def dashboard_extracts() -> MaterializeResult:
         metadata={
             "total_bytes": total,
             "repos_scored": meta["pipeline"]["repos_scored"],
-            "suppressed_rows": MetadataValue.json(meta["suppressed_rows"]),
         }
     )
 
@@ -326,5 +325,9 @@ defs = Definitions(
     ],
     jobs=[ingest_job, publish_job],
     schedules=[hourly_ingest_schedule, daily_publish_schedule],
-    resources={"dbt": DbtCliResource(project_dir=dbt_project)},
+    resources={
+        "dbt": DbtCliResource(
+            project_dir=dbt_project, dbt_executable=str(Path(sys.executable).parent / "dbt")
+        )
+    },
 )

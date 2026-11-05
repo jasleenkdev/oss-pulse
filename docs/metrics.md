@@ -5,7 +5,7 @@ are in `dbt/models/gold`, and thresholds are in `dbt/seeds/score_thresholds.csv`
 
 ## What the feed provides
 
-Since late 2025 events have lost most PR fields and `author_association`, and only about 1.4% of
+Since late 2025 events have lost most PR fields and `author_association`, and only about 1.2% of
 events are captured. Three consequences shape every definition:
 
 1. **Pairing events rarely works.** An `opened` and a `merged` event for the same PR both appear
@@ -43,7 +43,7 @@ Merge events are not maintainer evidence, because the actor on a `merged` event 
 | `time_to_merge_median_h` | Hours from creation to merge for human PRs merged in the window, however old | `time_to_merge_samples` |
 | `open_good_first_issues` | Good first issues open at last observation | none |
 | `gfi_pickup_median_h` | Hours from labelling to first contributor action, for issues labelled in the window | `gfi_pickups` |
-| `stars_gained`, `forks_gained` | Observed WatchEvent and ForkEvent. About 1.4% of the true count. | none |
+| `stars_gained`, `forks_gained` | Observed WatchEvent and ForkEvent. About 1.2% of the true count. | none |
 | `active_days` | Days with a non-bot event | none |
 | `distinct_maintainers_acting` | Maintainers with an event in the window. A bus factor proxy. | none |
 

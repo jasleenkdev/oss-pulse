@@ -7,13 +7,13 @@ Twelve questions this project prepares you for, with answers grounded in what it
 Each hour maps to exactly one partition path. A run writes to a temporary file and renames it
 atomically, so a crash leaves the old or new partition, never a partial one. Bronze excludes
 ingestion timestamps, which live in the audit table. Silver and gold are pure functions of bronze
-and seeds. I proved it by force re-ingesting all 168 partitions and comparing checksums, which were
-byte-identical. I also treat "idempotent" as not losing data: a 404 on re-run keeps the existing
+and seeds. I proved it by forcing a re-ingest over 168 existing partitions and comparing checksums, which
+were byte-identical. I also treat "idempotent" as not losing data: a 404 on re-run keeps the existing
 partition.
 
 ## 2. How do you run a backfill, and what can go wrong?
 
-`make backfill DAYS=14` runs the hours in a thread pool, skipping partitions already `ok`, or
+`make backfill` runs the hours in a thread pool, skipping partitions already `ok`, or
 Dagster runs partition backfills through the same `ingest_hour`. Downstream models rebuild from
 bronze, so nothing needs a special backfill mode. The risks are upstream rate limits, partial
 windows, and metrics computed before the backfill finishes. Scoped retries and the audit table
@@ -60,7 +60,7 @@ Move Parquet to object storage with the same layout, ideally Iceberg for atomic 
 dbt-duckdb for BigQuery or Snowflake, where most SQL ports with small changes. Make silver
 incremental with a lookback window instead of rebuilding it, and run partitions as Dagster tasks on
 a cluster. I'd type hot JSON fields at ingestion. The audit table and contract stay the same, which
-is why they're separate from the engine. I would not do this for today's volume, under 1 GB a week.
+is why they're separate from the engine. I would not do this for today's volume, about 6 GB a month.
 
 ## 8. How do you handle failures?
 
@@ -75,7 +75,7 @@ can account for the gap.
 
 The feed had lost `author_association` and most PR fields, so I inspected real payloads before
 writing parsers. Then the numbers looked wrong: the "merged by" actor equalled the PR author 99% of
-the time, and dependabot appeared to merge its own PRs. Checking 146 events against REST showed the
+the time, and dependabot appeared to merge its own PRs. Checking 139 events against REST showed the
 actor on `merged` is the author. That broke the obvious maintainer rule, so I replaced it with a
 stronger signal, because a same-repo branch needs push access. It also helped: every merged PR now
 has a known author without pairing events. I keep that validation as a script and report its
@@ -84,10 +84,10 @@ precision, including the rule that scored badly.
 ## 10. How do you know your proxy metrics are valid?
 
 I score them against ground truth where it exists. The removed fields are still in the REST API, so
-a script samples rows deterministically and compares. Maintainer inference has 85.4% precision.
-About 37% of sampled comments from people not inferred were really maintainers, so recall is the
+a script samples rows deterministically and compares. Maintainer inference has 84.1% precision.
+About 29% of sampled comments from people not inferred were really maintainers, so recall is the
 weak side, and I documented that "external" includes some insiders. The external merge rate reads
-88.7% from events and 77.3% from REST. I publish both, because a proxy without a measured error
+87.0% from events and 74.9% from REST. I publish both, because a proxy without a measured error
 is just a guess.
 
 ## 11. How did you optimise memory?

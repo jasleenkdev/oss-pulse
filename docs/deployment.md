@@ -22,7 +22,8 @@ Go to **Settings > Actions > General**.
 ## 3. Run the first refresh
 
 Go to **Actions > refresh > Run workflow**. The first run has no cached partitions, so it ingests
-the full seven days. That takes about 10 to 15 minutes. Later runs ingest one day.
+the full 30 days. That took 73 minutes on 6 workers locally, so allow up to two hours on the
+runner's 4. The job timeout is 240 minutes. Later runs ingest one day.
 
 The `data` branch is created on the first run. Its commits look like `data: refresh 2026-11-05`.
 The schedule is daily at 03:30 UTC. GitHub can disable scheduled workflows on repositories with no
@@ -35,14 +36,14 @@ Replace the placeholder under the title in `README.md` with the Pages URL.
 ## Secrets
 
 No secrets need adding. `refresh.yml` uses the built-in `GITHUB_TOKEN` for enrichment, limited to
-1,000 REST calls an hour for each repository, which is enough for 500 repositories.
+1,000 REST calls an hour for each repository, which is enough for the 900 repositories it enriches.
 
 ## Limits
 
-- **Disk and memory:** each hour is streamed and its download deleted, and seven days of bronze is
-  under 1 GB. DuckDB is capped at 4 GB on the runner.
+- **Disk and memory:** each hour is streamed and its download deleted, and 30 days of bronze is
+  about 3 GB. DuckDB is capped at 4 GB on the runner.
 - **Actions cache:** partitions persist in `actions/cache`. If the cache is evicted, the run rebuilds
   the window from GH Archive, so it is slower but still correct.
-- **Volume:** if GH Archive file sizes return to their earlier levels, seven days becomes about
-  16 GB of downloads. Each hour is still deleted after processing, so disk stays manageable, but the
+- **Volume:** if GH Archive file sizes return to their earlier levels, 30 days becomes about
+  70 GB of downloads. Each hour is still deleted after processing, so disk stays manageable, but the
   run takes much longer.

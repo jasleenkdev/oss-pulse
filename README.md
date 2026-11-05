@@ -44,22 +44,22 @@ Framework. Everything is free to run.
 
 ## Scale
 
-Numbers from the run over <!--m:window_start-->2026-10-29<!--/m--> to
+Numbers from the run over <!--m:window_start-->2026-10-06<!--/m--> to
 <!--m:window_last_day-->2026-11-04<!--/m--> (the most recent complete days).
 
 | Measure | Value |
 | --- | --- |
-| Hourly partitions ingested | <!--m:partitions_ok-->168<!--/m--> of <!--m:partitions_total-->168<!--/m--> |
-| Events read | <!--m:rows_read-->770,397<!--/m--> |
-| Events kept after filtering by type | <!--m:rows_kept-->680,100<!--/m--> |
-| Downloaded, compressed | <!--m:gb_compressed-->0.82<!--/m--> GB |
-| Processed, uncompressed | <!--m:gb_uncompressed-->3.85<!--/m--> GB |
-| Repositories seen | <!--m:repos_seen-->266,643<!--/m--> |
-| Repositories with human activity | <!--m:repos_human-->195,353<!--/m--> |
-| Repositories enriched through REST | <!--m:repos_enriched-->493<!--/m--> |
-| Repositories ranked | <!--m:repos_scored-->83<!--/m--> |
-| Ingestion runtime | <!--m:ingest_seconds-->472.9<!--/m--> s on <!--m:ingest_workers-->6<!--/m--> workers |
-| dbt, contract, extracts and report runtime, API cache warm | <!--m:build_seconds-->28.4<!--/m--> s |
+| Hourly partitions ingested | <!--m:partitions_ok-->720<!--/m--> of <!--m:partitions_total-->720<!--/m--> |
+| Events read | <!--m:rows_read-->20,595,692<!--/m--> |
+| Events kept after filtering by type | <!--m:rows_kept-->4,786,152<!--/m--> |
+| Downloaded, compressed | <!--m:gb_compressed-->6.00<!--/m--> GB |
+| Processed, uncompressed | <!--m:gb_uncompressed-->27.74<!--/m--> GB |
+| Repositories seen | <!--m:repos_seen-->1,590,019<!--/m--> |
+| Repositories with human activity | <!--m:repos_human-->1,337,470<!--/m--> |
+| Repositories enriched through REST | <!--m:repos_enriched-->869<!--/m--> |
+| Repositories ranked | <!--m:repos_scored-->646<!--/m--> |
+| Ingestion runtime | <!--m:ingest_seconds-->4,409.7<!--/m--> s on <!--m:ingest_workers-->6<!--/m--> workers |
+| dbt, contract, extracts and report runtime, API cache warm | <!--m:build_seconds-->49.5<!--/m--> s |
 
 ## Data model
 
@@ -104,57 +104,58 @@ Bots are excluded unless stated, and every number below is checked against pipel
 `scripts/verify_readme.py`.
 
 1. **The feed is a sample now.** Comment counters show about
-   <!--m:capture_rate-->1.36%<!--/m--> of events are captured. Every count below is sampled, and
+   <!--m:capture_rate-->1.24%<!--/m--> of events are captured. Every count below is sampled, and
    per-repo figures rest on small numbers, which is why only
-   <!--m:repos_scored-->83<!--/m--> of <!--m:repos_gate-->638<!--/m--> repositories that pass the
+   <!--m:repos_scored-->646<!--/m--> of <!--m:repos_gate-->4,348<!--/m--> repositories that pass the
    activity gate also have enough evidence to rank.
 
 2. **The actor on a merge event is not the person who merged.** It was the PR author in all
-   <!--m:merged_actor_checked-->146<!--/m--> events checked against REST, including
-   <!--m:merged_actor_not_merger-->13<!--/m--> where someone else merged. The obvious fallback,
+   <!--m:merged_actor_checked-->139<!--/m--> events checked against REST, including
+   <!--m:merged_actor_not_merger-->15<!--/m--> where someone else merged. The obvious fallback,
    "whoever merged is a maintainer", would have labelled contributors as maintainers.
 
-3. **A third of the activity is automated.** Bots produced
-   <!--m:bot_share-->31.9%<!--/m--> of events, including
-   <!--m:bot_share_issue_comments-->52.6%<!--/m--> of issue and PR comments and
-   <!--m:bot_share_review_comments-->55.8%<!--/m--> of diff comments, but only
-   <!--m:bot_share_issues-->15.1%<!--/m--> of issue activity.
+3. **About a quarter of the activity is automated.** Bots produced
+   <!--m:bot_share-->26.2%<!--/m--> of events, including
+   <!--m:bot_share_issue_comments-->56.4%<!--/m--> of issue and PR comments and
+   <!--m:bot_share_review_comments-->53.6%<!--/m--> of diff comments, but only
+   <!--m:bot_share_issues-->14.4%<!--/m--> of issue activity. The overall share moves with the
+   mix of event types the feed captures, so the per-type figures are the steadier ones.
 
 4. **Outsiders wait far longer to get merged.** The median external PR took
-   <!--m:external_ttm_h-->11.6<!--/m--> hours (<!--m:external_ttm_samples-->178<!--/m--> PRs),
-   against <!--m:branch_ttm_min-->14.6<!--/m--> minutes for same-repo branches
-   (<!--m:branch_ttm_samples-->2,139<!--/m--> PRs). That is about
-   <!--m:ttm_ratio-->48<!--/m--> times longer.
+   <!--m:external_ttm_h-->18.9<!--/m--> hours (<!--m:external_ttm_samples-->870<!--/m--> PRs),
+   against <!--m:branch_ttm_min-->15.5<!--/m--> minutes for same-repo branches
+   (<!--m:branch_ttm_samples-->10,496<!--/m--> PRs). That is about
+   <!--m:ttm_ratio-->73<!--/m--> times longer.
 
 5. **External PRs mostly land, though less often than events suggest.** Events give an external
-   merge rate of <!--m:external_merge_rate-->88.7%<!--/m--> over
-   <!--m:external_resolved-->4,747<!--/m--> resolved PRs. REST ground truth for
-   <!--m:true_resolved-->185<!--/m--> resolved PRs gives
-   <!--m:true_merge_rate-->77.3%<!--/m--> because closes are under-captured, and
-   <!--m:true_still_open_share-->33.5%<!--/m--> of sampled PRs were still open after three days.
+   merge rate of <!--m:external_merge_rate-->87.0%<!--/m--> over
+   <!--m:external_resolved-->18,417<!--/m--> resolved PRs. REST ground truth for
+   <!--m:true_resolved-->207<!--/m--> resolved PRs gives
+   <!--m:true_merge_rate-->74.9%<!--/m--> because closes are under-captured, and
+   <!--m:true_still_open_share-->27.4%<!--/m--> of sampled PRs were still open after three days.
    Trust the ranking more than the absolute rate.
 
 6. **Most outside issues get no visible answer in the window.** Of
-   <!--m:issue_items-->28,843<!--/m--> issues from non-maintainers, a maintainer response was
-   observed on <!--m:issue_observed_share-->13.6%<!--/m--> (a floor). The median observed response
-   was <!--m:issue_median_h-->8.8<!--/m--> hours with a p90 of
-   <!--m:issue_p90_h-->62.1<!--/m--> hours. Where the comment counter proves it was the first
-   comment (<!--m:issue_exact_items-->749<!--/m--> issues), the median was
-   <!--m:issue_exact_median_h-->6.2<!--/m--> hours.
+   <!--m:issue_items-->111,819<!--/m--> issues from non-maintainers, a maintainer response was
+   observed on <!--m:issue_observed_share-->17.4%<!--/m--> (a floor). The median observed response
+   was <!--m:issue_median_h-->18.7<!--/m--> hours with a p90 of
+   <!--m:issue_p90_h-->197.2<!--/m--> hours. Where the comment counter proves it was the first
+   comment (<!--m:issue_exact_items-->2,666<!--/m--> issues), the median was
+   <!--m:issue_exact_median_h-->9.6<!--/m--> hours.
 
 7. **Good first issues outnumber visible takers.** The window held
-   <!--m:gfi_open-->961<!--/m--> open good first issues across
-   <!--m:gfi_repos-->744<!--/m--> repositories. Of
-   <!--m:gfi_measurable-->901<!--/m--> labelled in the window, a contributor action was observed
-   on <!--m:gfi_pickups-->61<!--/m--> (<!--m:gfi_pickup_share-->6.8%<!--/m--> as a floor), with a
-   median of <!--m:gfi_pickup_median_h-->21.3<!--/m--> hours.
+   <!--m:gfi_open-->4,930<!--/m--> open good first issues across
+   <!--m:gfi_repos-->2,787<!--/m--> repositories. Of
+   <!--m:gfi_measurable-->5,267<!--/m--> labelled in the window, a contributor action was observed
+   on <!--m:gfi_pickups-->578<!--/m--> (<!--m:gfi_pickup_share-->11.0%<!--/m--> as a floor), with a
+   median of <!--m:gfi_pickup_median_h-->41.4<!--/m--> hours.
 
 8. **The ranking depends on what you value.** Against the baseline, rank correlation runs from
-   <!--m:spearman_gfi_heavy-->0.961<!--/m--> when good first issues are emphasised to
-   <!--m:spearman_health_heavy-->0.715<!--/m--> when activity health is. Only
-   <!--m:top10_response_heavy-->5<!--/m--> of the top ten survive a response-heavy weighting, and
-   the median repository's rank moves by <!--m:rank_spread_median-->29<!--/m--> places across
-   scenarios. Also, <!--m:single_maintainer_share-->43.4%<!--/m--> of ranked repositories had one
+   <!--m:spearman_gfi_heavy-->0.943<!--/m--> when good first issues are emphasised to
+   <!--m:spearman_health_heavy-->0.664<!--/m--> when activity health is. A
+   response-heavy weighting keeps <!--m:top10_response_heavy-->7<!--/m--> of the top ten, and
+   the median repository's rank moves by <!--m:rank_spread_median-->241<!--/m--> places across
+   scenarios. Also, <!--m:single_maintainer_share-->50.1%<!--/m--> of ranked repositories had one
    visible maintainer or none, though low capture will overstate that.
 
 ## Data quality summary
@@ -163,26 +164,30 @@ The generated report is [docs/data_quality.md](docs/data_quality.md).
 
 - **Coverage:** <!--m:partitions_missing-->0<!--/m--> partitions missing and
   <!--m:partitions_corrupt-->0<!--/m--> corrupt.
-- **Rejects:** <!--m:rows_rejected-->31<!--/m--> lines, all events with no repository.
-- **Duplicates:** <!--m:rows_duplicate-->95<!--/m--> removed.
-- **Timestamps:** <!--m:timestamp_anomalies-->525<!--/m--> rows corrected. GitHub shifted embedded
+- **Rejects:** <!--m:rows_rejected-->127<!--/m--> lines, all events with no repository.
+- **Duplicates:** <!--m:rows_duplicate-->216<!--/m--> removed.
+- **Timestamps:** <!--m:timestamp_anomalies-->533<!--/m--> rows corrected. GitHub shifted embedded
   timestamps by an hour around the US daylight saving change, in REST as well as in events, so
   some issues appear to close before they were created.
 - **Tests:** <!--m:dbt_tests_passed-->80<!--/m--> of <!--m:dbt_tests_total-->80<!--/m--> dbt tests
-  and <!--m:pytest_passed-->101<!--/m--> pytest tests pass.
-- **Maintainer rules against REST:** precision <!--m:maintainer_precision-->85.4%<!--/m--> on
-  <!--m:maintainer_checked-->288<!--/m--> comments. Owner evidence was right
+  and <!--m:pytest_passed-->103<!--/m--> pytest tests pass.
+- **Feed stability:** branch and tag creation events arrive in bursts, absent on some days and the
+  largest event type on others, so raw daily totals move with the feed. Pull request, issue and
+  comment events are steadier, and almost no ranked repository needs creation events to clear the
+  activity gate.
+- **Maintainer rules against REST:** precision <!--m:maintainer_precision-->84.1%<!--/m--> on
+  <!--m:maintainer_checked-->283<!--/m--> comments. Owner evidence was right
   <!--m:maintainer_owner_precision-->100.0%<!--/m--> of the time. The same-repo branch rule agrees
-  with REST only <!--m:maintainer_push_precision-->47.4%<!--/m--> of the time, though a same-repo
+  with REST only <!--m:maintainer_push_precision-->48.1%<!--/m--> of the time, though a same-repo
   branch does need push access, so REST may be hiding private organisation membership. That
   explanation is unverified.
-- **Known gap:** <!--m:maintainer_missed_share-->36.8%<!--/m--> of sampled comments from people
+- **Known gap:** <!--m:maintainer_missed_share-->28.9%<!--/m--> of sampled comments from people
   not inferred as maintainers came from real maintainers, so "external" includes some insiders.
 
 ## How FirstPR consumes the export
 
 `gold/firstpr_export.parquet` has one row per repository: every ranked repository, plus any active
-repository with an open good first issue, for <!--m:export_repos-->697<!--/m--> repositories and <!--m:export_issues-->956<!--/m--> issues in this run. Its
+repository with an open good first issue, for <!--m:export_repos-->2,926<!--/m--> repositories and <!--m:export_issues-->4,908<!--/m--> issues in this run. Its
 schema, types, nullability and semantics are versioned in
 [contracts/firstpr_export_v1.yml](contracts/firstpr_export_v1.yml).
 
@@ -221,12 +226,12 @@ Makefile             setup, backfill, build, test, dashboard, all
 
 ## How to reproduce
 
-Needs Python 3.11 through [uv](https://docs.astral.sh/uv/), Node 20 or later, and about 1 GB of
+Needs Python 3.11 through [uv](https://docs.astral.sh/uv/), Node 20 or later, and about 6 GB of
 disk. `GITHUB_TOKEN` is optional and only enables enrichment.
 
 ```sh
 make setup                  # Python environment, dashboard packages, .env
-make backfill               # the most recent 7 complete days
+make backfill               # the most recent 30 complete days
 make build                  # dbt, enrichment, contract, extracts, quality report
 make test                   # pytest
 make dashboard              # static site in dashboard/dist
@@ -236,6 +241,6 @@ make dagster                # Dagster UI
 make fixtures               # offline run over tests/fixtures, as in CI
 ```
 
-Use `make backfill DAYS=14` for a longer window, which would give per-repo samples more depth, or
-`make backfill END=2026-11-04 DAYS=7` to pin one. Deployment steps are in
-[docs/deployment.md](docs/deployment.md).
+Use `make backfill END=2026-11-04` to pin the window. To change its length, set `DAYS` for the
+backfill and `window_days` in `dbt/dbt_project.yml` for the metrics, since `DAYS` alone only changes
+what is ingested. Deployment steps are in [docs/deployment.md](docs/deployment.md).

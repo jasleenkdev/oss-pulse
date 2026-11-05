@@ -15,7 +15,7 @@ rejected or duplicate, and a dbt test enforces that sum.
 
 ## Why DuckDB and dbt
 
-The whole window is under 1 GB of Parquet, so a warehouse service would add cost and no capability.
+The whole window is about 4 GB of Parquet, so a warehouse service would add cost and no capability.
 DuckDB reads Parquet in place, runs in a free CI runner and needs no server. dbt adds tests,
 lineage and docs. `dbt-duckdb` external materialisation writes Parquet directly, so the warehouse
 file is disposable: delete it and rebuild.
@@ -27,8 +27,8 @@ serially, and Parquet-based checks avoid the warehouse file.
 
 Each hour maps to one partition path, and writes go to a temporary file followed by an atomic
 rename, so a crash leaves the old partition or the new one, never half of one. Bronze holds no
-ingestion timestamp, since that would make re-runs differ. A forced re-ingest of all 168 partitions
-gave a byte-identical checksum.
+ingestion timestamp, since that would make re-runs differ. Forcing a re-ingest of the full 720-hour window
+reproduced all 168 partitions that already existed, byte for byte.
 
 Silver and gold are pure functions of bronze and seeds. Extracts are rounded and sorted and hold no
 wall-clock values, so a rebuild leaves git clean. De-duplication happens twice: by event id within
@@ -61,6 +61,16 @@ One `json_extract` per field parses the document once per field, and this hit 12
 call with a list of paths parses once. De-duplication ranks ids only, so payloads aren't buffered.
 This took staging from out-of-memory to seconds under a 5 GB limit.
 
+## Enrichment budget
+
+The archived flag, language and stars come from REST, so a ranked repo that misses enrichment can't
+be screened or filtered. Choosing candidates by activity worked at 7 days and failed at 30, when 251
+of 647 ranked repos had a language and two archived repos had ranked. Activity-based proxies reached
+at most 442 of 647 within 950 calls, because ranking turns on observed responses. Candidates now
+sort by the same evidence gate as the score, which needs only 837 calls. The response models moved
+to staging so they can run before enrichment. The cap is 900, under the 1,000 calls an hour the
+Actions token allows.
+
 ## Scaling to a cloud warehouse
 
 The current feed is small, but the design has to hold up if volume returns to 100 MB an hour or
@@ -80,6 +90,6 @@ the audit table and the export contract stay the same, which is the point of hav
 
 ## What I would do next
 
-- Extend the window. Per-repo samples are thin at 7 days, and 30 days costs about 3 GB.
+- Drop creation events from daily totals, since their bursts dominate the charts.
 - Calibrate merge rates with a REST sample per repo, since the bias is measured.
 - Use `MemberEvent`, not in the required types, as further maintainer evidence.

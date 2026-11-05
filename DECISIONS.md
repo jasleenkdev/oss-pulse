@@ -93,3 +93,36 @@ from July 2026 and September 2025.
   score at this capture rate. Merge rates are shrunk toward the global rate with 5 pseudo-PRs.
 - **Minimum activity:** 15 human events, 3 external contributors, 3 active days, 5 evidence
   points and 3 components. Looser gates put repos with 2 contributors at the top of the ranking.
+
+## Step 4: enrichment
+
+- **Runs between silver and gold**, because the archived flag and language feed the score. It reads
+  `int_enrichment_candidates`, which puts repos that pass the activity gate first and then orders
+  by human events, so the ranked repos all get a language.
+- **Calls are sequential.** About 0.6 seconds each, which also stays clear of secondary rate limits.
+  The cache lasts 7 days, so rebuilds cost nothing.
+
+## Step 5: quality and validation
+
+- **Fallbacks were scored against REST** (`scripts/validate_fallbacks.py`, about 900 calls). See
+  `reports/fallback_validation.json`. The merged actor was the author in 146 of 146 checkable
+  events. Maintainer precision is 85.4%. 36.8% of sampled comments from people not inferred as
+  maintainers really were from maintainers, because 1.4% capture misses their evidence.
+- **The same-repo-branch rule agrees with REST `author_association` 47% of the time.** The rest
+  report `CONTRIBUTOR`, even though a same-repo branch needs push access. Private organisation
+  membership shown to a third-party token would explain this, but that was not verified.
+- **Event-based merge rates read high.** True outcomes for 186 resolved external PRs give 77.4%,
+  against 88.8% from events. Rankings use the event rate. The gap is published.
+- **The contract check is plain Python, not dbt model contracts**, so FirstPR can run the same file
+  against any Parquet it receives.
+
+## Step 6: orchestration
+
+- **`bronze_audit` and `bronze_rejects` are separate assets** written by one hourly multi-asset,
+  so each dbt source has one upstream asset.
+- **dbt is split into two asset groups**, silver and gold, so enrichment can sit between them
+  without a cycle.
+- **Backfills have two paths.** `make backfill` uses threads and is the fast path for a first
+  load. Dagster partition backfills use the same `ingest_hour`.
+- **Extract rows are filtered through a small encoded denylist** because they republish
+  third-party text in a public repository. `meta.json` records how many rows were dropped.

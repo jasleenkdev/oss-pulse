@@ -287,6 +287,13 @@ def fetch_with_retries(
     raise last_error  # type: ignore[misc]
 
 
+def ensure_placeholders(settings: Settings) -> None:
+    """Give the rejects glob one empty file, so dbt can read it when nothing was rejected."""
+    placeholder = settings.rejects_dir / "_schema" / "rejects.parquet"
+    if not placeholder.exists():
+        _write_table_atomic(REJECT_SCHEMA.empty_table(), placeholder)
+
+
 def ingest_hour(
     settings: Settings,
     hour: datetime,

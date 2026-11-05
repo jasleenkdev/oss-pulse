@@ -85,4 +85,4 @@ Feed-only rules scored against REST ground truth. Details are in `reports/fallba
 ## Test results
 
 - dbt tests: 80 passed of 80, 0 failed.
-- pytest: 99 passed, 0 failed.
+- pytest: 101 passed, 0 failed.

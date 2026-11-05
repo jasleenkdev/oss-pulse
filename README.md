@@ -169,7 +169,7 @@ The generated report is [docs/data_quality.md](docs/data_quality.md).
   timestamps by an hour around the US daylight saving change, in REST as well as in events, so
   some issues appear to close before they were created.
 - **Tests:** <!--m:dbt_tests_passed-->80<!--/m--> of <!--m:dbt_tests_total-->80<!--/m--> dbt tests
-  and <!--m:pytest_passed-->99<!--/m--> pytest tests pass.
+  and <!--m:pytest_passed-->101<!--/m--> pytest tests pass.
 - **Maintainer rules against REST:** precision <!--m:maintainer_precision-->85.4%<!--/m--> on
   <!--m:maintainer_checked-->288<!--/m--> comments. Owner evidence was right
   <!--m:maintainer_owner_precision-->100.0%<!--/m--> of the time. The same-repo branch rule agrees

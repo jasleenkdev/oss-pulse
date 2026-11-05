@@ -20,6 +20,7 @@ from oss_pulse.ingest import (
     read_audit,
     rejects_path,
 )
+from oss_pulse.reports import prune_old_partitions
 
 HOUR = datetime(2026, 3, 3, 10)
 
@@ -161,9 +162,7 @@ def test_corrupt_gzip_is_recorded_after_retries(settings, tmp_path):
     source = tmp_path / "source"
     source.mkdir()
     (source / gharchive_filename(HOUR)).write_bytes(b"\x1f\x8b not really gzip")
-    audit = ingest_hour(
-        settings, HOUR, base_url=f"file://{source}", max_attempts=2, sleep=no_sleep
-    )
+    audit = ingest_hour(settings, HOUR, base_url=f"file://{source}", max_attempts=2, sleep=no_sleep)
     assert audit.status == "corrupt"
     assert not bronze_path(settings, HOUR).exists()
 
@@ -173,9 +172,7 @@ def test_truncated_gzip_leaves_no_partial_partition(settings, tmp_path):
     write_hour(source, [json.dumps(event(str(i))) for i in range(500)])
     target = source / gharchive_filename(HOUR)
     target.write_bytes(target.read_bytes()[:-40])
-    audit = ingest_hour(
-        settings, HOUR, base_url=f"file://{source}", max_attempts=1, sleep=no_sleep
-    )
+    audit = ingest_hour(settings, HOUR, base_url=f"file://{source}", max_attempts=1, sleep=no_sleep)
     assert audit.status == "corrupt"
     assert not list(bronze_path(settings, HOUR).parent.glob("*"))
 
@@ -185,9 +182,10 @@ def test_skip_existing_does_not_refetch(settings, tmp_path):
     write_hour(source, [json.dumps(event())])
     first = ingest_hour(settings, HOUR, base_url=f"file://{source}")
     (source / gharchive_filename(HOUR)).unlink()
-    assert ingest_hour(
-        settings, HOUR, base_url=f"file://{source}", skip_existing=True
-    ).ingested_at == first.ingested_at
+    assert (
+        ingest_hour(settings, HOUR, base_url=f"file://{source}", skip_existing=True).ingested_at
+        == first.ingested_at
+    )
 
 
 def test_backoff_doubles_between_attempts(tmp_path):
@@ -239,3 +237,18 @@ def test_batches_flush_at_the_limit(monkeypatch):
     lines = [json.dumps(event(str(i))) for i in range(5)]
     process_lines(lines, HOUR, audit, "f", batches.append, rejects)
     assert [len(batch) for batch in batches] == [2, 2, 1]
+
+
+def test_prune_keeps_the_newest_days_only(settings):
+    for day in ("2026-03-01", "2026-03-02", "2026-03-03", "2026-03-04"):
+        for root in (settings.bronze_dir, settings.audit_dir, settings.rejects_dir):
+            (root / f"date={day}" / "hour=00").mkdir(parents=True)
+    (settings.rejects_dir / "_schema").mkdir()
+    assert prune_old_partitions(settings, keep_days=2) == 2
+    kept = sorted(path.name for path in settings.bronze_dir.glob("date=*"))
+    assert kept == ["date=2026-03-03", "date=2026-03-04"]
+    assert (settings.rejects_dir / "_schema").exists()
+
+
+def test_prune_with_nothing_to_do(settings):
+    assert prune_old_partitions(settings, keep_days=7) == 0

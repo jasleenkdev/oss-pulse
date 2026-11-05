@@ -79,7 +79,7 @@ from July 2026 and September 2025.
   independent capture the numerator and denominator lose events at the same rate.
 - **External requires observed fork status.** Treating unknown as external produced a 3-minute
   median response, because about 94% of PRs are same-repo and solo developers were being counted
-  as outsiders. Requiring a fork gives 5.05 hours.
+  as outsiders. Requiring a fork gave about 5 hours.
 - **A fork PR with an unknown author still counts.** `closed` does not identify the author, so
   requiring one would drop most rejections and inflate merge rates.
 - **First-time is a proxy:** external, with no earlier observed activity in the repo during the
@@ -106,13 +106,13 @@ from July 2026 and September 2025.
 
 - **Fallbacks were scored against REST** (`scripts/validate_fallbacks.py`, about 900 calls). See
   `reports/fallback_validation.json`. The merged actor was the author in 146 of 146 checkable
-  events. Maintainer precision is 85.4%. 36.8% of sampled comments from people not inferred as
+  events. Maintainer precision is 85.4%, and 36.8% of sampled comments from people not inferred as
   maintainers really were from maintainers, because 1.4% capture misses their evidence.
 - **The same-repo-branch rule agrees with REST `author_association` 47% of the time.** The rest
   report `CONTRIBUTOR`, even though a same-repo branch needs push access. Private organisation
   membership shown to a third-party token would explain this, but that was not verified.
-- **Event-based merge rates read high.** True outcomes for 186 resolved external PRs give 77.4%,
-  against 88.8% from events. Rankings use the event rate. The gap is published.
+- **Event-based merge rates read high.** True outcomes for 185 resolved external PRs give 77.3%,
+  against 88.7% from events. Rankings use the event rate. The gap is published.
 - **The contract check is plain Python, not dbt model contracts**, so FirstPR can run the same file
   against any Parquet it receives.
 
@@ -138,6 +138,8 @@ from July 2026 and September 2025.
   no `[bot]` suffix and were scoring as instant maintainers. They were added to the seed, and any
   action within 60 seconds of creation no longer counts as a response, which also covers accounts
   no list can enumerate.
+- **Good first issue pickup needs a label time inside the window.** Falling back to creation time
+  on old issues gave a p90 of 556 days. Restricted to the window, the median is 21 hours.
 - **Rows withheld by the text filter are stated on the page.** Rank numbers can skip as a result.
 
 ## Step 8: CI/CD

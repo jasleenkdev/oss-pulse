@@ -1,0 +1,50 @@
+{
+ "external_pr_true_outcomes": {
+  "closed_unmerged": 42,
+  "merged": 144,
+  "open": 94,
+  "prs_checked": 280,
+  "still_open_share": 0.3357,
+  "true_merge_rate_of_resolved": 0.7742
+ },
+ "maintainer_inference": {
+  "association_counts": {
+   "inferred:COLLABORATOR": 36,
+   "inferred:CONTRIBUTOR": 39,
+   "inferred:MEMBER": 9,
+   "inferred:NONE": 3,
+   "inferred:OWNER": 201,
+   "not_inferred:COLLABORATOR": 65,
+   "not_inferred:CONTRIBUTOR": 113,
+   "not_inferred:MEMBER": 44,
+   "not_inferred:NONE": 74
+  },
+  "comments_checked": 584,
+  "false_negative": 109,
+  "false_positive": 42,
+  "maintainer_share_among_not_inferred": 0.3682,
+  "precision_by_first_matching_rule": {
+   "issue_triage": {
+    "checked": 5,
+    "precision": 0.6
+   },
+   "owner_namespace": {
+    "checked": 207,
+    "precision": 1.0
+   },
+   "push_branch_pr": {
+    "checked": 76,
+    "precision": 0.4737
+   }
+  },
+  "precision_of_inferred": 0.8542,
+  "true_negative": 187,
+  "true_positive": 246
+ },
+ "merged_event_actor": {
+  "actor_is_author_and_merger": 133,
+  "actor_is_author_not_merger": 13,
+  "unavailable": 4
+ },
+ "method": "Deterministic hash sample of pipeline rows, checked against the REST API."
+}

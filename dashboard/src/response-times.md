@@ -85,7 +85,7 @@ Inputs.table(summary, {
 
 A response that never reached the feed looks like no response, so "share observed" is a floor.
 
-## Slowest and fastest ranked repositories
+## Ranked repositories, fastest first
 
 ```js
 const withIssues = d3.sort(

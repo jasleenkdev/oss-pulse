@@ -25,7 +25,9 @@ const size = (bytes) => `${(bytes / 1e9).toFixed(2)} GB`;
 
 ## Rows kept per partition
 
-Each cell is one hourly partition. A red cross marks an hour that is missing or corrupt.
+Each cell is one hourly partition. A red cross marks an hour that is missing or corrupt. The pale
+and dark pair on November 1 is upstream: when US daylight saving ended, GitHub stamped comment and
+fork events from 08:00 UTC as 09:00.
 
 ```js
 Plot.plot({
@@ -33,8 +35,8 @@ Plot.plot({
   marginLeft: 90,
   padding: 0.06,
   color: {type: "linear", scheme: "blues", legend: true, label: "Rows kept"},
-  x: {label: "Hour (UTC)", tickFormat: (d) => String(d).padStart(2, "0")},
-  y: {label: null},
+  x: {label: "Hour (UTC)", domain: d3.range(24), tickFormat: (d) => String(d).padStart(2, "0")},
+  y: {label: null, domain: [...new Set(partitions.map((d) => d.partition_date))]},
   marks: [
     Plot.cell(partitions, {
       x: "partition_hour",
@@ -60,7 +62,7 @@ Plot.plot({
 Plot.plot({
   marginLeft: 230,
   height: 40 + bots.by_type.length * 26,
-  x: {domain: [0, 1], percent: true, label: "Share of events from bots", grid: true},
+  x: {domain: [0, 100], percent: true, label: "Share of events from bots (%)", grid: true},
   y: {label: null},
   marks: [
     Plot.barX(bots.by_type, {

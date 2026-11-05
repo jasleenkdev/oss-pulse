@@ -57,11 +57,14 @@ from July 2026 and September 2025.
   kept in silver as metadata carriers and filtered in gold.
 - **`IssuesEvent` actors are reliable.** REST confirmed labeled 39/39, closed 38/38 and assigned
   34/40. `assigned` is therefore not used as maintainer evidence.
-- **GitHub timestamps are wrong around the US DST change.** On 2026-11-01 embedded `created_at`
+- **GitHub timestamps are wrong around the US DST change.** On 2026-11-01, resource `created_at`
   values from 08:00-08:59 UTC appear as 09:00-09:59. No issue has a `created_at` in the 08:00 hour
   and the 09:00 hour has about double the usual count. REST returns the same values, so issues
-  look closed before they were created. Envelope timestamps are correct. Silver caps `created_at`
-  at the first observed event and the close, and flags the row with `has_timestamp_anomaly`.
+  look closed before they were created. Event times for `IssuesEvent`, `WatchEvent` and
+  `PullRequestReviewEvent` are correct, but comment and fork events inherit the shift, with none
+  in hour 08 and double in hour 09. Silver caps `created_at` at the first observed event and the
+  close, and flags the row with `has_timestamp_anomaly`. The cap fixes ordering, not the remaining
+  one-hour error on unflagged rows, which is immaterial to medians over seven days.
 - **Label matching uses a punctuation-free key**, which folds `good-first-issue`,
   `Good First Issue` and emoji prefixes into one seed row. `help wanted`, `easy` and
   `hacktoberfest` are mapped as `adjacent`, not as good first issues.

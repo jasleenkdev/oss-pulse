@@ -6,6 +6,8 @@ export DBT_PROFILES_DIR := $(CURDIR)/dbt
 DAYS ?= 7
 END ?=
 END_FLAG := $(if $(END),--end-date $(END),)
+FORCE ?=
+FORCE_FLAG := $(if $(FORCE),--force,)
 FIXTURE_DIR := $(CURDIR)/data_fixture
 
 .PHONY: setup setup-python backfill build timed-build test dashboard all lint fixtures verify dagster freshness
@@ -20,7 +22,7 @@ setup-python:
 	@test -f .env || (umask 077; printf 'GITHUB_TOKEN=%s\n' "$$GITHUB_TOKEN" > .env)
 
 backfill:
-	$(PYTHON) -m oss_pulse.cli backfill --days $(DAYS) $(END_FLAG) --workers 6 --record
+	$(PYTHON) -m oss_pulse.cli backfill --days $(DAYS) $(END_FLAG) $(FORCE_FLAG) --workers 6 --record
 
 build:
 	cd dbt && $(DBT) seed --quiet

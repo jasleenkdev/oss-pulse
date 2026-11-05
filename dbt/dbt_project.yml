@@ -1,0 +1,41 @@
+name: oss_pulse
+version: "0.1.0"
+config-version: 2
+profile: oss_pulse
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+target-path: target
+clean-targets: [target, dbt_packages]
+
+flags:
+  send_anonymous_usage_stats: false
+
+vars:
+  # Length of the rolling metric window. The end comes from the newest ingested date.
+  window_days: 7
+
+seeds:
+  oss_pulse:
+    +schema: seeds
+
+models:
+  oss_pulse:
+    staging:
+      +schema: staging
+      +materialized: view
+      +tags: [staging]
+    silver:
+      +schema: silver
+      +materialized: external
+      +tags: [silver]
+    gold:
+      +schema: gold
+      +materialized: external
+      +tags: [gold]
+
+tests:
+  oss_pulse:
+    +severity: error

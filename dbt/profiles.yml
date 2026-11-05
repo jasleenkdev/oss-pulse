@@ -1,0 +1,15 @@
+oss_pulse:
+  target: "{{ env_var('OSS_PULSE_DBT_TARGET', 'dev') }}"
+  outputs:
+    dev: &default
+      type: duckdb
+      path: "{{ env_var('OSS_PULSE_DATA_DIR') }}/warehouse.duckdb"
+      threads: 4
+      external_root: "{{ env_var('OSS_PULSE_DATA_DIR') }}"
+      settings:
+        TimeZone: UTC
+        memory_limit: "{{ env_var('OSS_PULSE_DUCKDB_MEMORY', '5GB') }}"
+        preserve_insertion_order: false
+    ci:
+      <<: *default
+      threads: 2

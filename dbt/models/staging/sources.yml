@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: Hive-partitioned Parquet written by the ingestion step.
+    tables:
+      - name: events
+        description: Kept event types, with the raw JSON payload preserved.
+        meta:
+          external_location: "read_parquet('{{ env_var('OSS_PULSE_DATA_DIR') }}/bronze/date=*/hour=*/events.parquet', hive_partitioning = true, union_by_name = true)"
+        loaded_at_field: created_at
+        freshness:
+          warn_after: {count: 48, period: hour}
+          error_after: {count: 96, period: hour}
+      - name: audit
+        description: One row per ingested hour, including hours missing upstream.
+        meta:
+          external_location: "read_parquet('{{ env_var('OSS_PULSE_DATA_DIR') }}/audit/date=*/hour=*/audit.parquet', union_by_name = true)"
+      - name: rejects
+        description: Quarantined lines that could not be parsed or lacked required fields.
+        meta:
+          external_location: "read_parquet('{{ env_var('OSS_PULSE_DATA_DIR') }}/rejects/**/rejects.parquet', union_by_name = true)"
+  - name: enrichment
+    description: Repository metadata from the GitHub REST API. Empty when no token is set.
+    tables:
+      - name: repo_metadata
+        meta:
+          external_location: "read_parquet('{{ env_var('OSS_PULSE_DATA_DIR') }}/enrichment/repo_metadata.parquet')"

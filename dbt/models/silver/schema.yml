@@ -1,0 +1,161 @@
+version: 2
+
+models:
+  - name: events
+    description: De-duplicated event log inside the metric window. Bots are flagged, not removed.
+    columns:
+      - name: event_id
+        data_tests: [unique, not_null]
+      - name: event_type
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - IssuesEvent
+                  - IssueCommentEvent
+                  - PullRequestEvent
+                  - PullRequestReviewEvent
+                  - PullRequestReviewCommentEvent
+                  - WatchEvent
+                  - ForkEvent
+                  - CreateEvent
+      - name: created_at
+        data_tests: [not_null]
+      - name: actor_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('actors')
+                field: actor_id
+      - name: repo_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('repos')
+                field: repo_id
+      - name: is_bot
+        data_tests: [not_null]
+
+  - name: issues
+    description: Latest observed state per issue. Excludes pull requests.
+    columns:
+      - name: issue_id
+        data_tests: [unique, not_null]
+      - name: repo_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('repos')
+                field: repo_id
+      - name: created_at
+        data_tests: [not_null]
+      - name: state
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [open, closed]
+      - name: closed_at
+        data_tests:
+          - not_before:
+              arguments:
+                other_column: created_at
+      - name: is_good_first_issue
+        data_tests: [not_null]
+
+  - name: issue_comments
+    columns:
+      - name: comment_id
+        data_tests: [unique, not_null]
+      - name: repo_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('repos')
+                field: repo_id
+      - name: issue_id
+        description: Comments on pull requests carry the PR's issue id and have no row in issues.
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('issues')
+                field: issue_id
+                config:
+                  where: "not is_pull_request"
+      - name: pr_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('pull_requests')
+                field: pr_key
+                config:
+                  where: "is_pull_request"
+      - name: created_at
+        data_tests: [not_null]
+
+  - name: pull_requests
+    description: One row per pull request, assembled from all events that mention it.
+    columns:
+      - name: pr_key
+        data_tests: [unique, not_null]
+      - name: repo_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('repos')
+                field: repo_id
+      - name: outcome
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [merged, closed_unmerged, open_or_unknown]
+      - name: closed_at
+        data_tests:
+          - not_before:
+              arguments:
+                other_column: created_at
+      - name: merged_at
+        data_tests:
+          - not_before:
+              arguments:
+                other_column: created_at
+
+  - name: reviews
+    columns:
+      - name: review_key
+        data_tests: [unique, not_null]
+      - name: review_kind
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [review, review_comment]
+      - name: pr_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('pull_requests')
+                field: pr_key
+      - name: submitted_at
+        data_tests: [not_null]
+
+  - name: repos
+    columns:
+      - name: repo_id
+        data_tests: [unique, not_null]
+      - name: repo_name
+        data_tests: [not_null]
+
+  - name: actors
+    columns:
+      - name: actor_id
+        data_tests: [unique, not_null]
+      - name: is_bot
+        data_tests: [not_null]

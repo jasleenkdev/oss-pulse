@@ -1,0 +1,44 @@
+label_key,canonical_label,category
+good first issue,good first issue,good_first_issue
+good first issues,good first issue,good_first_issue
+goodfirstissue,good first issue,good_first_issue
+good first bug,good first issue,good_first_issue
+good first contribution,good first issue,good_first_issue
+good first pr,good first issue,good_first_issue
+type good first issue,good first issue,good_first_issue
+kind good first issue,good first issue,good_first_issue
+status good first issue,good first issue,good_first_issue
+d good first issue,good first issue,good_first_issue
+first timers only,first-timers-only,good_first_issue
+first timer only,first-timers-only,good_first_issue
+first timers,first-timers-only,good_first_issue
+first time contributor,first-timers-only,good_first_issue
+first time contribution,first-timers-only,good_first_issue
+first timer,first-timers-only,good_first_issue
+first contribution,first-timers-only,good_first_issue
+first contributor,first-timers-only,good_first_issue
+first contributors,first-timers-only,good_first_issue
+first contrib,first-timers-only,good_first_issue
+12 first time contribution,first-timers-only,good_first_issue
+beginner,beginner,good_first_issue
+beginners,beginner,good_first_issue
+beginner friendly,beginner,good_first_issue
+level beginner,beginner,good_first_issue
+difficulty beginner,beginner,good_first_issue
+skill level beginner,beginner,good_first_issue
+newcomer,beginner,good_first_issue
+newcomers,beginner,good_first_issue
+newcomer friendly,beginner,good_first_issue
+good for newcomers,beginner,good_first_issue
+good for beginners,beginner,good_first_issue
+easy first issue,beginner,good_first_issue
+starter issue,beginner,good_first_issue
+starter task,beginner,good_first_issue
+help wanted,help wanted,adjacent
+status help wanted,help wanted,adjacent
+up for grabs,up-for-grabs,adjacent
+easy,easy,adjacent
+difficulty easy,easy,adjacent
+effort easy,easy,adjacent
+size easy,easy,adjacent
+hacktoberfest,hacktoberfest,adjacent

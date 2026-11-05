@@ -14,7 +14,8 @@ with reviews as (
         review_state as state,
         review_author_association as author_association,
         least(review_submitted_at, created_at) as submitted_at,
-        created_at as event_at
+        created_at as event_at,
+        event_id
     from {{ ref('stg_events') }}
     where event_type = 'PullRequestReviewEvent' and review_id is not null and pr_number is not null
 ),
@@ -31,7 +32,8 @@ diff_comments as (
         cast(null as varchar),
         comment_author_association,
         least(comment_created_at, created_at),
-        created_at
+        created_at,
+        event_id
     from {{ ref('stg_events') }}
     where event_type = 'PullRequestReviewCommentEvent'
       and comment_id is not null
@@ -44,10 +46,10 @@ select
     any_value(repo_id) as repo_id,
     any_value(pr_number) as pr_number,
     any_value(repo_id) || '#' || any_value(pr_number) as pr_key,
-    arg_max(author_id, event_at) as author_id,
-    arg_max(author_login, event_at) as author_login,
-    bool_or(is_bot) or {{ is_bot('arg_max(author_login, event_at)') }} as author_is_bot,
-    arg_max(state, event_at) as state,
+    arg_max(author_id, (event_at, event_id)) as author_id,
+    arg_max(author_login, (event_at, event_id)) as author_login,
+    bool_or(is_bot) or {{ is_bot('arg_max(author_login, (event_at, event_id))') }} as author_is_bot,
+    arg_max(state, (event_at, event_id)) as state,
     max(author_association) as author_association,
     min(submitted_at) as submitted_at
 from (select * from reviews union all select * from diff_comments)

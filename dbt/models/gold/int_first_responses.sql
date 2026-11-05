@@ -99,7 +99,7 @@ issue_responses as (
         'issue' as kind,
         i.created_at,
         min(a.acted_at) as first_response_at,
-        arg_min(a.is_first_comment, a.acted_at) as is_exact
+        arg_min(a.is_first_comment, (a.acted_at, not a.is_first_comment)) as is_exact
     from external_issues i
     left join maintainer_actions a
         on a.repo_id = i.repo_id
@@ -125,7 +125,7 @@ pr_responses as (
                     then p.merged_at
             end
         ) as first_response_at,
-        coalesce(arg_min(a.is_first_comment, a.acted_at), false) as is_exact
+        coalesce(arg_min(a.is_first_comment, (a.acted_at, not a.is_first_comment)), false) as is_exact
     from external_prs p
     left join maintainer_actions a
         on a.repo_id = p.repo_id

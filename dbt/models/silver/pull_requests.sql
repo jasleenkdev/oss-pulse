@@ -24,12 +24,12 @@ with pr_events as (
         max(created_at) filter (where action = 'merged') as merged_event_at,
         max(created_at) filter (where action = 'closed') as closed_event_at,
         max(created_at) filter (where action = 'reopened') as reopened_event_at,
-        arg_max(actor_login, created_at) filter (where action = 'closed') as closed_actor_login,
+        arg_max(actor_login, (created_at, event_id)) filter (where action = 'closed') as closed_actor_login,
         min(created_at) as first_pr_event_at,
-        arg_min(actor_login, created_at) filter (where action = 'opened') as opened_actor_login,
-        arg_min(actor_id, created_at) filter (where action = 'opened') as opened_actor_id,
-        arg_max(actor_login, created_at) filter (where action = 'merged') as merged_actor_login,
-        arg_max(actor_id, created_at) filter (where action = 'merged') as merged_actor_id
+        arg_min(actor_login, (created_at, event_id)) filter (where action = 'opened') as opened_actor_login,
+        arg_min(actor_id, (created_at, event_id)) filter (where action = 'opened') as opened_actor_id,
+        arg_max(actor_login, (created_at, event_id)) filter (where action = 'merged') as merged_actor_login,
+        arg_max(actor_id, (created_at, event_id)) filter (where action = 'merged') as merged_actor_id
     from {{ ref('stg_events') }}
     where event_type = 'PullRequestEvent' and pr_number is not null
     group by repo_id, pr_number
@@ -56,11 +56,11 @@ snapshots as (
         issue_number as pr_number,
         max(repo_name) as repo_name,
         min(issue_created_at) as snapshot_created_at,
-        arg_max(issue_user_login, created_at) as snapshot_author_login,
-        arg_max(issue_user_id, created_at) as snapshot_author_id,
+        arg_max(issue_user_login, (created_at, event_id)) as snapshot_author_login,
+        arg_max(issue_user_id, (created_at, event_id)) as snapshot_author_id,
         max(issue_pr_merged_at) as snapshot_merged_at,
-        arg_max(issue_state, created_at) as snapshot_state,
-        arg_max(issue_closed_at, created_at) as snapshot_closed_at,
+        arg_max(issue_state, (created_at, event_id)) as snapshot_state,
+        arg_max(issue_closed_at, (created_at, event_id)) as snapshot_closed_at,
         min(created_at) as first_comment_event_at,
         max(issue_author_association) as snapshot_association
     from {{ ref('stg_events') }}

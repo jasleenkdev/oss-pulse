@@ -85,7 +85,7 @@ contributor_actions as (
 ),
 
 first_action as (
-    select issue_id, min(acted_at) as picked_up_at, arg_min(how, acted_at) as pickup_kind
+    select issue_id, min(acted_at) as picked_up_at, arg_min(how, (acted_at, how)) as pickup_kind
     from contributor_actions
     group by issue_id
 )

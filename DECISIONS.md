@@ -126,3 +126,26 @@ from July 2026 and September 2025.
   load. Dagster partition backfills use the same `ingest_hour`.
 - **Extract rows are filtered through a small encoded denylist** because they republish
   third-party text in a public repository. `meta.json` records how many rows were dropped.
+
+## Step 7: dashboard
+
+- **Observable Framework over Evidence.** Pages are Markdown plus JavaScript over static JSON, so
+  the site builds without a database connector or the warehouse. Evidence needs a source layer and
+  a heavier toolchain for the same result, and the language filter is simple client-side code here.
+- **Rendering caught what the build could not.** Screenshots showed a 0-minute median response on
+  the top-ranked repo. See below.
+- **Automation accounts registered as normal users.** `yugabyte-ci` and `elasticsearchmachine` have
+  no `[bot]` suffix and were scoring as instant maintainers. They were added to the seed, and any
+  action within 60 seconds of creation no longer counts as a response, which also covers accounts
+  no list can enumerate.
+- **Rows withheld by the text filter are stated on the page.** Rank numbers can skip as a result.
+
+## Step 8: CI/CD
+
+- **The daily refresh ingests one day, as specified, but metrics need seven.** Partitions are
+  carried between runs with `actions/cache`. A second backfill over seven days is a no-op unless
+  the cache was evicted, when it rebuilds the window from source.
+- **The `data` branch is an orphan branch of JSON only**, so bot commits never mix with `main`
+  history. Pages deploys from the workflow artifact, not from a branch.
+- **The refresh does not fail on a partition gap.** Gaps are recorded and surfaced on the health
+  page. The contract and dbt tests are what stop a publish.

@@ -3,10 +3,18 @@
 -- a null first_response_at. "First observed": a missed event can only make the true
 -- response earlier, so these durations are upper bounds. `is_exact` marks responses
 -- known to be the first comment on the thread, from the event's comment counter.
+-- Actions within min_response_seconds are ignored: nobody reads and answers that fast, and
+-- many automation accounts are registered as ordinary users that no list can enumerate.
 {{ config(materialized='table', location=none) }}
 
 with bounds as (
     select * from {{ ref('window_bounds') }}
+),
+
+min_delay as (
+    select value as seconds
+    from {{ ref('score_thresholds') }}
+    where name = 'min_response_seconds'
 ),
 
 maintainers as (
@@ -98,7 +106,7 @@ issue_responses as (
         and a.number = i.number
         and not a.is_pull_request
         and a.actor_login is distinct from i.author_login
-        and a.acted_at >= i.created_at
+        and a.acted_at >= i.created_at + to_seconds(cast((select seconds from min_delay) as bigint))
     group by i.item_id, i.repo_id, i.created_at
 ),
 
@@ -109,7 +117,14 @@ pr_responses as (
         'pr' as kind,
         p.created_at,
         -- An external PR can only be merged by someone with write access.
-        least(min(a.acted_at), p.merged_at) as first_response_at,
+        least(
+            min(a.acted_at),
+            case
+                when p.merged_at >= p.created_at
+                    + to_seconds(cast((select seconds from min_delay) as bigint))
+                    then p.merged_at
+            end
+        ) as first_response_at,
         coalesce(arg_min(a.is_first_comment, a.acted_at), false) as is_exact
     from external_prs p
     left join maintainer_actions a
@@ -117,7 +132,7 @@ pr_responses as (
         and a.number = p.number
         and a.is_pull_request
         and a.actor_login is distinct from p.author_login
-        and a.acted_at >= p.created_at
+        and a.acted_at >= p.created_at + to_seconds(cast((select seconds from min_delay) as bigint))
     group by p.item_id, p.repo_id, p.created_at, p.merged_at
 ),
 

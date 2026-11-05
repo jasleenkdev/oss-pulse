@@ -56,6 +56,22 @@ def test_dashboard_extracts_follow_the_export(graph):
     assert by_name(view, "firstpr_export") in view.get(AssetKey("dashboard_extracts")).parent_keys
 
 
+def test_every_dependency_is_a_real_asset(graph):
+    # A bare string dependency on a dbt model silently creates an unconnected stub asset.
+    _, view = graph
+    stubs = [
+        key.to_user_string() for key in view.get_all_asset_keys() if not view.get(key).is_executable
+    ]
+    assert stubs == []
+
+
+def test_checks_target_real_assets(graph):
+    _, view = graph
+    keys = set(view.get_all_asset_keys())
+    assert all(check.asset_key in keys for check in view.asset_check_keys)
+    assert all(view.get(check.asset_key).is_executable for check in view.asset_check_keys)
+
+
 def test_quality_checks_are_registered(graph):
     _, view = graph
     names = {key.name for key in view.asset_check_keys}

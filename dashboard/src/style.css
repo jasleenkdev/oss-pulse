@@ -1,0 +1,91 @@
+@import url("observablehq:default.css");
+@import url("observablehq:theme-air.css");
+@import url("observablehq:theme-near-midnight.css") (prefers-color-scheme: dark);
+
+:root {
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --recessive: #8f8e88;
+  --ink-muted: #52514e;
+  --callout: #f4f3ef;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --recessive: #6f6e69;
+    --ink-muted: #c3c2b7;
+    --callout: #232322;
+  }
+}
+
+.tiles {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  margin: 1.25rem 0;
+}
+
+.tile {
+  border-top: 2px solid var(--theme-foreground-faintest);
+  padding-top: 0.5rem;
+}
+
+.tile .label {
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+}
+
+.tile .value {
+  font-size: 1.9rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.tile .tile-note {
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+}
+
+.caveat {
+  background: var(--callout);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  max-width: 72ch;
+  padding: 0.75rem 1rem;
+}
+
+.legend {
+  align-items: center;
+  color: var(--ink-muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.legend i {
+  border-radius: 2px;
+  display: inline-block;
+  height: 10px;
+  margin-right: 0.35rem;
+  width: 10px;
+}
+
+.filters {
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+h1 {
+  max-width: 28ch;
+}

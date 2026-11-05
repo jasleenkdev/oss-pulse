@@ -9,8 +9,10 @@ cannot see: partition gaps, reject rates, the data contract and extract size.
 
 import os
 import subprocess
+import sys
 from collections.abc import Iterator
 from datetime import UTC, datetime
+from pathlib import Path
 
 import duckdb
 from dagster import (
@@ -55,8 +57,16 @@ hourly_partitions = HourlyPartitionsDefinition(start_date="2026-10-01-00:00", ti
 dbt_project = DbtProject(project_dir=DBT_DIR, profiles_dir=DBT_DIR)
 if not dbt_project.manifest_path.exists():
     subprocess.run(
-        ["dbt", "parse", "--quiet"], cwd=DBT_DIR, check=True, env={**os.environ}
+        [str(Path(sys.executable).parent / "dbt"), "parse", "--quiet"],
+        cwd=DBT_DIR,
+        check=True,
+        env={**os.environ},
     )
+
+
+def gold_key(name: str) -> AssetKey:
+    """dagster-dbt prefixes keys with the schema. A bare name would create a separate asset."""
+    return AssetKey(["gold", name])
 
 
 class Translator(DagsterDbtTranslator):
@@ -140,7 +150,7 @@ def dbt_silver(context: AssetExecutionContext, dbt: DbtCliResource) -> Iterator:
 
 
 @asset(
-    deps=["int_enrichment_candidates"],
+    deps=[AssetKey(["staging", "int_enrichment_candidates"])],
     group_name="silver",
     kinds={"python", "parquet"},
     description="Language, topics, license and archived status from the GitHub REST API.",
@@ -171,7 +181,12 @@ def dbt_gold(context: AssetExecutionContext, dbt: DbtCliResource) -> Iterator:
 
 
 @asset(
-    deps=["firstpr_export", "gold_repo_scores", "gold_pipeline_summary", "gold_network_summary"],
+    deps=[
+        gold_key("firstpr_export"),
+        gold_key("gold_repo_scores"),
+        gold_key("gold_pipeline_summary"),
+        gold_key("gold_network_summary"),
+    ],
     group_name="publish",
     kinds={"json"},
     description="Compact committed extracts that the static dashboard builds from.",
@@ -198,7 +213,7 @@ def data_quality_report() -> None:
     write_data_quality_report(settings)
 
 
-@asset_check(asset="gold_partition_health", blocking=False)
+@asset_check(asset=gold_key("gold_partition_health"), blocking=False)
 def partition_gaps_within_limit() -> AssetCheckResult:
     source = f"read_parquet('{settings.gold_dir}/gold_partition_health.parquet')"
     total, gaps = duckdb.sql(
@@ -212,7 +227,7 @@ def partition_gaps_within_limit() -> AssetCheckResult:
     )
 
 
-@asset_check(asset="gold_pipeline_summary", blocking=True)
+@asset_check(asset=gold_key("gold_pipeline_summary"), blocking=True)
 def reject_rate_within_limit() -> AssetCheckResult:
     source = f"read_parquet('{settings.gold_dir}/gold_pipeline_summary.parquet')"
     read, rejected = duckdb.sql(f"select rows_read, rows_rejected from {source}").fetchall()[0]
@@ -224,7 +239,7 @@ def reject_rate_within_limit() -> AssetCheckResult:
     )
 
 
-@asset_check(asset="gold_repo_scores", blocking=True)
+@asset_check(asset=gold_key("gold_repo_scores"), blocking=True)
 def scores_in_range() -> AssetCheckResult:
     source = f"read_parquet('{settings.gold_dir}/gold_repo_scores.parquet')"
     rows, invalid = duckdb.sql(
@@ -237,7 +252,7 @@ def scores_in_range() -> AssetCheckResult:
     )
 
 
-@asset_check(asset="firstpr_export", blocking=True)
+@asset_check(asset=gold_key("firstpr_export"), blocking=True)
 def firstpr_contract() -> AssetCheckResult:
     contract = load_contract(CONTRACTS_DIR / "firstpr_export_v1.yml")
     violations = validate(settings.gold_dir / "firstpr_export.parquet", contract)
@@ -261,7 +276,7 @@ def extracts_under_size_limit() -> AssetCheckResult:
     )
 
 
-@asset_check(asset="gold_pipeline_summary", blocking=False)
+@asset_check(asset=gold_key("gold_pipeline_summary"), blocking=False)
 def data_is_fresh() -> AssetCheckResult:
     source = f"read_parquet('{settings.gold_dir}/gold_pipeline_summary.parquet')"
     latest = duckdb.sql(f"select latest_event_at from {source}").fetchall()[0][0]
@@ -276,7 +291,6 @@ def data_is_fresh() -> AssetCheckResult:
 ingest_job = define_asset_job(
     "ingest_hour_job",
     selection=AssetSelection.assets(ingest_hour_asset),
-    partitions_def=hourly_partitions,
 )
 
 publish_job = define_asset_job(

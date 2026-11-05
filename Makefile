@@ -8,14 +8,16 @@ END ?=
 END_FLAG := $(if $(END),--end-date $(END),)
 FIXTURE_DIR := $(CURDIR)/data_fixture
 
-.PHONY: setup backfill build test dashboard all lint fixtures verify dagster freshness clean-fixtures
+.PHONY: setup setup-python backfill build timed-build test dashboard all lint fixtures verify dagster freshness
 
-setup:
+setup: setup-python
+	cd dashboard && npm ci
+
+setup-python:
 	uv venv --python 3.11 .venv
 	uv pip install --python $(PYTHON) -r requirements.lock
 	uv pip install --python $(PYTHON) --no-deps -e .
 	@test -f .env || (umask 077; printf 'GITHUB_TOKEN=%s\n' "$$GITHUB_TOKEN" > .env)
-	cd dashboard && npm ci
 
 backfill:
 	$(PYTHON) -m oss_pulse.cli backfill --days $(DAYS) $(END_FLAG) --workers 6 --record
@@ -29,6 +31,10 @@ build:
 	$(PYTHON) -m oss_pulse.cli check-contract
 	$(PYTHON) -m oss_pulse.cli extracts
 	$(PYTHON) -m oss_pulse.cli report
+
+# Same as build, and saves its duration to reports/run_summary.json for the README.
+timed-build:
+	$(PYTHON) scripts/timed_build.py
 
 lint:
 	.venv/bin/ruff check .

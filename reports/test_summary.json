@@ -1,0 +1,14 @@
+{
+ "dbt": {
+  "error": 0,
+  "fail": 0,
+  "pass": 80,
+  "total": 80,
+  "warn": 0
+ },
+ "pytest": {
+  "collected": 89,
+  "failed": 0,
+  "passed": 89
+ }
+}

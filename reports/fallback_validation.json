@@ -1,19 +1,19 @@
 {
  "external_pr_true_outcomes": {
   "closed_unmerged": 42,
-  "merged": 144,
-  "open": 94,
-  "prs_checked": 280,
-  "still_open_share": 0.3357,
-  "true_merge_rate_of_resolved": 0.7742
+  "merged": 143,
+  "open": 93,
+  "prs_checked": 278,
+  "still_open_share": 0.3345,
+  "true_merge_rate_of_resolved": 0.773
  },
  "maintainer_inference": {
   "association_counts": {
-   "inferred:COLLABORATOR": 36,
+   "inferred:COLLABORATOR": 35,
    "inferred:CONTRIBUTOR": 39,
    "inferred:MEMBER": 9,
    "inferred:NONE": 3,
-   "inferred:OWNER": 201,
+   "inferred:OWNER": 202,
    "not_inferred:COLLABORATOR": 65,
    "not_inferred:CONTRIBUTOR": 113,
    "not_inferred:MEMBER": 44,
@@ -25,11 +25,11 @@
   "maintainer_share_among_not_inferred": 0.3682,
   "precision_by_first_matching_rule": {
    "issue_triage": {
-    "checked": 5,
-    "precision": 0.6
+    "checked": 4,
+    "precision": 0.5
    },
    "owner_namespace": {
-    "checked": 207,
+    "checked": 208,
     "precision": 1.0
    },
    "push_branch_pr": {

@@ -1,0 +1,36 @@
+# secrets
+.env
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# warehouse and pipeline outputs
+data/
+data_fixture/
+*.duckdb
+*.duckdb.wal
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+dbt/.user.yml
+logs/
+
+# dagster
+.dagster/
+.dagster_home/
+
+# dashboard
+dashboard/node_modules/
+dashboard/dist/
+dashboard/src/.observablehq/cache/
+dashboard/.observablehq/cache/
+
+# os
+.DS_Store

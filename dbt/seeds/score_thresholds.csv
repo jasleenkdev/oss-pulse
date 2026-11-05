@@ -1,0 +1,7 @@
+name,value,description
+min_human_events,15,Non-bot events in the window
+min_external_contributors,3,Distinct non-maintainer humans who opened an issue or PR or commented
+min_active_days,3,Distinct days with at least one non-bot event
+min_evidence_points,5,External responses plus resolved external PRs needed before a repo can be ranked
+min_components,3,Score components a repo must have evidence for
+merge_rate_prior_strength,5,Pseudo-count of PRs that shrinks small-sample merge rates toward the global rate

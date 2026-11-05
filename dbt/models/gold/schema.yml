@@ -1,0 +1,92 @@
+version: 2
+
+models:
+  - name: gold_repo_metrics
+    description: Per-repo metrics over the window, bots excluded.
+    columns:
+      - name: repo_id
+        data_tests: [unique, not_null]
+      - name: pr_merge_rate
+        data_tests:
+          - between: {arguments: {low: 0, high: 1}}
+      - name: external_pr_merge_rate
+        data_tests:
+          - between: {arguments: {low: 0, high: 1}}
+      - name: first_time_pr_merge_rate
+        data_tests:
+          - between: {arguments: {low: 0, high: 1}}
+      - name: issue_first_response_median_h
+        data_tests: [non_negative]
+      - name: issue_first_response_p90_h
+        data_tests: [non_negative]
+      - name: pr_first_response_median_h
+        data_tests: [non_negative]
+      - name: pr_first_response_p90_h
+        data_tests: [non_negative]
+      - name: time_to_merge_median_h
+        data_tests: [non_negative]
+      - name: gfi_pickup_median_h
+        data_tests: [non_negative]
+      - name: active_days
+        data_tests:
+          - between: {arguments: {low: 1, high: 366}}
+
+  - name: gold_repo_scores
+    description: Baseline newcomer friendliness ranking.
+    columns:
+      - name: repo_id
+        data_tests:
+          - unique
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('gold_repo_metrics')
+                field: repo_id
+      - name: score
+        data_tests:
+          - not_null
+          - between: {arguments: {low: 0, high: 100}}
+      - name: score_rank
+        data_tests: [unique, not_null]
+
+  - name: gold_score_scenarios
+    columns:
+      - name: score
+        data_tests:
+          - not_null
+          - between: {arguments: {low: 0, high: 100}}
+
+  - name: gold_score_sensitivity
+    columns:
+      - name: scenario
+        data_tests: [unique, not_null]
+
+  - name: gold_open_good_first_issues
+    columns:
+      - name: issue_id
+        data_tests: [unique, not_null]
+
+  - name: gold_partition_health
+    columns:
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [ok, missing, corrupt]
+
+  - name: firstpr_export
+    columns:
+      - name: repo_id
+        data_tests: [unique, not_null]
+      - name: friendliness_score
+        data_tests:
+          - between: {arguments: {low: 0, high: 100}}
+
+  - name: int_first_responses
+    columns:
+      - name: response_hours
+        data_tests: [non_negative]
+  - name: int_gfi_pickup
+    columns:
+      - name: pickup_hours
+        data_tests: [non_negative]

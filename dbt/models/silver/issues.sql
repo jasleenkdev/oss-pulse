@@ -33,8 +33,9 @@ latest as (
 ),
 
 -- A resource cannot be created after its first observed event or its close. GitHub
--- shifted embedded timestamps by +1h around the US DST change on 2026-11-01, in REST
--- as well as in events, while envelope timestamps stayed correct.
+-- shifted resource timestamps by +1h around the US DST change on 2026-11-01, in REST as
+-- well as in events. Issue, watch and review event times stayed correct, while comment
+-- and fork event times inherited the shift.
 guarded as (
     select
         *,

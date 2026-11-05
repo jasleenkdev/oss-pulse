@@ -7,8 +7,8 @@
   "warn": 0
  },
  "pytest": {
-  "collected": 89,
+  "collected": 99,
   "failed": 0,
-  "passed": 89
+  "passed": 99
  }
 }

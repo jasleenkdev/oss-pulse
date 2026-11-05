@@ -28,7 +28,7 @@ def test_json_is_rounded_and_sorted(tmp_path):
     target = tmp_path / "a.json"
     write_json(target, {"b": 1.23456, "a": 1})
     assert list(json.loads(target.read_text())) == ["a", "b"]
-    assert json.loads(target.read_text())["b"] == 1.235
+    assert json.loads(target.read_text())["b"] == 1.2346
 
 
 def test_extracts_rebuild_byte_identically(pipeline, tmp_path):

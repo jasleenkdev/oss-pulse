@@ -1,0 +1,56 @@
+[
+ {
+  "median_rank_shift": 0.0,
+  "repos_scored": 83,
+  "scenario": "baseline",
+  "spearman_with_baseline": 1.0,
+  "top10_overlap": 10,
+  "top25_overlap": 25,
+  "top50_overlap": 50
+ },
+ {
+  "median_rank_shift": 5.0,
+  "repos_scored": 83,
+  "scenario": "equal",
+  "spearman_with_baseline": 0.9292,
+  "top10_overlap": 9,
+  "top25_overlap": 18,
+  "top50_overlap": 46
+ },
+ {
+  "median_rank_shift": 2.0,
+  "repos_scored": 83,
+  "scenario": "gfi_heavy",
+  "spearman_with_baseline": 0.9614,
+  "top10_overlap": 9,
+  "top25_overlap": 23,
+  "top50_overlap": 49
+ },
+ {
+  "median_rank_shift": 12.0,
+  "repos_scored": 83,
+  "scenario": "health_heavy",
+  "spearman_with_baseline": 0.715,
+  "top10_overlap": 6,
+  "top25_overlap": 15,
+  "top50_overlap": 39
+ },
+ {
+  "median_rank_shift": 7.0,
+  "repos_scored": 83,
+  "scenario": "merge_heavy",
+  "spearman_with_baseline": 0.8584,
+  "top10_overlap": 8,
+  "top25_overlap": 21,
+  "top50_overlap": 42
+ },
+ {
+  "median_rank_shift": 8.0,
+  "repos_scored": 83,
+  "scenario": "response_heavy",
+  "spearman_with_baseline": 0.8749,
+  "top10_overlap": 5,
+  "top25_overlap": 19,
+  "top50_overlap": 43
+ }
+]

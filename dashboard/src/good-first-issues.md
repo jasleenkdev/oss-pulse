@@ -24,13 +24,14 @@ neither its author nor a maintainer.
 <div class="tiles">
   ${tile("Seen in the window", integer(n.good_first_issues_seen), `${integer(n.repos_with_good_first_issues)} repositories`)}
   ${tile("Still open", integer(n.open_good_first_issues), "at last observation")}
-  ${tile("Observed pickups", integer(n.gfi_pickups), percent(n.gfi_pickup_share))}
+  ${tile("Observed pickups", integer(n.gfi_pickups), `${percent(n.gfi_pickup_share)} of ${integer(n.gfi_measurable)} labelled in the window`)}
   ${tile("Median time to pickup", hours(n.gfi_pickup_median_h), `p90 ${hours(n.gfi_pickup_p90_h)}`)}
 </div>
 
 <p class="caveat">
 Labelling time comes from a captured event for ${integer(n.gfi_with_labeled_event)} of these issues.
-The rest use the issue's creation time, which can only lengthen the measured pickup.
+The rest use the issue's creation time, which can only lengthen the measured pickup. Pickup time
+is only measured for issues labelled inside the window.
 </p>
 
 ## How pickups happen

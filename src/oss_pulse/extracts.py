@@ -46,7 +46,7 @@ def rows_as_dicts(connection: duckdb.DuckDBPyConnection, sql: str) -> list[dict]
 
 def _clean(value):
     if isinstance(value, float):
-        return round(value, 3)
+        return round(value, 4)
     if isinstance(value, datetime):
         return value.strftime("%Y-%m-%dT%H:%M:%SZ")
     if isinstance(value, date):

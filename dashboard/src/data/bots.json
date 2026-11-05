@@ -1,0 +1,114 @@
+{
+ "accounts": [
+  {
+   "login": "dependabot[bot]",
+   "total_events": 47173
+  },
+  {
+   "login": "github-actions[bot]",
+   "total_events": 41248
+  },
+  {
+   "login": "coderabbitai[bot]",
+   "total_events": 20008
+  },
+  {
+   "login": "chatgpt-codex-connector[bot]",
+   "total_events": 10569
+  },
+  {
+   "login": "Copilot",
+   "total_events": 9074
+  },
+  {
+   "login": "vercel[bot]",
+   "total_events": 8130
+  },
+  {
+   "login": "renovate[bot]",
+   "total_events": 7362
+  },
+  {
+   "login": "sonarqubecloud[bot]",
+   "total_events": 2829
+  },
+  {
+   "login": "dhi-app[bot]",
+   "total_events": 2031
+  },
+  {
+   "login": "cloudflare-workers-and-pages[bot]",
+   "total_events": 1906
+  },
+  {
+   "login": "greptile-apps[bot]",
+   "total_events": 1688
+  },
+  {
+   "login": "cubic-dev-ai[bot]",
+   "total_events": 1676
+  },
+  {
+   "login": "devin-ai-integration[bot]",
+   "total_events": 1608
+  },
+  {
+   "login": "cursor[bot]",
+   "total_events": 1450
+  },
+  {
+   "login": "clawsweeper[bot]",
+   "total_events": 1416
+  }
+ ],
+ "by_type": [
+  {
+   "bot_events": 84107,
+   "bot_share": 0.2981,
+   "event_type": "PullRequestEvent",
+   "total_events": 282154
+  },
+  {
+   "bot_events": 71057,
+   "bot_share": 0.5263,
+   "event_type": "IssueCommentEvent",
+   "total_events": 135008
+  },
+  {
+   "bot_events": 16549,
+   "bot_share": 0.1508,
+   "event_type": "IssuesEvent",
+   "total_events": 109717
+  },
+  {
+   "bot_events": 31679,
+   "bot_share": 0.4841,
+   "event_type": "PullRequestReviewEvent",
+   "total_events": 65441
+  },
+  {
+   "bot_events": 0,
+   "bot_share": 0.0,
+   "event_type": "WatchEvent",
+   "total_events": 49885
+  },
+  {
+   "bot_events": 12560,
+   "bot_share": 0.5579,
+   "event_type": "PullRequestReviewCommentEvent",
+   "total_events": 22512
+  },
+  {
+   "bot_events": 12,
+   "bot_share": 0.0014,
+   "event_type": "ForkEvent",
+   "total_events": 8636
+  },
+  {
+   "bot_events": 1232,
+   "bot_share": 0.1826,
+   "event_type": "CreateEvent",
+   "total_events": 6747
+  }
+ ]
+}

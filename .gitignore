@@ -10,8 +10,8 @@ __pycache__/
 *.egg-info/
 
 # warehouse and pipeline outputs
-data/
-data_fixture/
+/data/
+/data_fixture/
 *.duckdb
 *.duckdb.wal
 

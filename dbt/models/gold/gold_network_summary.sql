@@ -38,12 +38,13 @@ gfi as (
         count(*) as good_first_issues_seen,
         count(*) filter (where state = 'open') as open_good_first_issues,
         count(distinct repo_id) as repos_with_good_first_issues,
+        count(*) filter (where is_measurable) as gfi_measurable,
         count(pickup_hours) as gfi_pickups,
         round(median(pickup_hours), 3) as gfi_pickup_median_h,
         round(quantile_cont(pickup_hours, 0.9), 3) as gfi_pickup_p90_h,
-        count(*) filter (where pickup_kind = 'comment') as gfi_pickups_by_comment,
-        count(*) filter (where pickup_kind = 'assignment') as gfi_pickups_by_assignment,
-        count(*) filter (where pickup_kind = 'linked_pr') as gfi_pickups_by_linked_pr,
+        count(pickup_hours) filter (where pickup_kind = 'comment') as gfi_pickups_by_comment,
+        count(pickup_hours) filter (where pickup_kind = 'assignment') as gfi_pickups_by_assignment,
+        count(pickup_hours) filter (where pickup_kind = 'linked_pr') as gfi_pickups_by_linked_pr,
         count(*) filter (where labelled_at_source = 'labeled_event') as gfi_with_labeled_event
     from {{ ref('int_gfi_pickup') }}
 ),
@@ -79,7 +80,7 @@ select
     round(first_time_prs_merged * 1.0 / nullif(first_time_prs_merged + first_time_prs_closed_unmerged, 0), 4)
         as first_time_pr_merge_rate,
     g.*,
-    round(gfi_pickups * 1.0 / nullif(good_first_issues_seen, 0), 4) as gfi_pickup_share,
+    round(gfi_pickups * 1.0 / nullif(gfi_measurable, 0), 4) as gfi_pickup_share,
     m.*,
     s.*
 from prs p

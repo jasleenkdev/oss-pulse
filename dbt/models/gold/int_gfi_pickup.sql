@@ -1,7 +1,9 @@
 -- Good first issues and the first contributor action on each.
 --
 -- labelled_at comes from a captured `labeled` event when there is one and otherwise
--- falls back to issue creation, which can only lengthen the measured time.
+-- falls back to issue creation, which can only lengthen the measured time. Pickup time is
+-- only measured when labelled_at is inside the window: otherwise a comment today on a
+-- years-old issue reads as a pickup that took years.
 -- A contributor action is a comment or assignment from someone who is neither the
 -- author nor a maintainer, or a PR whose branch name cites the issue number. PR bodies
 -- are no longer in the feed, so branch names are the only available link.
@@ -105,6 +107,10 @@ select
     b.labelled_at_source,
     f.picked_up_at,
     f.pickup_kind,
-    {{ hours_between('b.labelled_at', 'f.picked_up_at') }} as pickup_hours
+    b.labelled_at >= (select window_start from {{ ref('window_bounds') }}) as is_measurable,
+    case
+        when b.labelled_at >= (select window_start from {{ ref('window_bounds') }})
+            then {{ hours_between('b.labelled_at', 'f.picked_up_at') }}
+    end as pickup_hours
 from base b
 left join first_action f using (issue_id)

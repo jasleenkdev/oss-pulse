@@ -1,0 +1,22 @@
+[
+ {
+  "exact_items": 3042,
+  "exact_median_h": 10.458,
+  "items": 106147,
+  "items_with_response": 19806,
+  "kind": "issue",
+  "median_h": 19.492,
+  "observed_response_share": 0.1866,
+  "p90_h": 194.189
+ },
+ {
+  "exact_items": 63,
+  "exact_median_h": 5.861,
+  "items": 28300,
+  "items_with_response": 1021,
+  "kind": "pr",
+  "median_h": 18.691,
+  "observed_response_share": 0.0361,
+  "p90_h": 217.446
+ }
+]

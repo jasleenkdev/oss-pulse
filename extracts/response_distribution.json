@@ -1,0 +1,72 @@
+[
+ {
+  "bucket": "under 1h",
+  "bucket_order": 1,
+  "exact_responses": 553,
+  "kind": "issue",
+  "responses": 2733
+ },
+ {
+  "bucket": "1-6h",
+  "bucket_order": 2,
+  "exact_responses": 657,
+  "kind": "issue",
+  "responses": 3461
+ },
+ {
+  "bucket": "6-24h",
+  "bucket_order": 3,
+  "exact_responses": 828,
+  "kind": "issue",
+  "responses": 4624
+ },
+ {
+  "bucket": "1-3d",
+  "bucket_order": 4,
+  "exact_responses": 491,
+  "kind": "issue",
+  "responses": 3842
+ },
+ {
+  "bucket": "3d+",
+  "bucket_order": 5,
+  "exact_responses": 513,
+  "kind": "issue",
+  "responses": 5146
+ },
+ {
+  "bucket": "under 1h",
+  "bucket_order": 1,
+  "exact_responses": 12,
+  "kind": "pr",
+  "responses": 136
+ },
+ {
+  "bucket": "1-6h",
+  "bucket_order": 2,
+  "exact_responses": 20,
+  "kind": "pr",
+  "responses": 202
+ },
+ {
+  "bucket": "6-24h",
+  "bucket_order": 3,
+  "exact_responses": 17,
+  "kind": "pr",
+  "responses": 228
+ },
+ {
+  "bucket": "1-3d",
+  "bucket_order": 4,
+  "exact_responses": 9,
+  "kind": "pr",
+  "responses": 172
+ },
+ {
+  "bucket": "3d+",
+  "bucket_order": 5,
+  "exact_responses": 5,
+  "kind": "pr",
+  "responses": 283
+ }
+]

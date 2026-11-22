@@ -1,7 +1,7 @@
 [
  {
   "median_rank_shift": 0.0,
-  "repos_scored": 576,
+  "repos_scored": 567,
   "scenario": "baseline",
   "spearman_with_baseline": 1.0,
   "top10_overlap": 10,
@@ -10,47 +10,47 @@
  },
  {
   "median_rank_shift": 27.0,
-  "repos_scored": 576,
+  "repos_scored": 567,
   "scenario": "equal",
-  "spearman_with_baseline": 0.9498,
+  "spearman_with_baseline": 0.9513,
   "top10_overlap": 8,
   "top25_overlap": 21,
   "top50_overlap": 37
  },
  {
-  "median_rank_shift": 15.0,
-  "repos_scored": 576,
+  "median_rank_shift": 14.0,
+  "repos_scored": 567,
   "scenario": "gfi_heavy",
-  "spearman_with_baseline": 0.9454,
-  "top10_overlap": 6,
-  "top25_overlap": 19,
-  "top50_overlap": 43
+  "spearman_with_baseline": 0.9445,
+  "top10_overlap": 8,
+  "top25_overlap": 18,
+  "top50_overlap": 42
  },
  {
-  "median_rank_shift": 88.0,
-  "repos_scored": 576,
+  "median_rank_shift": 89.0,
+  "repos_scored": 567,
   "scenario": "health_heavy",
-  "spearman_with_baseline": 0.6587,
-  "top10_overlap": 5,
-  "top25_overlap": 13,
-  "top50_overlap": 24
+  "spearman_with_baseline": 0.6552,
+  "top10_overlap": 4,
+  "top25_overlap": 15,
+  "top50_overlap": 22
  },
  {
-  "median_rank_shift": 52.0,
-  "repos_scored": 576,
+  "median_rank_shift": 57.0,
+  "repos_scored": 567,
   "scenario": "merge_heavy",
-  "spearman_with_baseline": 0.8562,
-  "top10_overlap": 5,
+  "spearman_with_baseline": 0.8584,
+  "top10_overlap": 6,
   "top25_overlap": 14,
   "top50_overlap": 37
  },
  {
-  "median_rank_shift": 59.0,
-  "repos_scored": 576,
+  "median_rank_shift": 56.0,
+  "repos_scored": 567,
   "scenario": "response_heavy",
-  "spearman_with_baseline": 0.8304,
-  "top10_overlap": 5,
-  "top25_overlap": 16,
-  "top50_overlap": 27
+  "spearman_with_baseline": 0.8401,
+  "top10_overlap": 6,
+  "top25_overlap": 15,
+  "top50_overlap": 26
  }
 ]

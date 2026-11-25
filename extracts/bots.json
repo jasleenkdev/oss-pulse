@@ -2,113 +2,113 @@
  "accounts": [
   {
    "login": "dependabot[bot]",
-   "total_events": 181638
+   "total_events": 172868
   },
   {
    "login": "github-actions[bot]",
-   "total_events": 169147
+   "total_events": 164235
   },
   {
    "login": "coderabbitai[bot]",
-   "total_events": 70353
+   "total_events": 70100
   },
   {
    "login": "chatgpt-codex-connector[bot]",
-   "total_events": 38901
+   "total_events": 38581
   },
   {
    "login": "renovate[bot]",
-   "total_events": 36716
+   "total_events": 34367
   },
   {
    "login": "Copilot",
-   "total_events": 31050
+   "total_events": 31010
   },
   {
    "login": "vercel[bot]",
-   "total_events": 30066
+   "total_events": 29895
   },
   {
    "login": "sonarqubecloud[bot]",
-   "total_events": 10457
-  },
-  {
-   "login": "cursor[bot]",
-   "total_events": 10385
-  },
-  {
-   "login": "github-merge-queue[bot]",
-   "total_events": 9696
+   "total_events": 10547
   },
   {
    "login": "devin-ai-integration[bot]",
-   "total_events": 9174
+   "total_events": 9293
+  },
+  {
+   "login": "cursor[bot]",
+   "total_events": 8495
   },
   {
    "login": "dhi-app[bot]",
-   "total_events": 7794
+   "total_events": 7649
   },
   {
    "login": "claude[bot]",
-   "total_events": 7158
+   "total_events": 7131
   },
   {
    "login": "cloudflare-workers-and-pages[bot]",
    "total_events": 6937
   },
   {
+   "login": "loom-fleet-dispatch[bot]",
+   "total_events": 6804
+  },
+  {
    "login": "greptile-apps[bot]",
-   "total_events": 6789
+   "total_events": 6731
   }
  ],
  "by_type": [
   {
-   "bot_events": 290793,
-   "bot_share": 0.276,
+   "bot_events": 291948,
+   "bot_share": 0.2758,
    "event_type": "PullRequestEvent",
-   "total_events": 1053602
+   "total_events": 1058601
   },
   {
-   "bot_events": 93549,
-   "bot_share": 0.1886,
-   "event_type": "CreateEvent",
-   "total_events": 495979
-  },
-  {
-   "bot_events": 260602,
-   "bot_share": 0.5302,
+   "bot_events": 260983,
+   "bot_share": 0.5307,
    "event_type": "IssueCommentEvent",
-   "total_events": 491520
+   "total_events": 491745
   },
   {
-   "bot_events": 66921,
-   "bot_share": 0.1544,
+   "bot_events": 67248,
+   "bot_share": 0.1545,
    "event_type": "IssuesEvent",
-   "total_events": 433350
+   "total_events": 435358
   },
   {
-   "bot_events": 118139,
-   "bot_share": 0.4728,
+   "bot_events": 65663,
+   "bot_share": 0.2003,
+   "event_type": "CreateEvent",
+   "total_events": 327757
+  },
+  {
+   "bot_events": 118919,
+   "bot_share": 0.4703,
    "event_type": "PullRequestReviewEvent",
-   "total_events": 249883
+   "total_events": 252883
   },
   {
    "bot_events": 0,
    "bot_share": 0.0,
    "event_type": "WatchEvent",
-   "total_events": 189082
+   "total_events": 190897
   },
   {
-   "bot_events": 46430,
-   "bot_share": 0.5494,
+   "bot_events": 45136,
+   "bot_share": 0.5479,
    "event_type": "PullRequestReviewCommentEvent",
-   "total_events": 84514
+   "total_events": 82383
   },
   {
    "bot_events": 49,
    "bot_share": 0.0016,
    "event_type": "ForkEvent",
-   "total_events": 30807
+   "total_events": 30885
   }
  ]
 }

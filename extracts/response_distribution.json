@@ -2,71 +2,71 @@
  {
   "bucket": "under 1h",
   "bucket_order": 1,
-  "exact_responses": 618,
+  "exact_responses": 615,
   "kind": "issue",
-  "responses": 2890
+  "responses": 2934
  },
  {
   "bucket": "1-6h",
   "bucket_order": 2,
-  "exact_responses": 699,
+  "exact_responses": 705,
   "kind": "issue",
-  "responses": 3574
+  "responses": 3621
  },
  {
   "bucket": "6-24h",
   "bucket_order": 3,
-  "exact_responses": 893,
+  "exact_responses": 906,
   "kind": "issue",
-  "responses": 4727
+  "responses": 4784
  },
  {
   "bucket": "1-3d",
   "bucket_order": 4,
-  "exact_responses": 515,
+  "exact_responses": 520,
   "kind": "issue",
-  "responses": 3928
+  "responses": 3932
  },
  {
   "bucket": "3d+",
   "bucket_order": 5,
-  "exact_responses": 513,
+  "exact_responses": 518,
   "kind": "issue",
-  "responses": 5092
+  "responses": 5127
  },
  {
   "bucket": "under 1h",
   "bucket_order": 1,
   "exact_responses": 11,
   "kind": "pr",
-  "responses": 137
+  "responses": 146
  },
  {
   "bucket": "1-6h",
   "bucket_order": 2,
   "exact_responses": 21,
   "kind": "pr",
-  "responses": 213
+  "responses": 223
  },
  {
   "bucket": "6-24h",
   "bucket_order": 3,
-  "exact_responses": 16,
+  "exact_responses": 17,
   "kind": "pr",
-  "responses": 242
+  "responses": 250
  },
  {
   "bucket": "1-3d",
   "bucket_order": 4,
   "exact_responses": 8,
   "kind": "pr",
-  "responses": 170
+  "responses": 172
  },
  {
   "bucket": "3d+",
   "bucket_order": 5,
-  "exact_responses": 6,
+  "exact_responses": 5,
   "kind": "pr",
-  "responses": 280
+  "responses": 284
  }
 ]

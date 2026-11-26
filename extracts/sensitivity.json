@@ -1,7 +1,7 @@
 [
  {
   "median_rank_shift": 0.0,
-  "repos_scored": 586,
+  "repos_scored": 599,
   "scenario": "baseline",
   "spearman_with_baseline": 1.0,
   "top10_overlap": 10,
@@ -9,48 +9,48 @@
   "top50_overlap": 50
  },
  {
-  "median_rank_shift": 28.0,
-  "repos_scored": 586,
+  "median_rank_shift": 29.0,
+  "repos_scored": 599,
   "scenario": "equal",
-  "spearman_with_baseline": 0.9522,
-  "top10_overlap": 7,
+  "spearman_with_baseline": 0.9515,
+  "top10_overlap": 8,
   "top25_overlap": 22,
-  "top50_overlap": 39
+  "top50_overlap": 38
  },
  {
   "median_rank_shift": 14.0,
-  "repos_scored": 586,
+  "repos_scored": 599,
   "scenario": "gfi_heavy",
-  "spearman_with_baseline": 0.9477,
+  "spearman_with_baseline": 0.9555,
   "top10_overlap": 7,
   "top25_overlap": 19,
-  "top50_overlap": 43
+  "top50_overlap": 42
  },
  {
-  "median_rank_shift": 85.0,
-  "repos_scored": 586,
+  "median_rank_shift": 89.0,
+  "repos_scored": 599,
   "scenario": "health_heavy",
-  "spearman_with_baseline": 0.6738,
-  "top10_overlap": 6,
-  "top25_overlap": 14,
-  "top50_overlap": 21
- },
- {
-  "median_rank_shift": 56.0,
-  "repos_scored": 586,
-  "scenario": "merge_heavy",
-  "spearman_with_baseline": 0.8564,
+  "spearman_with_baseline": 0.6766,
   "top10_overlap": 7,
-  "top25_overlap": 15,
-  "top50_overlap": 33
+  "top25_overlap": 13,
+  "top50_overlap": 20
  },
  {
-  "median_rank_shift": 55.0,
-  "repos_scored": 586,
+  "median_rank_shift": 61.0,
+  "repos_scored": 599,
+  "scenario": "merge_heavy",
+  "spearman_with_baseline": 0.8477,
+  "top10_overlap": 5,
+  "top25_overlap": 17,
+  "top50_overlap": 37
+ },
+ {
+  "median_rank_shift": 61.0,
+  "repos_scored": 599,
   "scenario": "response_heavy",
-  "spearman_with_baseline": 0.8418,
-  "top10_overlap": 4,
-  "top25_overlap": 15,
+  "spearman_with_baseline": 0.8338,
+  "top10_overlap": 2,
+  "top25_overlap": 13,
   "top50_overlap": 29
  }
 ]

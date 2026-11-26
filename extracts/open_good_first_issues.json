@@ -1,12 +1,23 @@
 [
  {
+  "comment_count": 3,
+  "created_at": "2026-11-25T02:34:14Z",
+  "issue_number": 245851,
+  "language": "LLVM",
+  "pickup_kind": null,
+  "repo_name": "llvm/llvm-project",
+  "score_rank": 2,
+  "title": "[libc] FreeBSD CI runner OOM-killed (exit 137) on large libc PRs",
+  "url": "https://github.com/llvm/llvm-project/issues/245851"
+ },
+ {
   "comment_count": 5,
   "created_at": "2026-11-19T17:40:13Z",
   "issue_number": 244310,
   "language": "LLVM",
   "pickup_kind": null,
   "repo_name": "llvm/llvm-project",
-  "score_rank": 1,
+  "score_rank": 2,
   "title": "[DAG] SimplifyDemandedVectorElts - add ISD::VECTOR_SHUFFLE_VAR handling",
   "url": "https://github.com/llvm/llvm-project/issues/244310"
  },
@@ -17,7 +28,7 @@
   "language": "LLVM",
   "pickup_kind": null,
   "repo_name": "llvm/llvm-project",
-  "score_rank": 1,
+  "score_rank": 2,
   "title": "[AMDGPU][GlobalISel] No known bits for llvm.amdgcn.mul.u24 / mul.i24",
   "url": "https://github.com/llvm/llvm-project/issues/236511"
  },
@@ -28,7 +39,7 @@
   "language": "LLVM",
   "pickup_kind": null,
   "repo_name": "llvm/llvm-project",
-  "score_rank": 1,
+  "score_rank": 2,
   "title": "[AMDGPU][GlobalISel] <2 x i64> udiv/urem with 32-bit operands uses the full 64-bit expansion",
   "url": "https://github.com/llvm/llvm-project/issues/236469"
  },
@@ -39,7 +50,7 @@
   "language": "LLVM",
   "pickup_kind": "assignment",
   "repo_name": "llvm/llvm-project",
-  "score_rank": 1,
+  "score_rank": 2,
   "title": "[AMDGPU][GlobalISel] Unmerge of an sgpr->vgpr copy of a 64-bit constant is not split into 32-bit constants",
   "url": "https://github.com/llvm/llvm-project/issues/236447"
  },
@@ -50,7 +61,7 @@
   "language": "LLVM",
   "pickup_kind": null,
   "repo_name": "llvm/llvm-project",
-  "score_rank": 1,
+  "score_rank": 2,
   "title": "[AMDGPU][GlobalISel] Uniform branch on (xor cond, 1) is not folded into the scc compare",
   "url": "https://github.com/llvm/llvm-project/issues/236436"
  },
@@ -61,7 +72,7 @@
   "language": "LLVM",
   "pickup_kind": null,
   "repo_name": "llvm/llvm-project",
-  "score_rank": 1,
+  "score_rank": 2,
   "title": "[X86] improve llvm.experimental.vector.histogram codegen on avx512",
   "url": "https://github.com/llvm/llvm-project/issues/216070"
  },
@@ -72,7 +83,7 @@
   "language": "LLVM",
   "pickup_kind": "comment",
   "repo_name": "llvm/llvm-project",
-  "score_rank": 1,
+  "score_rank": 2,
   "title": "clang mishandles a unicode escape beyond maximum codepoint limit.",
   "url": "https://github.com/llvm/llvm-project/issues/125461"
  },
@@ -100,278 +111,69 @@
  },
  {
   "comment_count": 1,
-  "created_at": "2026-11-17T17:36:42Z",
-  "issue_number": 38232,
-  "language": "C",
+  "created_at": "2026-11-25T13:42:44Z",
+  "issue_number": 10454,
+  "language": "TypeScript",
   "pickup_kind": null,
-  "repo_name": "yugabyte/yugabyte-db",
-  "score_rank": 23,
-  "title": "[DocDB] yb-master never starts again after the fd limit is restored, once a start hit Too many open files in sys catalog bootstrap: WAL files missing",
-  "url": "https://github.com/yugabyte/yugabyte-db/issues/38232"
+  "repo_name": "SatyamPandey-07/WorkSphere",
+  "score_rank": 22,
+  "title": "fix: Ensure acoustic notch filter bypasses cleanly when AudioContext is suspended",
+  "url": "https://github.com/SatyamPandey-07/WorkSphere/issues/10454"
  },
  {
-  "comment_count": 2,
-  "created_at": "2026-11-06T16:11:51Z",
-  "issue_number": 298,
-  "language": "JavaScript",
+  "comment_count": 3,
+  "created_at": "2026-11-25T13:42:35Z",
+  "issue_number": 10448,
+  "language": "TypeScript",
   "pickup_kind": "assignment",
-  "repo_name": "Pratyush-Panda-2006/CAREERFORGE",
-  "score_rank": 26,
-  "title": "[podcast-audio-stream] Add episode share modal with custom timestamp URL generator and one-click copy button",
-  "url": "https://github.com/Pratyush-Panda-2006/CAREERFORGE/issues/298"
+  "repo_name": "SatyamPandey-07/WorkSphere",
+  "score_rank": 22,
+  "title": "fix: Prevent Map container zero-height flash when toggling sidebar rapidly",
+  "url": "https://github.com/SatyamPandey-07/WorkSphere/issues/10448"
  },
  {
-  "comment_count": 2,
-  "created_at": "2026-10-29T13:15:37Z",
-  "issue_number": 192,
-  "language": "JavaScript",
+  "comment_count": 1,
+  "created_at": "2026-11-25T08:39:48Z",
+  "issue_number": 10290,
+  "language": "TypeScript",
   "pickup_kind": null,
-  "repo_name": "Pratyush-Panda-2006/CAREERFORGE",
-  "score_rank": 26,
-  "title": "[festival-hub] Add interactive festival weather forecast widget with day-by-day icons",
-  "url": "https://github.com/Pratyush-Panda-2006/CAREERFORGE/issues/192"
+  "repo_name": "SatyamPandey-07/WorkSphere",
+  "score_rank": 22,
+  "title": "docs: Document NavbarOfflineDrafts badge and BroadcastChannel synchronization",
+  "url": "https://github.com/SatyamPandey-07/WorkSphere/issues/10290"
  },
  {
-  "comment_count": 0,
-  "created_at": "2026-10-29T13:15:08Z",
-  "issue_number": 178,
-  "language": "JavaScript",
+  "comment_count": 1,
+  "created_at": "2026-11-25T05:21:58Z",
+  "issue_number": 10227,
+  "language": "TypeScript",
   "pickup_kind": null,
-  "repo_name": "Pratyush-Panda-2006/CAREERFORGE",
-  "score_rank": 26,
-  "title": "[crypto-exchange-pro] Add token search bar with quick currency filter buttons (All, Layer 1, DeFi, AI)",
-  "url": "https://github.com/Pratyush-Panda-2006/CAREERFORGE/issues/178"
+  "repo_name": "SatyamPandey-07/WorkSphere",
+  "score_rank": 22,
+  "title": "docs: Document Redis rate-limiting key prefixes and TTL policies",
+  "url": "https://github.com/SatyamPandey-07/WorkSphere/issues/10227"
  },
  {
-  "comment_count": 2,
-  "created_at": "2026-10-25T05:26:34Z",
-  "issue_number": 17,
-  "language": "JavaScript",
+  "comment_count": 7,
+  "created_at": "2026-11-25T05:08:28Z",
+  "issue_number": 10201,
+  "language": "TypeScript",
   "pickup_kind": "comment",
-  "repo_name": "Pratyush-Panda-2006/CAREERFORGE",
-  "score_rank": 26,
-  "title": "[cybersecurity-sentinel] Add pulsing status indicator light (Threat Level Normal) to header",
-  "url": "https://github.com/Pratyush-Panda-2006/CAREERFORGE/issues/17"
+  "repo_name": "SatyamPandey-07/WorkSphere",
+  "score_rank": 22,
+  "title": "docs: Document Skip-to-Content anchor link and keyboard navigation landmarks",
+  "url": "https://github.com/SatyamPandey-07/WorkSphere/issues/10201"
  },
  {
-  "comment_count": 2,
-  "created_at": "2026-10-25T05:26:25Z",
-  "issue_number": 12,
-  "language": "JavaScript",
-  "pickup_kind": null,
-  "repo_name": "Pratyush-Panda-2006/CAREERFORGE",
-  "score_rank": 26,
-  "title": "[automotive-hypercar] Implement smooth scroll behavior for 'Explore Hypercar' anchor links",
-  "url": "https://github.com/Pratyush-Panda-2006/CAREERFORGE/issues/12"
- },
- {
-  "comment_count": 2,
-  "created_at": "2026-11-11T03:29:05Z",
-  "issue_number": 14385,
-  "language": "Python",
+  "comment_count": 3,
+  "created_at": "2026-11-25T05:08:25Z",
+  "issue_number": 10199,
+  "language": "TypeScript",
   "pickup_kind": "comment",
-  "repo_name": "internetarchive/openlibrary",
-  "score_rank": 31,
-  "title": "Serve Infogami redirect documents (/type/redirect) from FastAPI",
-  "url": "https://github.com/internetarchive/openlibrary/issues/14385"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-09T06:45:05Z",
-  "issue_number": 14322,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "internetarchive/openlibrary",
-  "score_rank": 31,
-  "title": "Correct formatting of the sample TOC on the Edition edit page",
-  "url": "https://github.com/internetarchive/openlibrary/issues/14322"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-29T01:36:16Z",
-  "issue_number": 14190,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "internetarchive/openlibrary",
-  "score_rank": 31,
-  "title": "Use one shared list of known bot user agents for the app and nginx log monitoring",
-  "url": "https://github.com/internetarchive/openlibrary/issues/14190"
- },
- {
-  "comment_count": 2,
-  "created_at": "2026-10-28T03:59:11Z",
-  "issue_number": 14142,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "internetarchive/openlibrary",
-  "score_rank": 31,
-  "title": "Uppercase ISBN and LCC search fields are not normalized before Solr queries",
-  "url": "https://github.com/internetarchive/openlibrary/issues/14142"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-28T03:22:38Z",
-  "issue_number": 14136,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "internetarchive/openlibrary",
-  "score_rank": 31,
-  "title": "TestModels.test_setup expects list registrations that models.setup no longer installs",
-  "url": "https://github.com/internetarchive/openlibrary/issues/14136"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-28T03:22:16Z",
-  "issue_number": 14135,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "internetarchive/openlibrary",
-  "score_rank": 31,
-  "title": "MARC 711 meeting contributors disappear from author extraction",
-  "url": "https://github.com/internetarchive/openlibrary/issues/14135"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-26T14:34:19Z",
-  "issue_number": 14087,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "internetarchive/openlibrary",
-  "score_rank": 31,
-  "title": "Existing works fail to acquire authors when imported names contain honorifics",
-  "url": "https://github.com/internetarchive/openlibrary/issues/14087"
- },
- {
-  "comment_count": 2,
-  "created_at": "2026-10-06T00:16:50Z",
-  "issue_number": 4819,
-  "language": "Python",
-  "pickup_kind": "assignment",
-  "repo_name": "amd/gaia",
-  "score_rank": 41,
-  "title": "Agent UI shell: download progress polls at 5 s instead of 2 s, and the chat-create error toast never clears",
-  "url": "https://github.com/amd/gaia/issues/4819"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-23T12:10:19Z",
-  "issue_number": 970,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
-  "score_rank": 43,
-  "title": "fix(frontend): a cancelled invoice's preview still shows Share and Email",
-  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/970"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-20T21:28:05Z",
-  "issue_number": 903,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
-  "score_rank": 43,
-  "title": "fix(backend): a receipt or payment saved to a bank or cash account that was later deactivated can no longer be edited (\"Account not found\")",
-  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/903"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-17T08:18:37Z",
-  "issue_number": 850,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
-  "score_rank": 43,
-  "title": "fix(frontend): \"Export CSV\" on Invoice Dues, Credit Notes and Email History only exports the rows on the current page",
-  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/850"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-13T15:11:53Z",
-  "issue_number": 814,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
-  "score_rank": 43,
-  "title": "fix(backend): a blank Terms and Conditions line can be saved as an empty numbered term",
-  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/814"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-10T12:27:26Z",
-  "issue_number": 791,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
-  "score_rank": 43,
-  "title": "fix(backend): ledger statement and Day Book PDFs can show totals ₹1 less than the real amount",
-  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/791"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-10T12:23:58Z",
-  "issue_number": 788,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
-  "score_rank": 43,
-  "title": "fix(backend): production is blocked when a BOM includes a product that does not keep stock",
-  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/788"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-02T21:51:15Z",
-  "issue_number": 667,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple_invoicing",
-  "score_rank": 43,
-  "title": "fix(backend): product update accepts a blank unit and silently ignores an unknown status",
-  "url": "https://github.com/nikhilb2/simple_invoicing/issues/667"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-02T13:27:42Z",
-  "issue_number": 656,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple_invoicing",
-  "score_rank": 43,
-  "title": "fix(backend): looking up an unknown email scans the whole users table",
-  "url": "https://github.com/nikhilb2/simple_invoicing/issues/656"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-31T15:38:03Z",
-  "issue_number": 609,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple_invoicing",
-  "score_rank": 43,
-  "title": "fix(frontend): invoice product search can show results for an older query, or a stale list after you pick a product",
-  "url": "https://github.com/nikhilb2/simple_invoicing/issues/609"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-30T08:52:26Z",
-  "issue_number": 580,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple_invoicing",
-  "score_rank": 43,
-  "title": "fix(frontend): Tax Ledger can show stale results and refetches on every keystroke in GST rate",
-  "url": "https://github.com/nikhilb2/simple_invoicing/issues/580"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-26T08:34:55Z",
-  "issue_number": 407,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "nikhilb2/simple_invoicing",
-  "score_rank": 43,
-  "title": "test: add Vitest tests for utils/openingBalance.ts",
-  "url": "https://github.com/nikhilb2/simple_invoicing/issues/407"
+  "repo_name": "SatyamPandey-07/WorkSphere",
+  "score_rank": 22,
+  "title": "docs: Document crash-safe IndexedDB schema migration protocol across tabs and workers",
+  "url": "https://github.com/SatyamPandey-07/WorkSphere/issues/10199"
  },
  {
   "comment_count": 7,
@@ -380,7 +182,7 @@
   "language": "TypeScript",
   "pickup_kind": "assignment",
   "repo_name": "SatyamPandey-07/WorkSphere",
-  "score_rank": 44,
+  "score_rank": 22,
   "title": "feat: Add high-contrast mode indicator badge in accessibility settings",
   "url": "https://github.com/SatyamPandey-07/WorkSphere/issues/10109"
  },
@@ -391,64 +193,185 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "SatyamPandey-07/WorkSphere",
-  "score_rank": 44,
+  "score_rank": 22,
   "title": "docs(badges): add visual catalog and earning criteria for nomad community badges in docs/badges",
   "url": "https://github.com/SatyamPandey-07/WorkSphere/issues/7754"
  },
  {
-  "comment_count": 0,
-  "created_at": "2026-11-18T09:39:43Z",
-  "issue_number": 519,
-  "language": "Python",
+  "comment_count": 2,
+  "created_at": "2026-11-06T16:11:51Z",
+  "issue_number": 298,
+  "language": "JavaScript",
+  "pickup_kind": "assignment",
+  "repo_name": "Pratyush-Panda-2006/CAREERFORGE",
+  "score_rank": 25,
+  "title": "[podcast-audio-stream] Add episode share modal with custom timestamp URL generator and one-click copy button",
+  "url": "https://github.com/Pratyush-Panda-2006/CAREERFORGE/issues/298"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-10-29T13:15:37Z",
+  "issue_number": 192,
+  "language": "JavaScript",
   "pickup_kind": null,
-  "repo_name": "wheelgap/wheelgap",
-  "score_rank": 49,
-  "title": "docs/targets.md: describe multi-line flow mappings and opaque multi-line quoted values (#326)",
-  "url": "https://github.com/wheelgap/wheelgap/issues/519"
+  "repo_name": "Pratyush-Panda-2006/CAREERFORGE",
+  "score_rank": 25,
+  "title": "[festival-hub] Add interactive festival weather forecast widget with day-by-day icons",
+  "url": "https://github.com/Pratyush-Panda-2006/CAREERFORGE/issues/192"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-15T18:52:05Z",
-  "issue_number": 357,
-  "language": "Python",
+  "created_at": "2026-10-29T13:15:08Z",
+  "issue_number": 178,
+  "language": "JavaScript",
   "pickup_kind": null,
-  "repo_name": "wheelgap/wheelgap",
-  "score_rank": 49,
-  "title": "Docs: a Windows on ARM page (what breaks, how to check, what to do)",
-  "url": "https://github.com/wheelgap/wheelgap/issues/357"
+  "repo_name": "Pratyush-Panda-2006/CAREERFORGE",
+  "score_rank": 25,
+  "title": "[crypto-exchange-pro] Add token search bar with quick currency filter buttons (All, Layer 1, DeFi, AI)",
+  "url": "https://github.com/Pratyush-Panda-2006/CAREERFORGE/issues/178"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-10-25T05:26:34Z",
+  "issue_number": 17,
+  "language": "JavaScript",
+  "pickup_kind": "comment",
+  "repo_name": "Pratyush-Panda-2006/CAREERFORGE",
+  "score_rank": 25,
+  "title": "[cybersecurity-sentinel] Add pulsing status indicator light (Threat Level Normal) to header",
+  "url": "https://github.com/Pratyush-Panda-2006/CAREERFORGE/issues/17"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-10-25T05:26:25Z",
+  "issue_number": 12,
+  "language": "JavaScript",
+  "pickup_kind": null,
+  "repo_name": "Pratyush-Panda-2006/CAREERFORGE",
+  "score_rank": 25,
+  "title": "[automotive-hypercar] Implement smooth scroll behavior for 'Explore Hypercar' anchor links",
+  "url": "https://github.com/Pratyush-Panda-2006/CAREERFORGE/issues/12"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-10T03:10:02Z",
-  "issue_number": 145,
+  "created_at": "2026-11-25T10:32:02Z",
+  "issue_number": 1073,
   "language": "Python",
   "pickup_kind": null,
-  "repo_name": "wheelgap/wheelgap",
-  "score_rank": 49,
-  "title": "Lockfiles: a private-index package with no file list is still looked up on PyPI",
-  "url": "https://github.com/wheelgap/wheelgap/issues/145"
+  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
+  "score_rank": 40,
+  "title": "fix(seo): app.gstbill.in serves HTML for robots.txt and has no title or description for search results",
+  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/1073"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-09T00:56:08Z",
-  "issue_number": 13,
+  "created_at": "2026-11-23T12:10:19Z",
+  "issue_number": 970,
   "language": "Python",
   "pickup_kind": null,
-  "repo_name": "patrickballard/wheelgap",
-  "score_rank": 49,
-  "title": "--ignore known gaps (and ignore = [...] in pyproject.toml)",
-  "url": "https://github.com/patrickballard/wheelgap/issues/13"
+  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
+  "score_rank": 40,
+  "title": "fix(frontend): a cancelled invoice's preview still shows Share and Email",
+  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/970"
  },
  {
-  "comment_count": 1,
-  "created_at": "2026-11-09T00:44:36Z",
-  "issue_number": 8,
+  "comment_count": 0,
+  "created_at": "2026-11-20T21:28:05Z",
+  "issue_number": 903,
   "language": "Python",
   "pickup_kind": null,
-  "repo_name": "wheelgap/wheelgap",
-  "score_rank": 49,
-  "title": "Add armv7l, ppc64le, s390x and riscv64 Linux targets",
-  "url": "https://github.com/wheelgap/wheelgap/issues/8"
+  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
+  "score_rank": 40,
+  "title": "fix(backend): a receipt or payment saved to a bank or cash account that was later deactivated can no longer be edited (\"Account not found\")",
+  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/903"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-17T08:18:37Z",
+  "issue_number": 850,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
+  "score_rank": 40,
+  "title": "fix(frontend): \"Export CSV\" on Invoice Dues, Credit Notes and Email History only exports the rows on the current page",
+  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/850"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-13T15:11:53Z",
+  "issue_number": 814,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
+  "score_rank": 40,
+  "title": "fix(backend): a blank Terms and Conditions line can be saved as an empty numbered term",
+  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/814"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-10T12:27:26Z",
+  "issue_number": 791,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
+  "score_rank": 40,
+  "title": "fix(backend): ledger statement and Day Book PDFs can show totals ₹1 less than the real amount",
+  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/791"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-10T12:23:58Z",
+  "issue_number": 788,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "nikhilb2/simple-invoicing-free-gst-billing-software",
+  "score_rank": 40,
+  "title": "fix(backend): production is blocked when a BOM includes a product that does not keep stock",
+  "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/788"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-02T21:51:15Z",
+  "issue_number": 667,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "nikhilb2/simple_invoicing",
+  "score_rank": 40,
+  "title": "fix(backend): product update accepts a blank unit and silently ignores an unknown status",
+  "url": "https://github.com/nikhilb2/simple_invoicing/issues/667"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-02T13:27:42Z",
+  "issue_number": 656,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "nikhilb2/simple_invoicing",
+  "score_rank": 40,
+  "title": "fix(backend): looking up an unknown email scans the whole users table",
+  "url": "https://github.com/nikhilb2/simple_invoicing/issues/656"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-10-31T15:38:03Z",
+  "issue_number": 609,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "nikhilb2/simple_invoicing",
+  "score_rank": 40,
+  "title": "fix(frontend): invoice product search can show results for an older query, or a stale list after you pick a product",
+  "url": "https://github.com/nikhilb2/simple_invoicing/issues/609"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-10-30T08:52:26Z",
+  "issue_number": 580,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "nikhilb2/simple_invoicing",
+  "score_rank": 40,
+  "title": "fix(frontend): Tax Ledger can show stale results and refetches on every keystroke in GST rate",
+  "url": "https://github.com/nikhilb2/simple_invoicing/issues/580"
  },
  {
   "comment_count": 1,
@@ -457,7 +380,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "code-with-abhi-i5/CodePulse",
-  "score_rank": 60,
+  "score_rank": 41,
   "title": "[FEAT]: Add Challenge Category Filter Tags & Search Input in Challenges Page",
   "url": "https://github.com/code-with-abhi-i5/CodePulse/issues/228"
  },
@@ -468,7 +391,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "code-with-abhi-i5/CodePulse",
-  "score_rank": 60,
+  "score_rank": 41,
   "title": "[A11Y]: Add Accessible Breadcrumbs Navigation Component Across Dashboard Subpages",
   "url": "https://github.com/code-with-abhi-i5/CodePulse/issues/117"
  },
@@ -479,7 +402,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "code-with-abhi-i5/CodePulse",
-  "score_rank": 60,
+  "score_rank": 41,
   "title": "[UI/UX]: Add Interactive Tier Hierarchy Modal Explaining Developer Rank Thresholds",
   "url": "https://github.com/code-with-abhi-i5/CodePulse/issues/93"
  },
@@ -490,9 +413,152 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "code-with-abhi-i5/CodePulse",
-  "score_rank": 60,
+  "score_rank": 41,
   "title": "[UI/UX]: Add Interactive Explanatory Tooltips to Health and Popularity Scores in Repository Details",
   "url": "https://github.com/code-with-abhi-i5/CodePulse/issues/75"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-10-06T00:16:50Z",
+  "issue_number": 4819,
+  "language": "Python",
+  "pickup_kind": "assignment",
+  "repo_name": "amd/gaia",
+  "score_rank": 44,
+  "title": "Agent UI shell: download progress polls at 5 s instead of 2 s, and the chat-create error toast never clears",
+  "url": "https://github.com/amd/gaia/issues/4819"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-18T09:39:43Z",
+  "issue_number": 519,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "wheelgap/wheelgap",
+  "score_rank": 51,
+  "title": "docs/targets.md: describe multi-line flow mappings and opaque multi-line quoted values (#326)",
+  "url": "https://github.com/wheelgap/wheelgap/issues/519"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-15T18:52:05Z",
+  "issue_number": 357,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "wheelgap/wheelgap",
+  "score_rank": 51,
+  "title": "Docs: a Windows on ARM page (what breaks, how to check, what to do)",
+  "url": "https://github.com/wheelgap/wheelgap/issues/357"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-10T03:10:02Z",
+  "issue_number": 145,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "wheelgap/wheelgap",
+  "score_rank": 51,
+  "title": "Lockfiles: a private-index package with no file list is still looked up on PyPI",
+  "url": "https://github.com/wheelgap/wheelgap/issues/145"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-09T00:56:08Z",
+  "issue_number": 13,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "patrickballard/wheelgap",
+  "score_rank": 51,
+  "title": "--ignore known gaps (and ignore = [...] in pyproject.toml)",
+  "url": "https://github.com/patrickballard/wheelgap/issues/13"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-09T00:44:36Z",
+  "issue_number": 8,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "wheelgap/wheelgap",
+  "score_rank": 51,
+  "title": "Add armv7l, ppc64le, s390x and riscv64 Linux targets",
+  "url": "https://github.com/wheelgap/wheelgap/issues/8"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-11-11T03:29:05Z",
+  "issue_number": 14385,
+  "language": "Python",
+  "pickup_kind": "comment",
+  "repo_name": "internetarchive/openlibrary",
+  "score_rank": 53,
+  "title": "Serve Infogami redirect documents (/type/redirect) from FastAPI",
+  "url": "https://github.com/internetarchive/openlibrary/issues/14385"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-09T06:45:05Z",
+  "issue_number": 14322,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "internetarchive/openlibrary",
+  "score_rank": 53,
+  "title": "Correct formatting of the sample TOC on the Edition edit page",
+  "url": "https://github.com/internetarchive/openlibrary/issues/14322"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-10-29T01:36:16Z",
+  "issue_number": 14190,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "internetarchive/openlibrary",
+  "score_rank": 53,
+  "title": "Use one shared list of known bot user agents for the app and nginx log monitoring",
+  "url": "https://github.com/internetarchive/openlibrary/issues/14190"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-10-28T03:59:11Z",
+  "issue_number": 14142,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "internetarchive/openlibrary",
+  "score_rank": 53,
+  "title": "Uppercase ISBN and LCC search fields are not normalized before Solr queries",
+  "url": "https://github.com/internetarchive/openlibrary/issues/14142"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-28T03:22:38Z",
+  "issue_number": 14136,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "internetarchive/openlibrary",
+  "score_rank": 53,
+  "title": "TestModels.test_setup expects list registrations that models.setup no longer installs",
+  "url": "https://github.com/internetarchive/openlibrary/issues/14136"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-28T03:22:16Z",
+  "issue_number": 14135,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "internetarchive/openlibrary",
+  "score_rank": 53,
+  "title": "MARC 711 meeting contributors disappear from author extraction",
+  "url": "https://github.com/internetarchive/openlibrary/issues/14135"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T01:20:40Z",
+  "issue_number": 22170,
+  "language": "JavaScript",
+  "pickup_kind": null,
+  "repo_name": "neomjs/neo",
+  "score_rank": 63,
+  "title": "Support ?search query parity and per-windowId pathname routing in core",
+  "url": "https://github.com/neomjs/neo/issues/22170"
  },
  {
   "comment_count": 0,
@@ -501,7 +567,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "A canceled touch commits the drag over a valid drop target",
   "url": "https://github.com/neomjs/neo/issues/21765"
  },
@@ -512,7 +578,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "Restore Mermaid unit spec in test/playwright/unit/code/LivePreview.spec.mjs",
   "url": "https://github.com/neomjs/neo/issues/21443"
  },
@@ -523,7 +589,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "Dialog title-bar controls show no hover state in the neo themes",
   "url": "https://github.com/neomjs/neo/issues/21422"
  },
@@ -534,7 +600,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "A sign-up form validates as you type and lists what is wrong",
   "url": "https://github.com/neomjs/neo/issues/21338"
  },
@@ -545,7 +611,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "DockSplitterIframePane's passthrough arm reads an iframe that may not exist yet",
   "url": "https://github.com/neomjs/neo/issues/21317"
  },
@@ -556,7 +622,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "The tab overflow plugin throws where there is no layout to measure",
   "url": "https://github.com/neomjs/neo/issues/21303"
  },
@@ -567,7 +633,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "A grid example exports what it shows as CSV",
   "url": "https://github.com/neomjs/neo/issues/21188"
  },
@@ -578,7 +644,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "A button used as a navigation link still exposes aria-pressed",
   "url": "https://github.com/neomjs/neo/issues/21060"
  },
@@ -589,7 +655,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "Align Neo.core.Config#initDescriptor JSDoc with Config.prototype",
   "url": "https://github.com/neomjs/neo/issues/21017"
  },
@@ -600,7 +666,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "A container's bulkUpdateRecords writes one store batch",
   "url": "https://github.com/neomjs/neo/issues/20974"
  },
@@ -611,7 +677,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "A grid that allows several selections never sets aria-multiselectable",
   "url": "https://github.com/neomjs/neo/issues/20927"
  },
@@ -622,7 +688,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "The timeline reads to a person: editor, header, long bars, today, links",
   "url": "https://github.com/neomjs/neo/issues/20890"
  },
@@ -633,7 +699,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "An open cell edit survives its grid's move to another window",
   "url": "https://github.com/neomjs/neo/issues/20800"
  },
@@ -644,7 +710,7 @@
   "language": "JavaScript",
   "pickup_kind": "comment",
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "Without the VDom worker, meta, auto-mounts and the paint hook break",
   "url": "https://github.com/neomjs/neo/issues/20780"
  },
@@ -655,7 +721,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "GraphScene orbits on a drag that began outside its canvas",
   "url": "https://github.com/neomjs/neo/issues/20772"
  },
@@ -666,7 +732,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "Calendar week view setting columnsBuffer sets totalColumns to NaN",
   "url": "https://github.com/neomjs/neo/issues/20766"
  },
@@ -677,7 +743,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "Each dist build copies 5,839 Font Awesome files; the runtime loads 5",
   "url": "https://github.com/neomjs/neo/issues/20687"
  },
@@ -688,7 +754,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "List and tree search highlighting throws on regex metacharacters",
   "url": "https://github.com/neomjs/neo/issues/20277"
  },
@@ -699,7 +765,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "Pin how the RPC API manager resolves each call's type and URL",
   "url": "https://github.com/neomjs/neo/issues/19175"
  },
@@ -710,7 +776,7 @@
   "language": "JavaScript",
   "pickup_kind": "comment",
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "Pin the legend component's icon and text",
   "url": "https://github.com/neomjs/neo/issues/19139"
  },
@@ -721,7 +787,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "neomjs/neo",
-  "score_rank": 66,
+  "score_rank": 63,
   "title": "Write the first layout spec: the fit layout's item class rules",
   "url": "https://github.com/neomjs/neo/issues/19138"
  },
@@ -732,7 +798,7 @@
   "language": "Java",
   "pickup_kind": null,
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Add a unit test for the KsDataTable FilterSettings",
   "url": "https://github.com/kestra-io/kestra/issues/22744"
  },
@@ -743,7 +809,7 @@
   "language": "Java",
   "pickup_kind": null,
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Add a unit test for the filter useValues helper",
   "url": "https://github.com/kestra-io/kestra/issues/22733"
  },
@@ -754,7 +820,7 @@
   "language": "Java",
   "pickup_kind": "comment",
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Add a unit test for labelComparatorLabels",
   "url": "https://github.com/kestra-io/kestra/issues/22654"
  },
@@ -765,7 +831,7 @@
   "language": "Java",
   "pickup_kind": null,
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Add unit tests for useTaskEditModalStack",
   "url": "https://github.com/kestra-io/kestra/issues/22646"
  },
@@ -776,7 +842,7 @@
   "language": "Java",
   "pickup_kind": null,
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Add a unit test for dagEdgeStyle",
   "url": "https://github.com/kestra-io/kestra/issues/22640"
  },
@@ -787,9 +853,20 @@
   "language": "Java",
   "pickup_kind": null,
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Add unit tests for the Gantt timeline helpers",
   "url": "https://github.com/kestra-io/kestra/issues/22636"
+ },
+ {
+  "comment_count": 10,
+  "created_at": "2026-11-12T08:53:53Z",
+  "issue_number": 22556,
+  "language": "Java",
+  "pickup_kind": null,
+  "repo_name": "kestra-io/kestra",
+  "score_rank": 85,
+  "title": "[UI] Hovering a shortened environment name in the sidebar does not show the full name",
+  "url": "https://github.com/kestra-io/kestra/issues/22556"
  },
  {
   "comment_count": 0,
@@ -798,7 +875,7 @@
   "language": "Java",
   "pickup_kind": null,
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Add a unit test for CopyToClipboard",
   "url": "https://github.com/kestra-io/kestra/issues/22284"
  },
@@ -809,7 +886,7 @@
   "language": "Java",
   "pickup_kind": "comment",
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "[Logs] Trigger log rows show the trigger ID in the executionId tag",
   "url": "https://github.com/kestra-io/kestra/issues/22213"
  },
@@ -820,7 +897,7 @@
   "language": "Java",
   "pickup_kind": "comment",
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Add a unit test for FieldValidationErrors",
   "url": "https://github.com/kestra-io/kestra/issues/21892"
  },
@@ -831,7 +908,7 @@
   "language": "Java",
   "pickup_kind": "comment",
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Add unit tests for parseEncodedGroups",
   "url": "https://github.com/kestra-io/kestra/issues/21881"
  },
@@ -842,7 +919,7 @@
   "language": "Java",
   "pickup_kind": null,
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Flow editor: the \"Duplicate task id\" marker is not translated",
   "url": "https://github.com/kestra-io/kestra/issues/21717"
  },
@@ -853,53 +930,53 @@
   "language": "Java",
   "pickup_kind": null,
   "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
+  "score_rank": 85,
   "title": "Replace Bootstrap utility classes in `SecretsTable.vue`",
   "url": "https://github.com/kestra-io/kestra/issues/20807"
  },
  {
-  "comment_count": 11,
-  "created_at": "2026-09-10T06:45:35Z",
-  "issue_number": 19282,
-  "language": "Java",
+  "comment_count": 0,
+  "created_at": "2026-11-13T05:49:50Z",
+  "issue_number": 1578,
+  "language": "Go",
   "pickup_kind": null,
-  "repo_name": "kestra-io/kestra",
-  "score_rank": 81,
-  "title": "TaskObject.vue: replace explicit `any` with real types",
-  "url": "https://github.com/kestra-io/kestra/issues/19282"
+  "repo_name": "eugenioenko/ttt",
+  "score_rank": 97,
+  "title": "Case transforms under multi-cursor only change the primary selection",
+  "url": "https://github.com/eugenioenko/ttt/issues/1578"
  },
  {
-  "comment_count": 2,
-  "created_at": "2026-10-31T15:53:57Z",
-  "issue_number": 447,
-  "language": "TypeScript",
+  "comment_count": 0,
+  "created_at": "2026-11-13T05:26:24Z",
+  "issue_number": 1571,
+  "language": "Go",
   "pickup_kind": null,
-  "repo_name": "codercops/toolbelt",
-  "score_rank": 89,
-  "title": "CSV formatter: a Type name like `class` or `default` gives TypeScript that doesn't compile",
-  "url": "https://github.com/codercops/toolbelt/issues/447"
+  "repo_name": "eugenioenko/ttt",
+  "score_rank": 97,
+  "title": "Docs: keybindings and settings reference pages drifted from code",
+  "url": "https://github.com/eugenioenko/ttt/issues/1571"
  },
  {
-  "comment_count": 1,
-  "created_at": "2026-10-28T12:29:04Z",
-  "issue_number": 381,
-  "language": "TypeScript",
-  "pickup_kind": null,
-  "repo_name": "codercops/toolbelt",
-  "score_rank": 89,
-  "title": "Guide: how to validate a CSV file and fix common errors",
-  "url": "https://github.com/codercops/toolbelt/issues/381"
+  "comment_count": 0,
+  "created_at": "2026-11-13T05:26:23Z",
+  "issue_number": 1570,
+  "language": "Go",
+  "pickup_kind": "linked_pr",
+  "repo_name": "eugenioenko/ttt",
+  "score_rank": 97,
+  "title": "Open Changes on a binary file renders raw bytes as text",
+  "url": "https://github.com/eugenioenko/ttt/issues/1570"
  },
  {
-  "comment_count": 1,
-  "created_at": "2026-10-26T12:28:56Z",
-  "issue_number": 357,
-  "language": "TypeScript",
+  "comment_count": 0,
+  "created_at": "2026-11-13T05:26:18Z",
+  "issue_number": 1567,
+  "language": "Go",
   "pickup_kind": null,
-  "repo_name": "codercops/toolbelt",
-  "score_rank": 89,
-  "title": "JSON formatter leaves a timer running after it unmounts, so a test run can end with \"window is not defined\"",
-  "url": "https://github.com/codercops/toolbelt/issues/357"
+  "repo_name": "eugenioenko/ttt",
+  "score_rank": 97,
+  "title": "Find bar counter doesn't update on F3 / Shift+F3",
+  "url": "https://github.com/eugenioenko/ttt/issues/1567"
  },
  {
   "comment_count": 5,
@@ -908,7 +985,7 @@
   "language": "Go",
   "pickup_kind": null,
   "repo_name": "hivecommons/hive",
-  "score_rank": 106,
+  "score_rank": 99,
   "title": "🐛 bug: issues not staying held when set",
   "url": "https://github.com/hivecommons/hive/issues/18054"
  },
@@ -919,7 +996,7 @@
   "language": "Go",
   "pickup_kind": null,
   "repo_name": "hivecommons/hive",
-  "score_rank": 106,
+  "score_rank": 99,
   "title": "✨ Inbox: dibs destination",
   "url": "https://github.com/hivecommons/hive/issues/17880"
  },
@@ -930,7 +1007,7 @@
   "language": "Go",
   "pickup_kind": null,
   "repo_name": "hivecommons/hive",
-  "score_rank": 106,
+  "score_rank": 99,
   "title": "✨ OpenShell runtime: cluster-prerequisite preflight and egress-policy prover",
   "url": "https://github.com/hivecommons/hive/issues/17644"
  },
@@ -941,7 +1018,7 @@
   "language": "Go",
   "pickup_kind": null,
   "repo_name": "hivecommons/hive",
-  "score_rank": 106,
+  "score_rank": 99,
   "title": "[v6] ✨ deploy: PrometheusRule alerts for a running hive",
   "url": "https://github.com/hivecommons/hive/issues/15438"
  },
@@ -952,7 +1029,7 @@
   "language": "Go",
   "pickup_kind": null,
   "repo_name": "hivecommons/hive",
-  "score_rank": 106,
+  "score_rank": 99,
   "title": "Weekly competitor report",
   "url": "https://github.com/hivecommons/hive/issues/14613"
  },
@@ -963,7 +1040,7 @@
   "language": "Rust",
   "pickup_kind": null,
   "repo_name": "CurvineIO/curvine",
-  "score_rank": 113,
+  "score_rank": 120,
   "title": "[BUG]: cv duration parsing panics on non-ASCII suffixes",
   "url": "https://github.com/CurvineIO/curvine/issues/2256"
  },
@@ -974,7 +1051,7 @@
   "language": "Rust",
   "pickup_kind": null,
   "repo_name": "CurvineIO/curvine",
-  "score_rank": 113,
+  "score_rank": 120,
   "title": "[FEATURE] Add description and repository metadata to workspace crates",
   "url": "https://github.com/CurvineIO/curvine/issues/2031"
  },
@@ -985,7 +1062,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "DivyashreeR008/Open-Agents",
-  "score_rank": 126,
+  "score_rank": 131,
   "title": "[NSoC 2026] There is no accessibility statement or known-issues page",
   "url": "https://github.com/DivyashreeR008/Open-Agents/issues/358"
  },
@@ -996,7 +1073,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "DivyashreeR008/Open-Agents",
-  "score_rank": 126,
+  "score_rank": 131,
   "title": "[NSoC 2026] Prompt history entries cannot be deleted one at a time",
   "url": "https://github.com/DivyashreeR008/Open-Agents/issues/318"
  },
@@ -1007,7 +1084,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "DivyashreeR008/Open-Agents",
-  "score_rank": 126,
+  "score_rank": 131,
   "title": "[NSoC 2026] Nothing warns that storage is nearly full before writes fail",
   "url": "https://github.com/DivyashreeR008/Open-Agents/issues/269"
  },
@@ -1018,7 +1095,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "DivyashreeR008/Open-Agents",
-  "score_rank": 126,
+  "score_rank": 131,
   "title": "[NSoC 2026] There is no obvious way to clear an active search",
   "url": "https://github.com/DivyashreeR008/Open-Agents/issues/247"
  },
@@ -1029,7 +1106,7 @@
   "language": "JavaScript",
   "pickup_kind": "comment",
   "repo_name": "DivyashreeR008/Open-Agents",
-  "score_rank": 126,
+  "score_rank": 131,
   "title": "[NSoC 2026] Marketplace listings cannot be sorted by rating, imports, or age",
   "url": "https://github.com/DivyashreeR008/Open-Agents/issues/236"
  },
@@ -1040,7 +1117,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "DivyashreeR008/Open-Agents",
-  "score_rank": 126,
+  "score_rank": 131,
   "title": "[NSoC 2026] Package metadata is missing for a project that already has a license",
   "url": "https://github.com/DivyashreeR008/Open-Agents/issues/192"
  },
@@ -1051,7 +1128,7 @@
   "language": "JavaScript",
   "pickup_kind": "comment",
   "repo_name": "DivyashreeR008/Open-Agents",
-  "score_rank": 126,
+  "score_rank": 131,
   "title": "[NSoC 2026] One accidental hit clears the confidence bar and hides the warning",
   "url": "https://github.com/DivyashreeR008/Open-Agents/issues/166"
  },
@@ -1062,7 +1139,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "DivyashreeR008/Open-Agents",
-  "score_rank": 126,
+  "score_rank": 131,
   "title": "[NSoC 2026] Failed runs are never recorded in history",
   "url": "https://github.com/DivyashreeR008/Open-Agents/issues/157"
  },
@@ -1073,7 +1150,7 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "DivyashreeR008/Open-Agents",
-  "score_rank": 126,
+  "score_rank": 131,
   "title": "[NSoC 2026] Unknown agent links bounce silently back to the catalogue",
   "url": "https://github.com/DivyashreeR008/Open-Agents/issues/53"
  },
@@ -1084,20 +1161,9 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "DivyashreeR008/Open-Agents",
-  "score_rank": 126,
+  "score_rank": 131,
   "title": "[NSoC 2026] Global search shortcut focuses the field unreliably",
   "url": "https://github.com/DivyashreeR008/Open-Agents/issues/50"
- },
- {
-  "comment_count": 5,
-  "created_at": "2026-11-20T18:12:47Z",
-  "issue_number": 307,
-  "language": "TypeScript",
-  "pickup_kind": "comment",
-  "repo_name": "hydra-db/selfgraph",
-  "score_rank": 134,
-  "title": "Schema.from_tables raises TypeError on non-list columns",
-  "url": "https://github.com/hydra-db/selfgraph/issues/307"
  },
  {
   "comment_count": 3,
@@ -1106,108 +1172,20 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "nexu-io/open-design",
-  "score_rank": 139,
+  "score_rank": 138,
   "title": "Add OpenDesign as a catalog provider in models.dev for OpenCode /connect integration",
   "url": "https://github.com/nexu-io/open-design/issues/9502"
  },
  {
-  "comment_count": 0,
-  "created_at": "2026-11-11T22:27:19Z",
-  "issue_number": 6906,
-  "language": "JavaScript",
+  "comment_count": 4,
+  "created_at": "2026-09-27T18:53:32Z",
+  "issue_number": 22127,
+  "language": "Kotlin",
   "pickup_kind": null,
-  "repo_name": "career-ops-hq/career-ops",
-  "score_rank": 148,
-  "title": "bug(providers): greenhouse, ashby and lever return [] for a response that is not a board, so a broken board reads as \"no open roles\"",
-  "url": "https://github.com/career-ops-hq/career-ops/issues/6906"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-03T08:49:11Z",
-  "issue_number": 6427,
-  "language": "JavaScript",
-  "pickup_kind": null,
-  "repo_name": "career-ops-hq/career-ops",
-  "score_rank": 148,
-  "title": "test(web): the Config test does not check that the two hidden engine cards are gone",
-  "url": "https://github.com/career-ops-hq/career-ops/issues/6427"
- },
- {
-  "comment_count": 32,
-  "created_at": "2026-10-10T20:12:29Z",
-  "issue_number": 4963,
-  "language": "JavaScript",
-  "pickup_kind": "comment",
-  "repo_name": "career-ops-hq/career-ops",
-  "score_rank": 148,
-  "title": "h1b-sponsor: move the duplicated displayClean() into lib/",
-  "url": "https://github.com/career-ops-hq/career-ops/issues/4963"
- },
- {
-  "comment_count": 14,
-  "created_at": "2026-08-12T23:41:02Z",
-  "issue_number": 2784,
-  "language": "JavaScript",
-  "pickup_kind": null,
-  "repo_name": "career-ops-hq/career-ops",
-  "score_rank": 148,
-  "title": "i18n: translate the interview modes (plan/practice/debrief) to Indonesian",
-  "url": "https://github.com/career-ops-hq/career-ops/issues/2784"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-29T17:35:38Z",
-  "issue_number": 5076,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "pipeshub-ai/pipeshub-ai",
-  "score_rank": 149,
-  "title": "Add Mixpanel to the MCP server catalog",
-  "url": "https://github.com/pipeshub-ai/pipeshub-ai/issues/5076"
- },
- {
-  "comment_count": 2,
-  "created_at": "2026-10-29T17:35:28Z",
-  "issue_number": 5071,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "pipeshub-ai/pipeshub-ai",
-  "score_rank": 149,
-  "title": "Add Trello to the MCP server catalog",
-  "url": "https://github.com/pipeshub-ai/pipeshub-ai/issues/5071"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-29T10:35:57Z",
-  "issue_number": 5040,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "pipeshub-ai/pipeshub-ai",
-  "score_rank": 149,
-  "title": "Re-enable Dropbox in the MCP server catalog",
-  "url": "https://github.com/pipeshub-ai/pipeshub-ai/issues/5040"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-06T02:57:45Z",
-  "issue_number": 84,
-  "language": "TypeScript",
-  "pickup_kind": null,
-  "repo_name": "VarshithReddy2006/DevTrack",
-  "score_rank": 153,
-  "title": "feat(projects): implement project task deletion API",
-  "url": "https://github.com/VarshithReddy2006/DevTrack/issues/84"
- },
- {
-  "comment_count": 5,
-  "created_at": "2026-10-26T12:21:38Z",
-  "issue_number": 22,
-  "language": "TypeScript",
-  "pickup_kind": null,
-  "repo_name": "VarshithReddy2006/DevTrack",
-  "score_rank": 153,
-  "title": "bug: bulk DSA status changes leave topic solved counts and mastery progress stale",
-  "url": "https://github.com/VarshithReddy2006/DevTrack/issues/22"
+  "repo_name": "ankidroid/Anki-Android",
+  "score_rank": 147,
+  "title": "CI: Skip test sources for `DirectSnackbarMakeUsage` and similar lint rules",
+  "url": "https://github.com/ankidroid/Anki-Android/issues/22127"
  },
  {
   "comment_count": 0,
@@ -1216,7 +1194,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(doctor): \"Migrations outside the API\" passes silently when a backend folder cannot be listed (empty catch around readdirSync), so the same start-up migration is reported or not depending on folder permissions",
   "url": "https://github.com/flisk-sh/flisk/issues/5603"
  },
@@ -1227,7 +1205,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(scaffold): a fresh backend's `bun run test` fails on a Bun-only machine (vitest: child.channel.unref is not a function), though dev, build and Dockerfile are all Bun",
   "url": "https://github.com/flisk-sh/flisk/issues/5391"
  },
@@ -1238,7 +1216,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(status): a running project with only a database resource is reported as \"not running: the Tilt on port 10350 runs another project\", though that Tilt is its own",
   "url": "https://github.com/flisk-sh/flisk/issues/5346"
  },
@@ -1249,7 +1227,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "ci: merge queue held 48 PRs for 6 hours with no batch building, and no workflow noticed",
   "url": "https://github.com/flisk-sh/flisk/issues/5105"
  },
@@ -1260,7 +1238,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "Windows contract (W3) fails on main after #4795: every queued PR touching up.ts/cli.ts/platform files gets dropped",
   "url": "https://github.com/flisk-sh/flisk/issues/5055"
  },
@@ -1271,7 +1249,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "North star workflow fails at setup: npm ci needs a package-lock.json the repo does not have",
   "url": "https://github.com/flisk-sh/flisk/issues/5054"
  },
@@ -1282,7 +1260,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(project): `flisk project --yes --path <dir>` silently ignores --path when no template is given and initialises the current folder",
   "url": "https://github.com/flisk-sh/flisk/issues/5035"
  },
@@ -1293,7 +1271,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(import): `flisk import --dry-run --json` prints the human report on stderr as well as in data.output",
   "url": "https://github.com/flisk-sh/flisk/issues/5034"
  },
@@ -1304,7 +1282,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(import): a Procfile next to docker-compose.yml is silently ignored; `import --dry-run` does not list it under \"Skipped / not fully imported\"",
   "url": "https://github.com/flisk-sh/flisk/issues/5033"
  },
@@ -1315,7 +1293,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(down): `flisk down` in a project with nothing running and Docker off exits 1 with \"Flisk can't start - missing prerequisites\"",
   "url": "https://github.com/flisk-sh/flisk/issues/5029"
  },
@@ -1326,7 +1304,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(networks): with Docker down, `networks` and `urls` print 2 warnings per service (8 lines for 4 services) and `--json` keeps them on stderr, not in the document",
   "url": "https://github.com/flisk-sh/flisk/issues/5015"
  },
@@ -1337,7 +1315,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "refactor(scripts): split the 940-line compose-comparison benchmark into stacks, trial runner, statistics and report modules",
   "url": "https://github.com/flisk-sh/flisk/issues/4982"
  },
@@ -1348,7 +1326,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "refactor(doctor): cli/src/commands/doctor.ts is 850 lines — the `doctorCommand` action spans ~277-850 (~574 lines) and mixes environment checks (Docker/Tilt/ports), stack checks (Dockerfile ports, health-route probes) and the check runner itself — split the action into `doctor/` modules: `run-checks.ts` (the runner over the check registry), `checks/` (per-concept modules), `fix.ts` (the fix plan)",
   "url": "https://github.com/flisk-sh/flisk/issues/4889"
  },
@@ -1359,7 +1337,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "refactor(cli): cli/src/commands/config.ts is 858 lines — `configCommand` spans L100-L858 (~750 lines, all subcommand definitions + the regenerate action + infra-toggle logic) — split into config/ modules: plan.ts (regeneratePlan + RegenerateChange), regenerate-action.ts, infra-toggle.ts (toggleInfraService + infraToggleCommand), config.ts (the Command shell)",
   "url": "https://github.com/flisk-sh/flisk/issues/4883"
  },
@@ -1370,7 +1348,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(secrets): `FLISK_SECRET_PROVIDER=infisical` (or any typo) skips the required-secret check and injects nothing, with no warning, and the README says it \"reads secrets from Infisical\"",
   "url": "https://github.com/flisk-sh/flisk/issues/4706"
  },
@@ -1381,7 +1359,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(cli): `flisk wait [service...] --timeout` blocks until services are healthy and exits 1 with the failing service and its last log lines (plus an MCP `wait` tool)",
   "url": "https://github.com/flisk-sh/flisk/issues/4685"
  },
@@ -1392,7 +1370,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(mcp): the `status` and `logs` tools take `unhealthy` (and `stack` for status) like the CLI, so an agent reads only the broken services after a failed `up`",
   "url": "https://github.com/flisk-sh/flisk/issues/4682"
  },
@@ -1403,7 +1381,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(doctor): the \"Service commands\" check follows `npm run <script>` into package.json, so a script that starts a missing program (bun) fails the check instead of `ready: true`",
   "url": "https://github.com/flisk-sh/flisk/issues/4680"
  },
@@ -1414,7 +1392,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(up): a second `flisk up` in a running local-process project prints \"Starting 2 services...\" and the service list before saying it is already running",
   "url": "https://github.com/flisk-sh/flisk/issues/4642"
  },
@@ -1425,7 +1403,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(json): machine-readable-cli.md documents down and restart only for Tilt; a local-process project returns runtime, stopped, state, ready and pid instead",
   "url": "https://github.com/flisk-sh/flisk/issues/4585"
  },
@@ -1436,7 +1414,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(doctor): \"Generated Runtime Assets\" fails on the portal starter for five docker-templates files no Dockerfile uses",
   "url": "https://github.com/flisk-sh/flisk/issues/4583"
  },
@@ -1447,7 +1425,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(doctor): \"Startup Scripts\" fails on the agent-stack starter because a migrator is required to have dev and build scripts",
   "url": "https://github.com/flisk-sh/flisk/issues/4577"
  },
@@ -1458,7 +1436,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(ide-components): template_engine.py is a SyntaxError on every Python (f-string with a single '}'), and its conditional regex drops the closing braces",
   "url": "https://github.com/flisk-sh/flisk/issues/4536"
  },
@@ -1469,7 +1447,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(up): --json errors differ in shape: UNKNOWN_SERVICE has no `suggestions`, INVALID_WAIT_TIMEOUT has an empty one",
   "url": "https://github.com/flisk-sh/flisk/issues/4522"
  },
@@ -1480,7 +1458,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(cheat-sheet): `resource --local`, `resource --durability`, `stack --move` and `stack --remove` are in `--help` but not in the cheat sheet",
   "url": "https://github.com/flisk-sh/flisk/issues/4520"
  },
@@ -1491,7 +1469,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(connect): `connect --project` is a bare switch, so `flisk connect claude --project <dir>` fails with \"too many arguments\" while `os`, `down`, `status`, `logs` take a directory",
   "url": "https://github.com/flisk-sh/flisk/issues/4509"
  },
@@ -1502,7 +1480,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "cli: `flisk project info|list|status` say \"Unknown template\"; extend the #4435 \"Did you mean\" hint",
   "url": "https://github.com/flisk-sh/flisk/issues/4498"
  },
@@ -1513,7 +1491,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(tool): `flisk tool add` with no tool name lists the tools and exits 0, so a script with an empty variable looks successful",
   "url": "https://github.com/flisk-sh/flisk/issues/4497"
  },
@@ -1524,7 +1502,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(demo): `flisk demo --dry-run` ignores the flag and starts the whole demo (containers, database, ports)",
   "url": "https://github.com/flisk-sh/flisk/issues/4487"
  },
@@ -1535,7 +1513,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(projects): `flisk projects` shows only the current project and fails outside one, so no read-only command lists the running projects",
   "url": "https://github.com/flisk-sh/flisk/issues/4483"
  },
@@ -1546,7 +1524,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(networks): `flisk urls a1` fails with \"too many arguments for 'networks'\" and no hint that only --stack filters",
   "url": "https://github.com/flisk-sh/flisk/issues/4481"
  },
@@ -1557,7 +1535,7 @@
   "language": "TypeScript",
   "pickup_kind": "comment",
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(cli): `flisk stop` is \"unknown command\" with no hint that the command is `flisk down`",
   "url": "https://github.com/flisk-sh/flisk/issues/4474"
  },
@@ -1568,7 +1546,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(open): `flisk open` opens only the first frontend and takes no name, so a second frontend cannot be opened",
   "url": "https://github.com/flisk-sh/flisk/issues/4473"
  },
@@ -1579,7 +1557,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "doctor prints \"Not running in WSL2 - skipped ...\" rows on macOS and Linux where the check can never apply",
   "url": "https://github.com/flisk-sh/flisk/issues/4468"
  },
@@ -1590,7 +1568,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "tool --help says \"(cloud is rejected)\" but there is no tool id \"cloud\"; the rejected ids are aws, google-cloud, azure, kubernetes",
   "url": "https://github.com/flisk-sh/flisk/issues/4466"
  },
@@ -1601,7 +1579,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(down): `flisk down` in a directory that is not a project stops another project's running stack without asking",
   "url": "https://github.com/flisk-sh/flisk/issues/4452"
  },
@@ -1612,7 +1590,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(mcp): `flisk mcp check nope` (no such resource) probes an invented Traefik address and reports ECONNREFUSED instead of \"no resource named nope\"",
   "url": "https://github.com/flisk-sh/flisk/issues/4445"
  },
@@ -1623,7 +1601,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(doctor): `doctor --fix` prints \"✓ Nothing to repair\" and then lists failed checks, and exits 1",
   "url": "https://github.com/flisk-sh/flisk/issues/4444"
  },
@@ -1634,7 +1612,7 @@
   "language": "TypeScript",
   "pickup_kind": "comment",
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(completion): `completion bash --shell zsh` silently prints the zsh script; the two shell inputs are never compared",
   "url": "https://github.com/flisk-sh/flisk/issues/4433"
  },
@@ -1645,7 +1623,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(config): `enable-infra` / `disable-infra` say \"Enabled\" / \"Disabled\" and ask for a regenerate even when nothing changed",
   "url": "https://github.com/flisk-sh/flisk/issues/4432"
  },
@@ -1656,7 +1634,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(create): `flisk create --starter saas --frontend vue` accepts the extra options silently and the plan never mentions them",
   "url": "https://github.com/flisk-sh/flisk/issues/4419"
  },
@@ -1667,7 +1645,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(scaffold): the new backend's `test` script is bare `vitest` (watch mode in a terminal) and its only test is `it.todo`, so it passes while checking nothing",
   "url": "https://github.com/flisk-sh/flisk/issues/4385"
  },
@@ -1678,7 +1656,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(cli): `flisk logs`, `restart` and `status` outside a project say only 'Could not find project root' while 3 projects run; only `down` and `stop` list them and take --project",
   "url": "https://github.com/flisk-sh/flisk/issues/4347"
  },
@@ -1689,7 +1667,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(up): the first readiness probe of a local-process service resets the connection, so python http.server prints a ConnectionResetError traceback in the user's log",
   "url": "https://github.com/flisk-sh/flisk/issues/4346"
  },
@@ -1700,7 +1678,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(cli): in a local-process starter (swarm, security, langgraph...) `flisk resources` and `flisk status` fail with Could not find project root although `flisk up --dry-run` lists the services",
   "url": "https://github.com/flisk-sh/flisk/issues/4292"
  },
@@ -1711,7 +1689,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(project): `flisk project sas` (typo of saas) prints all 17 starters but no \"Did you mean saas?\", which commands already get",
   "url": "https://github.com/flisk-sh/flisk/issues/4287"
  },
@@ -1722,7 +1700,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(project): `flisk project launch` and `fullstack` leave the new repo on a detached HEAD, so a beginner's first commits are on no branch",
   "url": "https://github.com/flisk-sh/flisk/issues/4286"
  },
@@ -1733,7 +1711,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(starters): `flisk project fullstack` and `launch` copy the template's demo.gif, demo.mp4 and video screenshots into the user's new repo and first commit",
   "url": "https://github.com/flisk-sh/flisk/issues/4285"
  },
@@ -1744,7 +1722,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "chore(runtime): three manifests for another product (identity-sdk, identity-management-backend, identity-management-frontend) ship in the discovery runtime and are copied into every eject",
   "url": "https://github.com/flisk-sh/flisk/issues/4259"
  },
@@ -1755,7 +1733,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(cli): `config migrate` (rewrites service.json files) and `repos clone` (git clones) have no --dry-run, unlike down, eject, doctor --fix and upgrade",
   "url": "https://github.com/flisk-sh/flisk/issues/4256"
  },
@@ -1766,7 +1744,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(upgrade): on a Bun-only machine `flisk upgrade --dry-run` prints \"npm: command not found\" and fails, because the latest-version lookup needs npm",
   "url": "https://github.com/flisk-sh/flisk/issues/4250"
  },
@@ -1777,7 +1755,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(json): `flisk project --list --json` prints a bare array while every other --json command prints the envelope",
   "url": "https://github.com/flisk-sh/flisk/issues/4247"
  },
@@ -1788,7 +1766,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(stack): `flisk stack list` opens the wizard for a stack named \"list\" instead of listing; MCP calls it `stack_list`",
   "url": "https://github.com/flisk-sh/flisk/issues/4239"
  },
@@ -1799,7 +1777,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(config): `flisk config verify` on a fresh, never-started Docker starter exits 1 with 68 errors and a 54 KB payload; report \"not generated yet\" once",
   "url": "https://github.com/flisk-sh/flisk/issues/4219"
  },
@@ -1810,7 +1788,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(mcp): tools/list is 23 tools and 19.9 KB (about 5,000 tokens) in every agent's context; add a smaller profile",
   "url": "https://github.com/flisk-sh/flisk/issues/4184"
  },
@@ -1821,7 +1799,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(down): `flisk down` with nothing running takes 0.45 s (0.09 s for --version): 5 subprocesses in series, Docker asked twice",
   "url": "https://github.com/flisk-sh/flisk/issues/4173"
  },
@@ -1832,7 +1810,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(swarm): the swarm template's coordinator accepts an unbounded goal (a 3 MB goal made a 9 MB swarm-state.json, no 413)",
   "url": "https://github.com/flisk-sh/flisk/issues/4168"
  },
@@ -1843,7 +1821,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(resource): `flisk resource --base-path` accepts values the schema rejects, so a successful create leaves `config verify` invalid",
   "url": "https://github.com/flisk-sh/flisk/issues/4162"
  },
@@ -1854,7 +1832,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(cli): `flisk test [stack] --json` and an MCP `test` tool that run every service's tests with the stack's env and return one result",
   "url": "https://github.com/flisk-sh/flisk/issues/4049"
  },
@@ -1865,7 +1843,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(engine): the Tilt maintenance resources and cron status tracker call .sh scripts by path (./...sh, #!/bin/bash), which cannot run on native Windows, so prune-images, memory-optimizer and auto-prune-* fail there",
   "url": "https://github.com/flisk-sh/flisk/issues/4032"
  },
@@ -1876,7 +1854,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(engine): watchers.star starts two Docker prune loops in every project by default, auto-prune-migrator-images runs docker ps and inspect every 45 s and auto-prune-dangling runs image cleanup every 300 s, both with auto_init=True",
   "url": "https://github.com/flisk-sh/flisk/issues/4031"
  },
@@ -1887,7 +1865,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf+windows(engine): 18 `local([\"sh\", \"-c\", ...])` calls in 9 .star files (test -f, cat, stat, ls, mkdir) fork a shell on every Tiltfile load and cannot run on native Windows, where Tilt's in-process os.path.exists / read_file / listdir would do",
   "url": "https://github.com/flisk-sh/flisk/issues/4028"
  },
@@ -1898,7 +1876,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(release): the publish job idles 391 s waiting for the release candidate (RC 778 s, 31 jobs, span 3.3x its longest job); everything else was ready after 6 min",
   "url": "https://github.com/flisk-sh/flisk/issues/3979"
  },
@@ -1909,7 +1887,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(ci): the broken-project journey takes 329 s (6 of 6 merge-group runs, 319-339 s), the longest Journeys job; BP3 waits on a 240 s ready timeout",
   "url": "https://github.com/flisk-sh/flisk/issues/3967"
  },
@@ -1920,7 +1898,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "ci: skipped matrix jobs show the literal name `${{ matrix.group }} / ${{ matrix.label }}` and a -120 s duration (4 of the last 12 Resource types runs)",
   "url": "https://github.com/flisk-sh/flisk/issues/3949"
  },
@@ -1931,7 +1909,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(ci): two PRs wait 30+ min in the merge queue; each merge to main rebuilds their groups (4 times, 56 merge_group runs, 0 finished)",
   "url": "https://github.com/flisk-sh/flisk/issues/3948"
  },
@@ -1942,7 +1920,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "ci: 38 jobs run Node 22 (floating) and 10 run pinned Node 24.15.0; the release candidate tests 22 but the release publishes on 24",
   "url": "https://github.com/flisk-sh/flisk/issues/3946"
  },
@@ -1953,7 +1931,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "dx(tests): the two generated-file tests pin 28 SHA-256 hashes by hand with no update mode and no new hash in the failure; 4 of 14 recent failed Test jobs were this",
   "url": "https://github.com/flisk-sh/flisk/issues/3898"
  },
@@ -1964,7 +1942,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(ci): after the merge queue passes, every merge to main runs the same SHA again: 7 push workflows (about 30 jobs) re-test a commit that 7 merge_group runs already proved",
   "url": "https://github.com/flisk-sh/flisk/issues/3896"
  },
@@ -1975,7 +1953,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(ci): one PR commit starts 34 jobs that wait 78 min for runners to do 25 min of work; four of them (e2e resource-types gate, DCO, Scans, area labels) do 7-9 s each",
   "url": "https://github.com/flisk-sh/flisk/issues/3894"
  },
@@ -1986,7 +1964,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(ci): the Linux Test job runs the unit suite with coverage in 4 min 39 s; the same suite without coverage takes 2 min 40 s on macOS. Measure it and drop coverage from PRs",
   "url": "https://github.com/flisk-sh/flisk/issues/3893"
  },
@@ -1997,7 +1975,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(mcp): `flisk mcp check` takes 2.1 s to report a refused connection (curl: 0.03 s): it retries twice with a 1 s pause, even for ECONNREFUSED on localhost",
   "url": "https://github.com/flisk-sh/flisk/issues/3887"
  },
@@ -2008,7 +1986,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(project): a cloned starter keeps its full history and `origin` (the starter repo), so `git remote add origin <your repo>` fails (\"remote origin already exists\"); rename it to `upstream`",
   "url": "https://github.com/flisk-sh/flisk/issues/3884"
  },
@@ -2019,7 +1997,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(project): `flisk doctor`, step 2 of the clone's own next steps, fails two checks on a fresh Docker starter (\"Master configs missing\", \"Missing required env variables\") and says to run `flisk project`",
   "url": "https://github.com/flisk-sh/flisk/issues/3883"
  },
@@ -2030,7 +2008,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(scaffold): a new Solid website fails its own `bun run test` (\"Cannot find dependency jsdom\"); vite-plugin-solid selects jsdom and the scaffold does not install it",
   "url": "https://github.com/flisk-sh/flisk/issues/3868"
  },
@@ -2041,7 +2019,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(down): `flisk down --prune-networks --dry-run` previews nothing (text or JSON), while `--purge --dry-run` lists the volumes, networks and images it would delete",
   "url": "https://github.com/flisk-sh/flisk/issues/3864"
  },
@@ -2052,7 +2030,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "ci(e2e): bring-your-own-no-curl (BY12) failed on the scheduled run: `flisk up --wait --wait-timeout 25` hit its timeout before the failure the test expects (cold runner)",
   "url": "https://github.com/flisk-sh/flisk/issues/3863"
  },
@@ -2063,7 +2041,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(up): Postgres answers 0.4 s after it starts but its healthcheck has no start_interval, so the first probe is at +5.2 s; `api` starts only after it (about 1.7 s lost here, up to 4.7 s)",
   "url": "https://github.com/flisk-sh/flisk/issues/3857"
  },
@@ -2074,7 +2052,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(docker): every generated Dockerfile starts with `# syntax=docker/dockerfile:1`, which adds 1.0 s (2.5 s vs 1.5 s) and a Docker Hub lookup to each warm image build; emit it only when a heredoc needs it",
   "url": "https://github.com/flisk-sh/flisk/issues/3854"
  },
@@ -2085,7 +2063,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(mcp): a missing `projectPath` makes 13 of 18 tools answer \"ENOENT ... posix_spawn flisk\", which blames the binary instead of the directory",
   "url": "https://github.com/flisk-sh/flisk/issues/3852"
  },
@@ -2096,7 +2074,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(json): every FliskError becomes `COMMAND_FAILED` in `--json`, including \"not in a project\"; the contract says error codes are stable, so give the named errors their own codes",
   "url": "https://github.com/flisk-sh/flisk/issues/3849"
  },
@@ -2107,7 +2085,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(up): `flisk up --wait --json` prints three JSON documents on a failed local service; the first says \"see its output above\" (nothing is printed) and shows a literal `<service>.log`",
   "url": "https://github.com/flisk-sh/flisk/issues/3848"
  },
@@ -2118,7 +2096,7 @@
   "language": "TypeScript",
   "pickup_kind": "assignment",
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(status): `flisk status` in a stopped project runs 6 subprocesses one after another (git and lsof twice, a `tilt get` that cannot succeed): 0.24 s of its 0.27-0.33 s",
   "url": "https://github.com/flisk-sh/flisk/issues/3842"
  },
@@ -2129,7 +2107,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(resource): `flisk resource traefik` is accepted, then `flisk up` fails with a Tiltfile traceback cut off before its cause; reserve the infrastructure names (traefik, postgres, tilt, ...)",
   "url": "https://github.com/flisk-sh/flisk/issues/3840"
  },
@@ -2140,7 +2118,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(agents): llms.txt and llms-full.txt (and the sync script) still point at demo.flisk.sh, which redirects; flisk.sh/llms-full.txt is a different 8 KB document next to the 20 KB one in docs/agents",
   "url": "https://github.com/flisk-sh/flisk/issues/3839"
  },
@@ -2151,7 +2129,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(ci): the \"Check shell verification script syntax\" step is `make test-shell` (static checks plus 95 Node test files): 38-45 s of the 289-354 s Test job, run after the unit tests instead of beside them",
   "url": "https://github.com/flisk-sh/flisk/issues/3836"
  },
@@ -2162,7 +2140,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(docker): a backend with no Prisma is built on a golden layer that installs Prisma globally: 357 MB, 37 % of its 966 MB image",
   "url": "https://github.com/flisk-sh/flisk/issues/3833"
  },
@@ -2173,7 +2151,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(agent): POST /turn with {\"message\": \"...\"} returns 200 and stores an empty prompt; the template only reads \"input\" and the docs never name it",
   "url": "https://github.com/flisk-sh/flisk/issues/3829"
  },
@@ -2184,7 +2162,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(status): `flisk status` exits 0 while services are unhealthy; add `--strict` (like `doctor --strict`) so scripts and agents can test $?",
   "url": "https://github.com/flisk-sh/flisk/issues/3826"
  },
@@ -2195,7 +2173,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(status): a local service that never started because its dependency is unhealthy is shown as \"pending (restarting)\" instead of \"waiting for <dependency>\"",
   "url": "https://github.com/flisk-sh/flisk/issues/3805"
  },
@@ -2206,7 +2184,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(config): `flisk config edit` hangs forever without a terminal and replaces $EDITOR (cursor, zed, ...) with vi; $VISUAL is ignored",
   "url": "https://github.com/flisk-sh/flisk/issues/3803"
  },
@@ -2217,7 +2195,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(connect): `flisk connect codex` writes the absolute project path (cwd = \"/Users/...\") into .codex/config.toml, which breaks on every other machine",
   "url": "https://github.com/flisk-sh/flisk/issues/3802"
  },
@@ -2228,7 +2206,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(create): `flisk create --language python --start` fails with \"did not finish\" and hides pip's real reason (Python 3.11 < 3.12); the advice to retry cannot work",
   "url": "https://github.com/flisk-sh/flisk/issues/3799"
  },
@@ -2239,7 +2217,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(cli): plain `flisk` takes 0.8 s (every other command 0.07 s) because the machine pre-flight runs 9 probes in a row, with 2 duplicates",
   "url": "https://github.com/flisk-sh/flisk/issues/3785"
  },
@@ -2250,7 +2228,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(down): `flisk down` takes 1.5 s in an idle Docker project (0.07 s for local processes) because it runs a full `tilt down` to find nothing",
   "url": "https://github.com/flisk-sh/flisk/issues/3768"
  },
@@ -2261,7 +2239,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(down): `flisk down` rewrites 15 generated files (identical content) on every call, even when nothing is running",
   "url": "https://github.com/flisk-sh/flisk/issues/3758"
  },
@@ -2272,7 +2250,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "perf(up): a project with no sablier/deferStart resource still builds a 431 MB wake-gateway image and runs sablier, because the licence is probed with a made-up resource",
   "url": "https://github.com/flisk-sh/flisk/issues/3753"
  },
@@ -2283,7 +2261,7 @@
   "language": "TypeScript",
   "pickup_kind": "assignment",
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(e2e): verify-*.sh cleanup matches Docker names by substring/prefix of a PID-based name, so it can remove another run's containers; add shellcheck to test-shell",
   "url": "https://github.com/flisk-sh/flisk/issues/3750"
  },
@@ -2294,7 +2272,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(cli): `flisk demo` is the first command new users run, but `flisk --help` never mentions it and `flisk demo --help` prints the root help",
   "url": "https://github.com/flisk-sh/flisk/issues/3743"
  },
@@ -2305,7 +2283,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(resource): a new worker runs `bun run worker`, but its package.json has no \"worker\" script",
   "url": "https://github.com/flisk-sh/flisk/issues/3740"
  },
@@ -2316,7 +2294,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(project): a folder name with a space or capitals (\"My App.v2\") becomes the project name, and Docker rejects every generated name",
   "url": "https://github.com/flisk-sh/flisk/issues/3739"
  },
@@ -2327,7 +2305,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(doctor): Colima check prints a stray quote, \"(aarch64\")\"",
   "url": "https://github.com/flisk-sh/flisk/issues/3729"
  },
@@ -2338,7 +2316,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(up): two `flisk up` started together both start the services, and `flisk down` leaves one set running",
   "url": "https://github.com/flisk-sh/flisk/issues/3727"
  },
@@ -2349,7 +2327,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(open): with nothing running, `flisk open` waits 2 minutes, blames Docker port 80, and exits 0",
   "url": "https://github.com/flisk-sh/flisk/issues/3715"
  },
@@ -2360,7 +2338,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(security): the generated .gitignore ignores .env but not the copies Flisk tells users to make (.env.integration)",
   "url": "https://github.com/flisk-sh/flisk/issues/3707"
  },
@@ -2371,7 +2349,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(up): `flisk up --wait --dry-run` says \"Stack is healthy\" and starts nothing; with --json it prints three documents",
   "url": "https://github.com/flisk-sh/flisk/issues/3696"
  },
@@ -2382,7 +2360,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(issue forms): bug and feature forms say local development is \"Docker + Tilt\", but Docker is optional",
   "url": "https://github.com/flisk-sh/flisk/issues/3685"
  },
@@ -2393,7 +2371,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(machine-readable): `doctor --json` fields commit, commitSha, host and fixFirst are not documented",
   "url": "https://github.com/flisk-sh/flisk/issues/3684"
  },
@@ -2404,7 +2382,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(status): `flisk status --tilt` prints nothing extra, and no reason, when Tilt is not running",
   "url": "https://github.com/flisk-sh/flisk/issues/3677"
  },
@@ -2415,7 +2393,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(completion): `--install` help says it installs \"to shell config automatically\", but bash and zsh still need a manual line",
   "url": "https://github.com/flisk-sh/flisk/issues/3635"
  },
@@ -2426,7 +2404,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(create): add an Examples block to `flisk create --help`",
   "url": "https://github.com/flisk-sh/flisk/issues/3631"
  },
@@ -2437,7 +2415,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(stacks): `flisk stacks --verbose` shows no more detail than the default (and says \"resources\" instead of \"services\")",
   "url": "https://github.com/flisk-sh/flisk/issues/3630"
  },
@@ -2448,7 +2426,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(logs): `flisk logs --help` calls service names \"Tilt resource names\", which confuses local-process projects",
   "url": "https://github.com/flisk-sh/flisk/issues/3627"
  },
@@ -2459,7 +2437,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(status): `flisk status` says \"Run flisk up … to start a stack\" even when every service is healthy",
   "url": "https://github.com/flisk-sh/flisk/issues/3625"
  },
@@ -2470,7 +2448,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(ui): `flisk ui --help` still says \"(Neon Edition)\", an internal name",
   "url": "https://github.com/flisk-sh/flisk/issues/3619"
  },
@@ -2481,7 +2459,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(cli): `flisk --help` describes `project` with an internal file name (TILT_RESOURCE_DEFAULTS.star)",
   "url": "https://github.com/flisk-sh/flisk/issues/3617"
  },
@@ -2492,7 +2470,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(agent): a // request path hangs the generated custom agent instead of answering 400",
   "url": "https://github.com/flisk-sh/flisk/issues/3541"
  },
@@ -2503,7 +2481,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "[Türkçe] docs: translate the start of the CLI unit-tests guide into Turkish",
   "url": "https://github.com/flisk-sh/flisk/issues/3523"
  },
@@ -2514,7 +2492,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "[日本語] docs: translate the start of the write-an-e2e-test guide into Japanese",
   "url": "https://github.com/flisk-sh/flisk/issues/3521"
  },
@@ -2525,7 +2503,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "[Türkçe] docs: translate CONTRIBUTING into Turkish (CONTRIBUTING-tr.md)",
   "url": "https://github.com/flisk-sh/flisk/issues/3520"
  },
@@ -2536,7 +2514,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(cheat-sheet): add `flisk create` to the commands table and give it a section",
   "url": "https://github.com/flisk-sh/flisk/issues/3515"
  },
@@ -2547,7 +2525,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "[Română] docs: add Prerequisites and Installation to README-ro",
   "url": "https://github.com/flisk-sh/flisk/issues/3507"
  },
@@ -2558,7 +2536,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "[ไทย] docs: add Prerequisites and Installation to README-th",
   "url": "https://github.com/flisk-sh/flisk/issues/3506"
  },
@@ -2569,7 +2547,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "[Українська] docs: add Prerequisites and Installation to README-uk",
   "url": "https://github.com/flisk-sh/flisk/issues/3504"
  },
@@ -2580,7 +2558,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(cheat-sheet): add `flisk open` and `flisk connect` to the cheat sheet",
   "url": "https://github.com/flisk-sh/flisk/issues/3469"
  },
@@ -2591,7 +2569,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(cheat-sheet): add --prune-cache and --cache-until to the `flisk down` flag table",
   "url": "https://github.com/flisk-sh/flisk/issues/3466"
  },
@@ -2602,7 +2580,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(cli): add an Examples block to `flisk connect --help`",
   "url": "https://github.com/flisk-sh/flisk/issues/3441"
  },
@@ -2613,7 +2591,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(cli): add an Examples block to `flisk logs --help`",
   "url": "https://github.com/flisk-sh/flisk/issues/3430"
  },
@@ -2624,7 +2602,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "test(cli): scaffold test for the vanilla frontend provider (frontend-frameworks/vanilla.ts)",
   "url": "https://github.com/flisk-sh/flisk/issues/3422"
  },
@@ -2635,7 +2613,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "test(engine): test_byo_compose_does_not_require_curl_inside_the_image fails on main",
   "url": "https://github.com/flisk-sh/flisk/issues/3198"
  },
@@ -2646,7 +2624,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs: agent-readiness section in AGENTS.md: several agents at once, what is safe to run in parallel",
   "url": "https://github.com/flisk-sh/flisk/issues/3120"
  },
@@ -2657,7 +2635,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "fix(release): log a warning and the target sha when `Tag vX already exists` points at a different commit",
   "url": "https://github.com/flisk-sh/flisk/issues/3097"
  },
@@ -2668,7 +2646,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(version): `flisk version --verbose` prints the git commit the package was built from",
   "url": "https://github.com/flisk-sh/flisk/issues/3096"
  },
@@ -2679,7 +2657,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "chore(release): delete release/<version>-rcN branches once the version is published",
   "url": "https://github.com/flisk-sh/flisk/issues/3094"
  },
@@ -2690,7 +2668,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "ci(release): cancel a running Release candidate when a newer candidate for the same version starts",
   "url": "https://github.com/flisk-sh/flisk/issues/3093"
  },
@@ -2701,7 +2679,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(releasing): add troubleshooting rows for 'No passing Release candidate covers <sha>' when main keeps moving",
   "url": "https://github.com/flisk-sh/flisk/issues/3092"
  },
@@ -2712,7 +2690,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(cli): a reference section for `flisk version` (flags, example, exit codes)",
   "url": "https://github.com/flisk-sh/flisk/issues/3077"
  },
@@ -2723,7 +2701,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(cli): a reference section for `flisk run` (flags, example, exit codes)",
   "url": "https://github.com/flisk-sh/flisk/issues/3076"
  },
@@ -2734,7 +2712,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "docs(cli): a reference section for `flisk mcp-check` (flags, example, exit codes)",
   "url": "https://github.com/flisk-sh/flisk/issues/3067"
  },
@@ -2745,7 +2723,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(manifest): deploy.resources.reservations from Compose (importer drops them today)",
   "url": "https://github.com/flisk-sh/flisk/issues/3058"
  },
@@ -2756,7 +2734,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(up): when --wait fails on a health check, print the failing probe's output and command",
   "url": "https://github.com/flisk-sh/flisk/issues/3056"
  },
@@ -2767,7 +2745,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "[日本語] docs: translate the e2e matrix guide into Japanese",
   "url": "https://github.com/flisk-sh/flisk/issues/2726"
  },
@@ -2778,7 +2756,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "feat(cli): preflight the generated Compose file and Dockerfiles before Tilt starts (`docker compose config` + `buildx --check`)",
   "url": "https://github.com/flisk-sh/flisk/issues/2702"
  },
@@ -2789,7 +2767,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "Link networks-design.md from the docs index or mark it as a design record",
   "url": "https://github.com/flisk-sh/flisk/issues/2342"
  },
@@ -2800,7 +2778,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "flisk-sh/flisk",
-  "score_rank": 155,
+  "score_rank": 157,
   "title": "engine: unreferenced spec files at the engine root (paths.star, where-things-live.star)",
   "url": "https://github.com/flisk-sh/flisk/issues/1539"
  },
@@ -2811,7 +2789,7 @@
   "language": "Python",
   "pickup_kind": "assignment",
   "repo_name": "LMCache/LMCache",
-  "score_rank": 167,
+  "score_rank": 162,
   "title": "[CI/CD] remove Python 3.10 from the GitHub Actions unit tests",
   "url": "https://github.com/LMCache/LMCache/issues/6494"
  },
@@ -2822,7 +2800,7 @@
   "language": "PHP",
   "pickup_kind": null,
   "repo_name": "symfony/symfony",
-  "score_rank": 169,
+  "score_rank": 166,
   "title": "Missing translations for Belarusian (be)",
   "url": "https://github.com/symfony/symfony/issues/64483"
  },
@@ -2937,59 +2915,81 @@
   "url": "https://github.com/sis-inf/ChuspaPulse/issues/1230"
  },
  {
-  "comment_count": 1,
-  "created_at": "2026-10-22T18:31:00Z",
-  "issue_number": 1023,
-  "language": "C++",
-  "pickup_kind": "assignment",
-  "repo_name": "sis-inf/ChuspaPulse",
-  "score_rank": 176,
-  "title": "refactor(referencias): actualizar referencias de Pulso a ChuspaPulse en src/collectors/bateria/bateria_collector.hpp",
-  "url": "https://github.com/sis-inf/ChuspaPulse/issues/1023"
+  "comment_count": 0,
+  "created_at": "2026-10-29T17:35:38Z",
+  "issue_number": 5076,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "pipeshub-ai/pipeshub-ai",
+  "score_rank": 179,
+  "title": "Add Mixpanel to the MCP server catalog",
+  "url": "https://github.com/pipeshub-ai/pipeshub-ai/issues/5076"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-10-29T17:35:28Z",
+  "issue_number": 5071,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "pipeshub-ai/pipeshub-ai",
+  "score_rank": 179,
+  "title": "Add Trello to the MCP server catalog",
+  "url": "https://github.com/pipeshub-ai/pipeshub-ai/issues/5071"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-11T03:00:40Z",
-  "issue_number": 5479,
+  "created_at": "2026-10-29T10:35:57Z",
+  "issue_number": 5040,
   "language": "Python",
   "pickup_kind": null,
-  "repo_name": "repowise-dev/repowise",
-  "score_rank": 182,
-  "title": "[Bug] F# value bindings become function units named `<anonymous>`, and a class-level `let` counts as a method",
-  "url": "https://github.com/repowise-dev/repowise/issues/5479"
+  "repo_name": "pipeshub-ai/pipeshub-ai",
+  "score_rank": 179,
+  "title": "Re-enable Dropbox in the MCP server catalog",
+  "url": "https://github.com/pipeshub-ai/pipeshub-ai/issues/5040"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-08T11:04:23Z",
-  "issue_number": 5367,
-  "language": "Python",
+  "created_at": "2026-11-11T22:27:19Z",
+  "issue_number": 6906,
+  "language": "JavaScript",
   "pickup_kind": null,
-  "repo_name": "repowise-dev/repowise",
-  "score_rank": 182,
-  "title": "[Bug] `repowise init --follow-renames` is never saved to config.yaml, and there is no flag to turn it off",
-  "url": "https://github.com/repowise-dev/repowise/issues/5367"
+  "repo_name": "career-ops-hq/career-ops",
+  "score_rank": 190,
+  "title": "bug(providers): greenhouse, ashby and lever return [] for a response that is not a board, so a broken board reads as \"no open roles\"",
+  "url": "https://github.com/career-ops-hq/career-ops/issues/6906"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-10-30T06:36:04Z",
-  "issue_number": 4976,
-  "language": "Python",
+  "created_at": "2026-11-03T08:49:11Z",
+  "issue_number": 6427,
+  "language": "JavaScript",
   "pickup_kind": null,
-  "repo_name": "repowise-dev/repowise",
-  "score_rank": 182,
-  "title": "[Bug] C# `is Foo` and `as Foo` are read as declarations of a variable named `Foo`",
-  "url": "https://github.com/repowise-dev/repowise/issues/4976"
+  "repo_name": "career-ops-hq/career-ops",
+  "score_rank": 190,
+  "title": "test(web): the Config test does not check that the two hidden engine cards are gone",
+  "url": "https://github.com/career-ops-hq/career-ops/issues/6427"
  },
  {
-  "comment_count": 3,
-  "created_at": "2026-10-23T15:27:50Z",
-  "issue_number": 4482,
-  "language": "Python",
+  "comment_count": 32,
+  "created_at": "2026-10-10T20:12:29Z",
+  "issue_number": 4963,
+  "language": "JavaScript",
   "pickup_kind": "comment",
-  "repo_name": "repowise-dev/repowise",
-  "score_rank": 182,
-  "title": "[Bug] Parser warnings such as `parser.symbol_bloat` never appear in the init log",
-  "url": "https://github.com/repowise-dev/repowise/issues/4482"
+  "repo_name": "career-ops-hq/career-ops",
+  "score_rank": 190,
+  "title": "h1b-sponsor: move the duplicated displayClean() into lib/",
+  "url": "https://github.com/career-ops-hq/career-ops/issues/4963"
+ },
+ {
+  "comment_count": 14,
+  "created_at": "2026-08-12T23:41:02Z",
+  "issue_number": 2784,
+  "language": "JavaScript",
+  "pickup_kind": null,
+  "repo_name": "career-ops-hq/career-ops",
+  "score_rank": 190,
+  "title": "i18n: translate the interview modes (plan/practice/debrief) to Indonesian",
+  "url": "https://github.com/career-ops-hq/career-ops/issues/2784"
  },
  {
   "comment_count": 1,
@@ -2998,7 +2998,7 @@
   "language": "C++",
   "pickup_kind": null,
   "repo_name": "openvinotoolkit/openvino",
-  "score_rank": 186,
+  "score_rank": 194,
   "title": "[Bug]: [CPU] GatedDeltaNet: infer() after CompiledModel::release_memory() with unchanged input shapes fails with \"Memory has not been allocated\"",
   "url": "https://github.com/openvinotoolkit/openvino/issues/39339"
  },
@@ -3009,7 +3009,7 @@
   "language": "C++",
   "pickup_kind": null,
   "repo_name": "openvinotoolkit/openvino",
-  "score_rank": 186,
+  "score_rank": 194,
   "title": "[Good First Issue]: Support aten::histc",
   "url": "https://github.com/openvinotoolkit/openvino/issues/29699"
  },
@@ -3020,9 +3020,53 @@
   "language": "Rust",
   "pickup_kind": null,
   "repo_name": "arismoko/horizon",
-  "score_rank": 189,
+  "score_rank": 197,
   "title": "Document client prediction on prediction-affecting side=both hooks",
   "url": "https://github.com/arismoko/horizon/issues/4715"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-11T03:00:40Z",
+  "issue_number": 5479,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "repowise-dev/repowise",
+  "score_rank": 200,
+  "title": "[Bug] F# value bindings become function units named `<anonymous>`, and a class-level `let` counts as a method",
+  "url": "https://github.com/repowise-dev/repowise/issues/5479"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-08T11:04:23Z",
+  "issue_number": 5367,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "repowise-dev/repowise",
+  "score_rank": 200,
+  "title": "[Bug] `repowise init --follow-renames` is never saved to config.yaml, and there is no flag to turn it off",
+  "url": "https://github.com/repowise-dev/repowise/issues/5367"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-10-30T06:36:04Z",
+  "issue_number": 4976,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "repowise-dev/repowise",
+  "score_rank": 200,
+  "title": "[Bug] C# `is Foo` and `as Foo` are read as declarations of a variable named `Foo`",
+  "url": "https://github.com/repowise-dev/repowise/issues/4976"
+ },
+ {
+  "comment_count": 3,
+  "created_at": "2026-10-23T15:27:50Z",
+  "issue_number": 4482,
+  "language": "Python",
+  "pickup_kind": "comment",
+  "repo_name": "repowise-dev/repowise",
+  "score_rank": 200,
+  "title": "[Bug] Parser warnings such as `parser.symbol_bloat` never appear in the init log",
+  "url": "https://github.com/repowise-dev/repowise/issues/4482"
  },
  {
   "comment_count": 1,
@@ -3031,9 +3075,20 @@
   "language": "Markdown",
   "pickup_kind": null,
   "repo_name": "mdn/content",
-  "score_rank": 196,
+  "score_rank": 204,
   "title": "Literal matching: wrong resolver path",
   "url": "https://github.com/mdn/content/issues/46630"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-17T17:36:42Z",
+  "issue_number": 38232,
+  "language": "C",
+  "pickup_kind": null,
+  "repo_name": "yugabyte/yugabyte-db",
+  "score_rank": 206,
+  "title": "[DocDB] yb-master never starts again after the fd limit is restored, once a start hit Too many open files in sys catalog bootstrap: WAL files missing",
+  "url": "https://github.com/yugabyte/yugabyte-db/issues/38232"
  },
  {
   "comment_count": 1,
@@ -3042,18 +3097,18 @@
   "language": "JavaScript",
   "pickup_kind": "assignment",
   "repo_name": "AhmedNavaz/codeshi",
-  "score_rank": 200,
+  "score_rank": 210,
   "title": "Plan card drawer shows \"npm test\" placeholder even in repositories with no package.json",
   "url": "https://github.com/AhmedNavaz/codeshi/issues/174"
  },
  {
-  "comment_count": 1,
+  "comment_count": 3,
   "created_at": "2026-11-20T23:54:08Z",
   "issue_number": 1782,
   "language": "JavaScript",
   "pickup_kind": "assignment",
   "repo_name": "sis-inf/ChuspaNumeric",
-  "score_rank": 218,
+  "score_rank": 227,
   "title": "test(utils): cubrir las funciones de matriz_typed con pruebas en matriz_typed.test.js",
   "url": "https://github.com/sis-inf/ChuspaNumeric/issues/1782"
  },
@@ -3064,7 +3119,7 @@
   "language": "JavaScript",
   "pickup_kind": "assignment",
   "repo_name": "sis-inf/ChuspaNumeric",
-  "score_rank": 218,
+  "score_rank": 227,
   "title": "docs(chuspanumeric): actualizar instrucciones de instalacion y uso de chuspanumeric en README.md",
   "url": "https://github.com/sis-inf/ChuspaNumeric/issues/1494"
  },
@@ -3075,7 +3130,7 @@
   "language": "JavaScript",
   "pickup_kind": "comment",
   "repo_name": "sis-inf/ChuspaNumeric",
-  "score_rank": 218,
+  "score_rank": 227,
   "title": "refactor(edo): usar ErrorParametros y nombres en las validaciones de euler.js",
   "url": "https://github.com/sis-inf/ChuspaNumeric/issues/1104"
  },
@@ -3086,7 +3141,7 @@
   "language": "JavaScript",
   "pickup_kind": "comment",
   "repo_name": "sis-inf/ChuspaNumeric",
-  "score_rank": 218,
+  "score_rank": 227,
   "title": "test(lineales): crear pruebas unitarias para inversa en tests/automatizados/unit/inversa.test.js",
   "url": "https://github.com/sis-inf/ChuspaNumeric/issues/1093"
  },
@@ -3097,7 +3152,7 @@
   "language": "JavaScript",
   "pickup_kind": "comment",
   "repo_name": "sis-inf/ChuspaNumeric",
-  "score_rank": 218,
+  "score_rank": 227,
   "title": "refactor(referencias): actualizar referencias de Trazo a ChuspaNumeric en src/core/contrato.js",
   "url": "https://github.com/sis-inf/ChuspaNumeric/issues/1048"
  },
@@ -3108,7 +3163,7 @@
   "language": "JavaScript",
   "pickup_kind": "comment",
   "repo_name": "sis-inf/ChuspaNumeric",
-  "score_rank": 218,
+  "score_rank": 227,
   "title": "docs(referencias): actualizar referencias de Trazo a ChuspaNumeric en src/cli/completion.zsh",
   "url": "https://github.com/sis-inf/ChuspaNumeric/issues/1045"
  },
@@ -3119,7 +3174,7 @@
   "language": "JavaScript",
   "pickup_kind": "comment",
   "repo_name": "sis-inf/ChuspaNumeric",
-  "score_rank": 218,
+  "score_rank": 227,
   "title": "docs(referencias): actualizar referencias de Trazo a ChuspaNumeric en docs/versionado.md",
   "url": "https://github.com/sis-inf/ChuspaNumeric/issues/1024"
  },
@@ -3130,218 +3185,9 @@
   "language": "JavaScript",
   "pickup_kind": "comment",
   "repo_name": "sis-inf/ChuspaNumeric",
-  "score_rank": 218,
+  "score_rank": 227,
   "title": "docs(referencias): actualizar referencias de Trazo a ChuspaNumeric en docs/estilo-commits.md",
   "url": "https://github.com/sis-inf/ChuspaNumeric/issues/995"
- },
- {
-  "comment_count": 4,
-  "created_at": "2026-09-27T18:53:32Z",
-  "issue_number": 22127,
-  "language": "Kotlin",
-  "pickup_kind": null,
-  "repo_name": "ankidroid/Anki-Android",
-  "score_rank": 221,
-  "title": "CI: Skip test sources for `DirectSnackbarMakeUsage` and similar lint rules",
-  "url": "https://github.com/ankidroid/Anki-Android/issues/22127"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-14T01:52:57Z",
-  "issue_number": 1889,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(chuspacalc): migrar imports historicos a chuspacalc en test_numeros_complejos.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1889"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-14T01:52:54Z",
-  "issue_number": 1886,
-  "language": "Python",
-  "pickup_kind": "assignment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(chuspacalc): migrar imports historicos a chuspacalc en test_herramienta_combinacion_cargas.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1886"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-14T01:50:51Z",
-  "issue_number": 1874,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(chuspacalc): migrar imports historicos a chuspacalc en test_deflexion_viga.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1874"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-14T01:50:35Z",
-  "issue_number": 1865,
-  "language": "Python",
-  "pickup_kind": "comment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(chuspacalc): migrar imports historicos a chuspacalc en test_calculadora_subred.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1865"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-14T01:50:32Z",
-  "issue_number": 1862,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(chuspacalc): migrar imports historicos a chuspacalc en test_comparar.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1862"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-03T03:54:01Z",
-  "issue_number": 1643,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "docs(cli): documentar guia de comandos de la suite y opciones de invocacion",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1643"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-03T03:53:51Z",
-  "issue_number": 1634,
-  "language": "Python",
-  "pickup_kind": "assignment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "feat(ui): formatear mensajes de error y confirmacion en modulo mensajes",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1634"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-29T18:00:48Z",
-  "issue_number": 1497,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(chuspacalc): migrar paquete e identificadores a chuspacalc en tests/modulos/test_temperatura.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1497"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-29T18:00:43Z",
-  "issue_number": 1493,
-  "language": "Python",
-  "pickup_kind": "assignment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(chuspacalc): migrar paquete e identificadores a chuspacalc en tests/modulos/test_geometria_calculos.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1493"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-29T18:00:22Z",
-  "issue_number": 1476,
-  "language": "Python",
-  "pickup_kind": "assignment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(chuspacalc): migrar paquete e identificadores a chuspacalc en tests/test_utils.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1476"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-29T18:00:13Z",
-  "issue_number": 1469,
-  "language": "Python",
-  "pickup_kind": "assignment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(chuspacalc): migrar paquete e identificadores a chuspacalc en tests/test_cli.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1469"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-29T17:59:53Z",
-  "issue_number": 1452,
-  "language": "Python",
-  "pickup_kind": "assignment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "refactor(chuspacalc): normalizar identificador en minusculas chuspacalc en modulos/matematicas/herramienta_numeros_complejos.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1452"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-24T03:21:03Z",
-  "issue_number": 1326,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(io): crear pruebas unitarias para csv_parser en tests/test_csv_parser.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1326"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-24T03:21:02Z",
-  "issue_number": 1325,
-  "language": "Python",
-  "pickup_kind": "comment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "test(civil): crear pruebas unitarias para herramienta_combinacion_cargas en tests/modulos/test_herramienta_combinacion_cargas.py",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1325"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-22T18:24:34Z",
-  "issue_number": 1247,
-  "language": "Python",
-  "pickup_kind": "assignment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "docs(referencias): actualizar referencias de Escuadra a ChuspaCalc en examples/google-sheets/funcion-personalizada.gs",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1247"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-21T12:32:09Z",
-  "issue_number": 1233,
-  "language": "Python",
-  "pickup_kind": "comment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "chore(referencias): actualizar referencias de Escuadra a ChuspaCalc en .pre-commit-config.yaml",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1233"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-21T12:31:45Z",
-  "issue_number": 1212,
-  "language": "Python",
-  "pickup_kind": "assignment",
-  "repo_name": "sis-inf/ChuspaCalc",
-  "score_rank": 222,
-  "title": "docs(referencias): actualizar referencias de Escuadra a ChuspaCalc en docs/instalacion.md",
-  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1212"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-06T00:27:20Z",
-  "issue_number": 7274,
-  "language": "TypeScript",
-  "pickup_kind": null,
-  "repo_name": "heygen-com/hyperframes",
-  "score_rank": 228,
-  "title": "Lint: flag data-volume values that are not numbers or fall outside 0 to 3.98",
-  "url": "https://github.com/heygen-com/hyperframes/issues/7274"
  },
  {
   "comment_count": 13,
@@ -3367,12 +3213,199 @@
  },
  {
   "comment_count": 0,
+  "created_at": "2026-11-14T01:52:57Z",
+  "issue_number": 1889,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(chuspacalc): migrar imports historicos a chuspacalc en test_numeros_complejos.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1889"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-14T01:52:54Z",
+  "issue_number": 1886,
+  "language": "Python",
+  "pickup_kind": "assignment",
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(chuspacalc): migrar imports historicos a chuspacalc en test_herramienta_combinacion_cargas.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1886"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-14T01:50:51Z",
+  "issue_number": 1874,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(chuspacalc): migrar imports historicos a chuspacalc en test_deflexion_viga.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1874"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-14T01:50:35Z",
+  "issue_number": 1865,
+  "language": "Python",
+  "pickup_kind": "comment",
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(chuspacalc): migrar imports historicos a chuspacalc en test_calculadora_subred.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1865"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-14T01:50:32Z",
+  "issue_number": 1862,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(chuspacalc): migrar imports historicos a chuspacalc en test_comparar.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1862"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-03T03:54:01Z",
+  "issue_number": 1643,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "docs(cli): documentar guia de comandos de la suite y opciones de invocacion",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1643"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-03T03:53:51Z",
+  "issue_number": 1634,
+  "language": "Python",
+  "pickup_kind": "assignment",
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "feat(ui): formatear mensajes de error y confirmacion en modulo mensajes",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1634"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-10-29T18:00:48Z",
+  "issue_number": 1497,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(chuspacalc): migrar paquete e identificadores a chuspacalc en tests/modulos/test_temperatura.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1497"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-29T18:00:43Z",
+  "issue_number": 1493,
+  "language": "Python",
+  "pickup_kind": "assignment",
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(chuspacalc): migrar paquete e identificadores a chuspacalc en tests/modulos/test_geometria_calculos.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1493"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-29T18:00:22Z",
+  "issue_number": 1476,
+  "language": "Python",
+  "pickup_kind": "assignment",
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(chuspacalc): migrar paquete e identificadores a chuspacalc en tests/test_utils.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1476"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-29T18:00:13Z",
+  "issue_number": 1469,
+  "language": "Python",
+  "pickup_kind": "assignment",
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(chuspacalc): migrar paquete e identificadores a chuspacalc en tests/test_cli.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1469"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-29T17:59:53Z",
+  "issue_number": 1452,
+  "language": "Python",
+  "pickup_kind": "assignment",
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "refactor(chuspacalc): normalizar identificador en minusculas chuspacalc en modulos/matematicas/herramienta_numeros_complejos.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1452"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-24T03:21:03Z",
+  "issue_number": 1326,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(io): crear pruebas unitarias para csv_parser en tests/test_csv_parser.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1326"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-24T03:21:02Z",
+  "issue_number": 1325,
+  "language": "Python",
+  "pickup_kind": "comment",
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "test(civil): crear pruebas unitarias para herramienta_combinacion_cargas en tests/modulos/test_herramienta_combinacion_cargas.py",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1325"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-22T18:24:34Z",
+  "issue_number": 1247,
+  "language": "Python",
+  "pickup_kind": "assignment",
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "docs(referencias): actualizar referencias de Escuadra a ChuspaCalc en examples/google-sheets/funcion-personalizada.gs",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1247"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-21T12:31:45Z",
+  "issue_number": 1212,
+  "language": "Python",
+  "pickup_kind": "assignment",
+  "repo_name": "sis-inf/ChuspaCalc",
+  "score_rank": 245,
+  "title": "docs(referencias): actualizar referencias de Escuadra a ChuspaCalc en docs/instalacion.md",
+  "url": "https://github.com/sis-inf/ChuspaCalc/issues/1212"
+ },
+ {
+  "comment_count": 5,
+  "created_at": "2026-11-16T09:41:21Z",
+  "issue_number": 7342,
+  "language": "C++",
+  "pickup_kind": null,
+  "repo_name": "MaaEnd/MaaEnd",
+  "score_rank": 260,
+  "title": "云终末地排队时\"启动游戏\"一分半就判失败，把游戏杀了重开",
+  "url": "https://github.com/MaaEnd/MaaEnd/issues/7342"
+ },
+ {
+  "comment_count": 0,
   "created_at": "2026-11-03T10:37:46Z",
   "issue_number": 674,
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "aws-samples/sample-collaborative-ai-dlc",
-  "score_rank": 249,
+  "score_rank": 262,
   "title": "[Bug]: Codex model picker uses a stale hardcoded list instead of the regional Mantle catalog",
   "url": "https://github.com/aws-samples/sample-collaborative-ai-dlc/issues/674"
  },
@@ -3383,317 +3416,9 @@
   "language": "JavaScript",
   "pickup_kind": null,
   "repo_name": "aws-samples/sample-collaborative-ai-dlc",
-  "score_rank": 249,
+  "score_rank": 262,
   "title": "chore(refactoring): simplify intent handler",
   "url": "https://github.com/aws-samples/sample-collaborative-ai-dlc/issues/656"
- },
- {
-  "comment_count": 5,
-  "created_at": "2026-11-16T09:41:21Z",
-  "issue_number": 7342,
-  "language": "C++",
-  "pickup_kind": null,
-  "repo_name": "MaaEnd/MaaEnd",
-  "score_rank": 256,
-  "title": "云终末地排队时\"启动游戏\"一分半就判失败，把游戏杀了重开",
-  "url": "https://github.com/MaaEnd/MaaEnd/issues/7342"
- },
- {
-  "comment_count": 2,
-  "created_at": "2026-10-27T02:58:29Z",
-  "issue_number": 72427,
-  "language": "Go",
-  "pickup_kind": null,
-  "repo_name": "pingcap/tidb",
-  "score_rank": 271,
-  "title": "TiDB v8.5.6：ANALYZE 后有序全表扫描漏读本事务新增数据；0.1 采样两次结果不同，0.01 在已测场景均能恢复",
-  "url": "https://github.com/pingcap/tidb/issues/72427"
- },
- {
-  "comment_count": 10,
-  "created_at": "2026-01-05T10:51:53Z",
-  "issue_number": 65412,
-  "language": "Go",
-  "pickup_kind": null,
-  "repo_name": "pingcap/tidb",
-  "score_rank": 271,
-  "title": "planner: switch to RWLock to improve binding cache performance",
-  "url": "https://github.com/pingcap/tidb/issues/65412"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-04T15:40:47Z",
-  "issue_number": 3369,
-  "language": "Cython",
-  "pickup_kind": null,
-  "repo_name": "NVIDIA/cuda-python",
-  "score_rank": 292,
-  "title": "[BUG][pathfinder] Wheel layout order can override site-packages root priority",
-  "url": "https://github.com/NVIDIA/cuda-python/issues/3369"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-13T15:18:10Z",
-  "issue_number": 36579,
-  "language": "Swift",
-  "pickup_kind": null,
-  "repo_name": "mozilla-mobile/firefox-ios",
-  "score_rank": 340,
-  "title": "[iPad] Empty 56pt keyboard accessory bar on iOS 26 reserves space and blocks touches above the keyboard",
-  "url": "https://github.com/mozilla-mobile/firefox-ios/issues/36579"
- },
- {
-  "comment_count": 5,
-  "created_at": "2026-11-07T14:58:00Z",
-  "issue_number": 36477,
-  "language": "Swift",
-  "pickup_kind": null,
-  "repo_name": "mozilla-mobile/firefox-ios",
-  "score_rank": 340,
-  "title": "#36477 ⁃ Tapping a QuickType password suggestion doesn’t fill the login form – the fill is lost behind the privacy screen",
-  "url": "https://github.com/mozilla-mobile/firefox-ios/issues/36477"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-02T06:03:57Z",
-  "issue_number": 9471,
-  "language": "TypeScript",
-  "pickup_kind": null,
-  "repo_name": "meta/astryx",
-  "score_rank": 363,
-  "title": "docs(useCombobox): add a minimal live example",
-  "url": "https://github.com/meta/astryx/issues/9471"
- },
- {
-  "comment_count": 22,
-  "created_at": "2025-08-09T10:06:51Z",
-  "issue_number": 14398,
-  "language": "C++",
-  "pickup_kind": "comment",
-  "repo_name": "facebookincubator/velox",
-  "score_rank": 366,
-  "title": "FOLLY_LIKELY/UNLIKELY can be replaced with C++ standard attribute",
-  "url": "https://github.com/facebookincubator/velox/issues/14398"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-18T16:35:33Z",
-  "issue_number": 23955,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "pytorch/executorch",
-  "score_rank": 372,
-  "title": "executor_runner segfaults in portable kernels when a .pte tensor has neither a data buffer nor a memory plan (null data pointer)",
-  "url": "https://github.com/pytorch/executorch/issues/23955"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-09T14:58:57Z",
-  "issue_number": 2052,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "Under-Research-Labs/CONTINUUM",
-  "score_rank": 395,
-  "title": "[good first issue] tests: cover briefing curation attempt lessons, trajectory reports, and informed retry rendering",
-  "url": "https://github.com/Under-Research-Labs/CONTINUUM/issues/2052"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-09T14:58:43Z",
-  "issue_number": 2050,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "Under-Research-Labs/CONTINUUM",
-  "score_rank": 395,
-  "title": "[good first issue] tests: cover Claude Code hook installer, settings schema validation errors, and hook pruning fallbacks",
-  "url": "https://github.com/Under-Research-Labs/CONTINUUM/issues/2050"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-06T07:37:25Z",
-  "issue_number": 2007,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "Cyrax321/CONTINUUM",
-  "score_rank": 395,
-  "title": "[good first issue] tests: cover continuum_record_summary character cap, pinning, and provenance in MCP server",
-  "url": "https://github.com/Cyrax321/CONTINUUM/issues/2007"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-05T18:09:04Z",
-  "issue_number": 1992,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "Cyrax321/CONTINUUM",
-  "score_rank": 395,
-  "title": "tests: cover MCP configfmt format refusals, comment detection, and container pruning",
-  "url": "https://github.com/Cyrax321/CONTINUUM/issues/1992"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-05T18:05:56Z",
-  "issue_number": 1987,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "Cyrax321/CONTINUUM",
-  "score_rank": 395,
-  "title": "[good first issue] tests: cover checkpoint manager's clear_resume_pointer, corruption degradation, and prune normalization",
-  "url": "https://github.com/Cyrax321/CONTINUUM/issues/1987"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-03T06:51:40Z",
-  "issue_number": 1949,
-  "language": "Python",
-  "pickup_kind": "comment",
-  "repo_name": "Cyrax321/CONTINUUM",
-  "score_rank": 395,
-  "title": "docs: the documented test count drifted to ~3950 while the suite collects 4289",
-  "url": "https://github.com/Cyrax321/CONTINUUM/issues/1949"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-20T15:46:10Z",
-  "issue_number": 1650,
-  "language": "Kotlin",
-  "pickup_kind": null,
-  "repo_name": "open-telemetry/opentelemetry-kotlin",
-  "score_rank": 396,
-  "title": "Default JVM error output is `println` rather than the platform logging convention",
-  "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/1650"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-09T11:12:04Z",
-  "issue_number": 1512,
-  "language": "Kotlin",
-  "pickup_kind": null,
-  "repo_name": "open-telemetry/opentelemetry-kotlin",
-  "score_rank": 396,
-  "title": "Migrate to Kotlin's in-built binary compatibility validator",
-  "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/1512"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-08T21:18:30Z",
-  "issue_number": 1507,
-  "language": "Kotlin",
-  "pickup_kind": null,
-  "repo_name": "open-telemetry/opentelemetry-kotlin",
-  "score_rank": 396,
-  "title": "Correct the JUnit extension's usage example",
-  "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/1507"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-10-23T12:47:54Z",
-  "issue_number": 1311,
-  "language": "Kotlin",
-  "pickup_kind": null,
-  "repo_name": "open-telemetry/opentelemetry-kotlin",
-  "score_rank": 396,
-  "title": "Improve Baggage percent-decoding",
-  "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/1311"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-29T18:33:46Z",
-  "issue_number": 15986,
-  "language": "Rust",
-  "pickup_kind": null,
-  "repo_name": "uutils/coreutils",
-  "score_rank": 398,
-  "title": "sum: the last of `-r` / `-s` should win",
-  "url": "https://github.com/uutils/coreutils/issues/15986"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-29T18:33:44Z",
-  "issue_number": 15985,
-  "language": "Rust",
-  "pickup_kind": null,
-  "repo_name": "uutils/coreutils",
-  "score_rank": 398,
-  "title": "ln: --verbose should use `=>` for hard links",
-  "url": "https://github.com/uutils/coreutils/issues/15985"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-30T14:50:28Z",
-  "issue_number": 6454,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "kornia/kornia",
-  "score_rank": 414,
-  "title": "Bare AssertionError shape checks in kornia.geometry.epipolar; multiply_deg_two_one_poly fails on unbatched input; runs of spaces in augmentation messages",
-  "url": "https://github.com/kornia/kornia/issues/6454"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-10-29T14:21:36Z",
-  "issue_number": 6422,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "kornia/kornia",
-  "score_rank": 414,
-  "title": "RANSAC and NamedPose error messages contain runs of spaces; epipolar and solver helpers fail on unbatched input with IndexError",
-  "url": "https://github.com/kornia/kornia/issues/6422"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-18T08:03:26Z",
-  "issue_number": 4890,
-  "language": "TypeScript",
-  "pickup_kind": "comment",
-  "repo_name": "melgarafael/DeskcommCRM",
-  "score_rank": 429,
-  "title": "Detalhe do registro de auditoria: 'Metadata' e 'Request ID' seguem em inglês",
-  "url": "https://github.com/melgarafael/DeskcommCRM/issues/4890"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-11T12:04:20Z",
-  "issue_number": 4410,
-  "language": "TypeScript",
-  "pickup_kind": null,
-  "repo_name": "melgarafael/DeskcommCRM",
-  "score_rank": 429,
-  "title": "Inbox: a busca do seletor de etiquetas não acha a etiqueta quando se digita sem acento",
-  "url": "https://github.com/melgarafael/DeskcommCRM/issues/4410"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-06T17:25:21Z",
-  "issue_number": 4166,
-  "language": "TypeScript",
-  "pickup_kind": null,
-  "repo_name": "melgarafael/DeskcommCRM",
-  "score_rank": 429,
-  "title": "Funil: a sugestão de etiqueta em lote não ignora acento (\"promocao\" não sugere \"Promoção\")",
-  "url": "https://github.com/melgarafael/DeskcommCRM/issues/4166"
- },
- {
-  "comment_count": 2,
-  "created_at": "2026-11-01T05:04:46Z",
-  "issue_number": 7,
-  "language": "JavaScript",
-  "pickup_kind": null,
-  "repo_name": "chhavikant03/Civic-Connect",
-  "score_rank": 432,
-  "title": "feat: add Help & Support Center page (FAQ + Contact)",
-  "url": "https://github.com/chhavikant03/Civic-Connect/issues/7"
- },
- {
-  "comment_count": 3,
-  "created_at": "2025-11-09T15:29:38Z",
-  "issue_number": 25185,
-  "language": "C++",
-  "pickup_kind": null,
-  "repo_name": "FreeCAD/FreeCAD",
-  "score_rank": 461,
-  "title": "PartDesign: Cannot set the Tip of a Body before the first Feature.",
-  "url": "https://github.com/FreeCAD/FreeCAD/issues/25185"
  },
  {
   "comment_count": 7,
@@ -3702,7 +3427,7 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "mermaid-js/mermaid",
-  "score_rank": 462,
+  "score_rank": 267,
   "title": "Feature request: Flowchart node size or emphasis",
   "url": "https://github.com/mermaid-js/mermaid/issues/3183"
  },
@@ -3713,9 +3438,317 @@
   "language": "TypeScript",
   "pickup_kind": null,
   "repo_name": "mermaid-js/mermaid",
-  "score_rank": 462,
+  "score_rank": 267,
   "title": "allow relative dates in Gantt (eg m1,m2,m3)",
   "url": "https://github.com/mermaid-js/mermaid/issues/2850"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-10-27T02:58:29Z",
+  "issue_number": 72427,
+  "language": "Go",
+  "pickup_kind": null,
+  "repo_name": "pingcap/tidb",
+  "score_rank": 277,
+  "title": "TiDB v8.5.6：ANALYZE 后有序全表扫描漏读本事务新增数据；0.1 采样两次结果不同，0.01 在已测场景均能恢复",
+  "url": "https://github.com/pingcap/tidb/issues/72427"
+ },
+ {
+  "comment_count": 10,
+  "created_at": "2026-01-05T10:51:53Z",
+  "issue_number": 65412,
+  "language": "Go",
+  "pickup_kind": null,
+  "repo_name": "pingcap/tidb",
+  "score_rank": 277,
+  "title": "planner: switch to RWLock to improve binding cache performance",
+  "url": "https://github.com/pingcap/tidb/issues/65412"
+ },
+ {
+  "comment_count": 5,
+  "created_at": "2026-11-20T18:12:47Z",
+  "issue_number": 307,
+  "language": "TypeScript",
+  "pickup_kind": "comment",
+  "repo_name": "hydra-db/selfgraph",
+  "score_rank": 345,
+  "title": "Schema.from_tables raises TypeError on non-list columns",
+  "url": "https://github.com/hydra-db/selfgraph/issues/307"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-13T15:18:10Z",
+  "issue_number": 36579,
+  "language": "Swift",
+  "pickup_kind": null,
+  "repo_name": "mozilla-mobile/firefox-ios",
+  "score_rank": 346,
+  "title": "[iPad] Empty 56pt keyboard accessory bar on iOS 26 reserves space and blocks touches above the keyboard",
+  "url": "https://github.com/mozilla-mobile/firefox-ios/issues/36579"
+ },
+ {
+  "comment_count": 5,
+  "created_at": "2026-11-07T14:58:00Z",
+  "issue_number": 36477,
+  "language": "Swift",
+  "pickup_kind": null,
+  "repo_name": "mozilla-mobile/firefox-ios",
+  "score_rank": 346,
+  "title": "#36477 ⁃ Tapping a QuickType password suggestion doesn’t fill the login form – the fill is lost behind the privacy screen",
+  "url": "https://github.com/mozilla-mobile/firefox-ios/issues/36477"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-02T06:03:57Z",
+  "issue_number": 9471,
+  "language": "TypeScript",
+  "pickup_kind": null,
+  "repo_name": "meta/astryx",
+  "score_rank": 375,
+  "title": "docs(useCombobox): add a minimal live example",
+  "url": "https://github.com/meta/astryx/issues/9471"
+ },
+ {
+  "comment_count": 22,
+  "created_at": "2025-08-09T10:06:51Z",
+  "issue_number": 14398,
+  "language": "C++",
+  "pickup_kind": "comment",
+  "repo_name": "facebookincubator/velox",
+  "score_rank": 380,
+  "title": "FOLLY_LIKELY/UNLIKELY can be replaced with C++ standard attribute",
+  "url": "https://github.com/facebookincubator/velox/issues/14398"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-18T16:35:33Z",
+  "issue_number": 23955,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "pytorch/executorch",
+  "score_rank": 383,
+  "title": "executor_runner segfaults in portable kernels when a .pte tensor has neither a data buffer nor a memory plan (null data pointer)",
+  "url": "https://github.com/pytorch/executorch/issues/23955"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-10-29T18:33:46Z",
+  "issue_number": 15986,
+  "language": "Rust",
+  "pickup_kind": null,
+  "repo_name": "uutils/coreutils",
+  "score_rank": 389,
+  "title": "sum: the last of `-r` / `-s` should win",
+  "url": "https://github.com/uutils/coreutils/issues/15986"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-10-29T18:33:44Z",
+  "issue_number": 15985,
+  "language": "Rust",
+  "pickup_kind": null,
+  "repo_name": "uutils/coreutils",
+  "score_rank": 389,
+  "title": "ln: --verbose should use `=>` for hard links",
+  "url": "https://github.com/uutils/coreutils/issues/15985"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-20T15:46:10Z",
+  "issue_number": 1650,
+  "language": "Kotlin",
+  "pickup_kind": null,
+  "repo_name": "open-telemetry/opentelemetry-kotlin",
+  "score_rank": 416,
+  "title": "Default JVM error output is `println` rather than the platform logging convention",
+  "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/1650"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-09T11:12:04Z",
+  "issue_number": 1512,
+  "language": "Kotlin",
+  "pickup_kind": null,
+  "repo_name": "open-telemetry/opentelemetry-kotlin",
+  "score_rank": 416,
+  "title": "Migrate to Kotlin's in-built binary compatibility validator",
+  "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/1512"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-08T21:18:30Z",
+  "issue_number": 1507,
+  "language": "Kotlin",
+  "pickup_kind": null,
+  "repo_name": "open-telemetry/opentelemetry-kotlin",
+  "score_rank": 416,
+  "title": "Correct the JUnit extension's usage example",
+  "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/1507"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-10-23T12:47:54Z",
+  "issue_number": 1311,
+  "language": "Kotlin",
+  "pickup_kind": null,
+  "repo_name": "open-telemetry/opentelemetry-kotlin",
+  "score_rank": 416,
+  "title": "Improve Baggage percent-decoding",
+  "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/1311"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-09T14:58:57Z",
+  "issue_number": 2052,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "Under-Research-Labs/CONTINUUM",
+  "score_rank": 418,
+  "title": "[good first issue] tests: cover briefing curation attempt lessons, trajectory reports, and informed retry rendering",
+  "url": "https://github.com/Under-Research-Labs/CONTINUUM/issues/2052"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-09T14:58:43Z",
+  "issue_number": 2050,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "Under-Research-Labs/CONTINUUM",
+  "score_rank": 418,
+  "title": "[good first issue] tests: cover Claude Code hook installer, settings schema validation errors, and hook pruning fallbacks",
+  "url": "https://github.com/Under-Research-Labs/CONTINUUM/issues/2050"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-06T07:37:25Z",
+  "issue_number": 2007,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "Cyrax321/CONTINUUM",
+  "score_rank": 418,
+  "title": "[good first issue] tests: cover continuum_record_summary character cap, pinning, and provenance in MCP server",
+  "url": "https://github.com/Cyrax321/CONTINUUM/issues/2007"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-05T18:09:04Z",
+  "issue_number": 1992,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "Cyrax321/CONTINUUM",
+  "score_rank": 418,
+  "title": "tests: cover MCP configfmt format refusals, comment detection, and container pruning",
+  "url": "https://github.com/Cyrax321/CONTINUUM/issues/1992"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-05T18:05:56Z",
+  "issue_number": 1987,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "Cyrax321/CONTINUUM",
+  "score_rank": 418,
+  "title": "[good first issue] tests: cover checkpoint manager's clear_resume_pointer, corruption degradation, and prune normalization",
+  "url": "https://github.com/Cyrax321/CONTINUUM/issues/1987"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-03T06:51:40Z",
+  "issue_number": 1949,
+  "language": "Python",
+  "pickup_kind": "comment",
+  "repo_name": "Cyrax321/CONTINUUM",
+  "score_rank": 418,
+  "title": "docs: the documented test count drifted to ~3950 while the suite collects 4289",
+  "url": "https://github.com/Cyrax321/CONTINUUM/issues/1949"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-10-30T14:50:28Z",
+  "issue_number": 6454,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "kornia/kornia",
+  "score_rank": 421,
+  "title": "Bare AssertionError shape checks in kornia.geometry.epipolar; multiply_deg_two_one_poly fails on unbatched input; runs of spaces in augmentation messages",
+  "url": "https://github.com/kornia/kornia/issues/6454"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-10-29T14:21:36Z",
+  "issue_number": 6422,
+  "language": "Python",
+  "pickup_kind": null,
+  "repo_name": "kornia/kornia",
+  "score_rank": 421,
+  "title": "RANSAC and NamedPose error messages contain runs of spaces; epipolar and solver helpers fail on unbatched input with IndexError",
+  "url": "https://github.com/kornia/kornia/issues/6422"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-10-29T16:57:54Z",
+  "issue_number": 810,
+  "language": "TypeScript",
+  "pickup_kind": null,
+  "repo_name": "jannskiee/floe",
+  "score_rank": 444,
+  "title": "CLI: floe accepts an --iface name that matches no interface, then fails 30 s after the code is used",
+  "url": "https://github.com/jannskiee/floe/issues/810"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-11-01T05:04:46Z",
+  "issue_number": 7,
+  "language": "JavaScript",
+  "pickup_kind": null,
+  "repo_name": "chhavikant03/Civic-Connect",
+  "score_rank": 445,
+  "title": "feat: add Help & Support Center page (FAQ + Contact)",
+  "url": "https://github.com/chhavikant03/Civic-Connect/issues/7"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-18T08:03:26Z",
+  "issue_number": 4890,
+  "language": "TypeScript",
+  "pickup_kind": "comment",
+  "repo_name": "melgarafael/DeskcommCRM",
+  "score_rank": 451,
+  "title": "Detalhe do registro de auditoria: 'Metadata' e 'Request ID' seguem em inglês",
+  "url": "https://github.com/melgarafael/DeskcommCRM/issues/4890"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-11T12:04:20Z",
+  "issue_number": 4410,
+  "language": "TypeScript",
+  "pickup_kind": null,
+  "repo_name": "melgarafael/DeskcommCRM",
+  "score_rank": 451,
+  "title": "Inbox: a busca do seletor de etiquetas não acha a etiqueta quando se digita sem acento",
+  "url": "https://github.com/melgarafael/DeskcommCRM/issues/4410"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-06T17:25:21Z",
+  "issue_number": 4166,
+  "language": "TypeScript",
+  "pickup_kind": null,
+  "repo_name": "melgarafael/DeskcommCRM",
+  "score_rank": 451,
+  "title": "Funil: a sugestão de etiqueta em lote não ignora acento (\"promocao\" não sugere \"Promoção\")",
+  "url": "https://github.com/melgarafael/DeskcommCRM/issues/4166"
+ },
+ {
+  "comment_count": 3,
+  "created_at": "2025-11-09T15:29:38Z",
+  "issue_number": 25185,
+  "language": "C++",
+  "pickup_kind": null,
+  "repo_name": "FreeCAD/FreeCAD",
+  "score_rank": 478,
+  "title": "PartDesign: Cannot set the Tip of a Body before the first Feature.",
+  "url": "https://github.com/FreeCAD/FreeCAD/issues/25185"
  },
  {
   "comment_count": 15,
@@ -3724,7 +3757,7 @@
   "language": "Python",
   "pickup_kind": "comment",
   "repo_name": "langgenius/dify",
-  "score_rank": 483,
+  "score_rank": 498,
   "title": "[Chore/Refactor] use sqlalchemy engine",
   "url": "https://github.com/langgenius/dify/issues/45584"
  },
@@ -3735,20 +3768,9 @@
   "language": "Python",
   "pickup_kind": null,
   "repo_name": "langgenius/dify",
-  "score_rank": 483,
+  "score_rank": 498,
   "title": "dep inject in current flask",
   "url": "https://github.com/langgenius/dify/issues/45583"
- },
- {
-  "comment_count": 5,
-  "created_at": "2026-11-19T07:53:15Z",
-  "issue_number": 144333,
-  "language": "Go",
-  "pickup_kind": "assignment",
-  "repo_name": "kubernetes/kubernetes",
-  "score_rank": 486,
-  "title": "retry.OnErrorWithContext / retry.RetryOnConflictWithContext",
-  "url": "https://github.com/kubernetes/kubernetes/issues/144333"
  },
  {
   "comment_count": 4,
@@ -3757,20 +3779,9 @@
   "language": "Rust",
   "pickup_kind": null,
   "repo_name": "dsx-ai-factory/infra-controller",
-  "score_rank": 488,
+  "score_rank": 502,
   "title": "feat: expose graceful host reboot through the tenant API",
   "url": "https://github.com/dsx-ai-factory/infra-controller/issues/6915"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-02T14:46:09Z",
-  "issue_number": 24981,
-  "language": "C++",
-  "pickup_kind": null,
-  "repo_name": "NVIDIA/cudf",
-  "score_rank": 496,
-  "title": "[FEA] cudf-polars: support `min_horizontal` and `max_horizontal` on String",
-  "url": "https://github.com/NVIDIA/cudf/issues/24981"
  },
  {
   "comment_count": 22,
@@ -3779,7 +3790,7 @@
   "language": "Python",
   "pickup_kind": "comment",
   "repo_name": "pytorch/pytorch",
-  "score_rank": 498,
+  "score_rank": 513,
   "title": "Make tlparse able to show a summary of distinct graph breaks",
   "url": "https://github.com/pytorch/pytorch/issues/153669"
  },
@@ -3790,7 +3801,7 @@
   "language": "Scala",
   "pickup_kind": "comment",
   "repo_name": "apache/datafusion-comet",
-  "score_rank": 514,
+  "score_rank": 538,
   "title": "Establish nomenclature style guide and audit operator names for clarity",
   "url": "https://github.com/apache/datafusion-comet/issues/4419"
  },
@@ -3801,9 +3812,20 @@
   "language": "Rust",
   "pickup_kind": null,
   "repo_name": "physicsdolphin/nv-uefi-unlocker",
-  "score_rank": 533,
+  "score_rank": 544,
   "title": "RTX 2080（TU104-400, 10de:1e87）v2.1.1 ~ v2.1.6 全部 0x91，与已成功的 2080 Super（1e81）逐项对齐后仍失败",
   "url": "https://github.com/physicsdolphin/nv-uefi-unlocker/issues/62"
+ },
+ {
+  "comment_count": 5,
+  "created_at": "2026-11-19T07:53:15Z",
+  "issue_number": 144333,
+  "language": "Go",
+  "pickup_kind": "assignment",
+  "repo_name": "kubernetes/kubernetes",
+  "score_rank": 545,
+  "title": "retry.OnErrorWithContext / retry.RetryOnConflictWithContext",
+  "url": "https://github.com/kubernetes/kubernetes/issues/144333"
  },
  {
   "comment_count": 10,
@@ -3812,20 +3834,9 @@
   "language": "Python",
   "pickup_kind": "comment",
   "repo_name": "apache/airflow",
-  "score_rank": 565,
+  "score_rank": 582,
   "title": "Add Real-World DAG Debugging Strategies to Airflow Docs",
   "url": "https://github.com/apache/airflow/issues/71948"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-12T09:27:46Z",
-  "issue_number": 3794,
-  "language": "Python",
-  "pickup_kind": null,
-  "repo_name": "Gathin23/cleanyourtv",
-  "score_rank": 578,
-  "title": "[TV] Impex 4K (Google TV 11)",
-  "url": "https://github.com/Gathin23/cleanyourtv/issues/3794"
  },
  {
   "comment_count": 594,
@@ -3834,569 +3845,558 @@
   "language": "Ruby",
   "pickup_kind": null,
   "repo_name": "Homebrew/homebrew-cask",
-  "score_rank": 579,
+  "score_rank": 585,
   "title": "Casks with homepage or source issues",
   "url": "https://github.com/Homebrew/homebrew-cask/issues/172732"
  },
  {
-  "comment_count": 0,
-  "created_at": "2026-11-24T23:56:37Z",
-  "issue_number": 1050,
-  "language": null,
+  "comment_count": 1,
+  "created_at": "2026-11-12T09:27:46Z",
+  "issue_number": 3794,
+  "language": "Python",
   "pickup_kind": null,
-  "repo_name": "neomjs/neo-agent-institution",
-  "score_rank": null,
-  "title": "The Nightshift menu has no span shorter than 8 hours",
-  "url": "https://github.com/neomjs/neo-agent-institution/issues/1050"
+  "repo_name": "Gathin23/cleanyourtv",
+  "score_rank": 590,
+  "title": "[TV] Impex 4K (Google TV 11)",
+  "url": "https://github.com/Gathin23/cleanyourtv/issues/3794"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T23:49:23Z",
-  "issue_number": 359,
+  "created_at": "2026-11-25T23:51:24Z",
+  "issue_number": 1,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "ZHangZHengEric/Sage",
+  "repo_name": "AndriiK-RC/copilot-app-for-beginners",
   "score_rank": null,
-  "title": "docs: show current RSI demo JSON before historical output",
-  "url": "https://github.com/ZHangZHengEric/Sage/issues/359"
+  "title": "Make search case-insensitive",
+  "url": "https://github.com/AndriiK-RC/copilot-app-for-beginners/issues/1"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T22:16:33Z",
-  "issue_number": 127,
+  "created_at": "2026-11-25T23:44:38Z",
+  "issue_number": 427,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "PETROV2026/nimzo-app",
+  "repo_name": "Huerte/algo-solutions",
   "score_rank": null,
-  "title": "Móvil: avisar de los reportes sin enviar al cerrar sesión",
-  "url": "https://github.com/PETROV2026/nimzo-app/issues/127"
+  "title": "Help document programming problem solutions - no coding required",
+  "url": "https://github.com/Huerte/algo-solutions/issues/427"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T21:08:29Z",
-  "issue_number": 21,
+  "created_at": "2026-11-25T23:16:03Z",
+  "issue_number": 1711,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "89Aman/PatchPilot",
+  "repo_name": "mloda-ai/mloda-registry",
   "score_rank": null,
-  "title": "[Good First Issue]: Add Anthropic & Stripe patterns and finish placeholder exclusion logic in Pre-LLM Secret Scanner",
-  "url": "https://github.com/89Aman/PatchPilot/issues/21"
+  "title": "[Need support]: Update the backend-families guide: core declines chained names on a declared prefix",
+  "url": "https://github.com/mloda-ai/mloda-registry/issues/1711"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T21:07:38Z",
-  "issue_number": 177,
+  "created_at": "2026-11-25T23:00:28Z",
+  "issue_number": 844,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "leepusp/rotifer",
+  "repo_name": "vyncint/termlens",
   "score_rank": null,
-  "title": "Rename cordinates to coordinates",
-  "url": "https://github.com/leepusp/rotifer/issues/177"
+  "title": "A kitty placement with `P=0` does not move the cursor and one with `U=2` does; kitty does the opposite",
+  "url": "https://github.com/vyncint/termlens/issues/844"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T20:51:54Z",
-  "issue_number": 3275,
+  "created_at": "2026-11-25T22:34:51Z",
+  "issue_number": 436,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "meshery/meshery.io",
+  "repo_name": "Sekelenao/Flinkboot",
   "score_rank": null,
-  "title": "Reduce Excessive Whitespace Between Catalog Cards and Footer",
-  "url": "https://github.com/meshery/meshery.io/issues/3275"
+  "title": "[Refactor]: Use Enum.name() instead of toString() in environment customizers",
+  "url": "https://github.com/Sekelenao/Flinkboot/issues/436"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T20:35:05Z",
-  "issue_number": 468,
+  "created_at": "2026-11-25T22:28:49Z",
+  "issue_number": 9,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "ritsth/job-autofill-extension",
+  "repo_name": "SoftagonSistemas/whatsapp-gateway-relay-softagon",
   "score_rank": null,
-  "title": "Autofill still types a profile link into \"How did you first hear about us?\" and other referral phrasings",
-  "url": "https://github.com/ritsth/job-autofill-extension/issues/468"
+  "title": "[jv] Review Basa Jawa: i18n + docs/jv",
+  "url": "https://github.com/SoftagonSistemas/whatsapp-gateway-relay-softagon/issues/9"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T20:03:01Z",
-  "issue_number": 188,
+  "created_at": "2026-11-25T22:23:17Z",
+  "issue_number": 800,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "Sam-AEC/aec-model-bridge",
+  "repo_name": "pacocartones/free-llm-api-hub",
   "score_rank": null,
-  "title": "MCP conformance in CI",
-  "url": "https://github.com/Sam-AEC/aec-model-bridge/issues/188"
+  "title": "Home: add a visible \"All providers\" H2 above the explorer table",
+  "url": "https://github.com/pacocartones/free-llm-api-hub/issues/800"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T19:53:45Z",
-  "issue_number": 242,
+  "created_at": "2026-11-25T22:01:40Z",
+  "issue_number": 54,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "jmineau/fips",
+  "repo_name": "Mikiyas-Meles-Assefa/opensourcebook",
   "score_rank": null,
-  "title": "blocks= in sum, mean and offset_block: a repeated name counts the block twice, and a non-string name is ignored",
-  "url": "https://github.com/jmineau/fips/issues/242"
+  "title": "Draw videos at low priority so the computer stays usable",
+  "url": "https://github.com/Mikiyas-Meles-Assefa/opensourcebook/issues/54"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T19:39:53Z",
-  "issue_number": 532,
+  "created_at": "2026-11-25T22:01:02Z",
+  "issue_number": 108,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "OSM-Piatnica/pi-plane",
+  "repo_name": "Beovulfo/herd-sdlc",
   "score_rank": null,
-  "title": "Guest sees 'Pending work items - NaN' and an empty Progress panel on the active cycle card",
-  "url": "https://github.com/OSM-Piatnica/pi-plane/issues/532"
+  "title": "herd detect: Java (Maven, Gradle) and Ruby projects",
+  "url": "https://github.com/Beovulfo/herd-sdlc/issues/108"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T19:27:38Z",
-  "issue_number": 50,
+  "created_at": "2026-11-25T21:46:50Z",
+  "issue_number": 2465,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "Turing-Council/study",
+  "repo_name": "moinwiki/moin",
   "score_rank": null,
-  "title": "[M2] Link course hubs to dtu-compass",
-  "url": "https://github.com/Turing-Council/study/issues/50"
+  "title": "Migration tool for upgrading data between releases",
+  "url": "https://github.com/moinwiki/moin/issues/2465"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T19:17:35Z",
-  "issue_number": 14,
+  "created_at": "2026-11-25T21:31:59Z",
+  "issue_number": 792,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "Turing-Council/study",
+  "repo_name": "pacocartones/free-llm-api-hub",
   "score_rank": null,
-  "title": "[M0] Convert to pnpm workspaces on Node 24 with a justfile",
-  "url": "https://github.com/Turing-Council/study/issues/14"
+  "title": "Explorer: remove the emoji from the \"Filter by modality\" options so screen readers read only the label",
+  "url": "https://github.com/pacocartones/free-llm-api-hub/issues/792"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T19:05:32Z",
-  "issue_number": 432,
+  "created_at": "2026-11-25T21:29:14Z",
+  "issue_number": 143,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "olafurjohannsson/kjarni",
+  "score_rank": null,
+  "title": "Add bge-reranker-v2-m3 and bge-reranker-base",
+  "url": "https://github.com/olafurjohannsson/kjarni/issues/143"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T20:41:16Z",
+  "issue_number": 33,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "stackwares/casama",
+  "score_rank": null,
+  "title": "Add tests for the CLI's slugify helper",
+  "url": "https://github.com/stackwares/casama/issues/33"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T20:08:24Z",
+  "issue_number": 2470,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "reticlehq/reticle",
+  "score_rank": null,
+  "title": "fix(server): the help note for an older project SDK names a command that the older CLI rejects",
+  "url": "https://github.com/reticlehq/reticle/issues/2470"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T20:07:08Z",
+  "issue_number": 273,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "L1UK3/playsouthwales",
+  "score_rank": null,
+  "title": "Confirm destructive admin actions",
+  "url": "https://github.com/L1UK3/playsouthwales/issues/273"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T20:04:02Z",
+  "issue_number": 32,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "hemang1404/Argus",
+  "score_rank": null,
+  "title": "Show [tui] install hint on bare 'argus' command when textual is not installed",
+  "url": "https://github.com/hemang1404/Argus/issues/32"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T20:03:52Z",
+  "issue_number": 30,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "hemang1404/Argus",
+  "score_rank": null,
+  "title": "DoctorModal: reports 'no stored key' for providers configured via TUI or keyring",
+  "url": "https://github.com/hemang1404/Argus/issues/30"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T20:01:44Z",
+  "issue_number": 13,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "luismiguelopes/ikabot-dashboard",
+  "score_rank": null,
+  "title": "Fix the remaining `react-hooks/exhaustive-deps` warnings",
+  "url": "https://github.com/luismiguelopes/ikabot-dashboard/issues/13"
+ },
+ {
+  "comment_count": 2,
+  "created_at": "2026-11-25T19:09:06Z",
+  "issue_number": 6,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "OCodejs/docs",
+  "score_rank": null,
+  "title": "Bạn là Senior Full-stack Engineer phụ trách dự án OCODEJS.",
+  "url": "https://github.com/OCodejs/docs/issues/6"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T18:22:17Z",
+  "issue_number": 4,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "Sarveshsivasankaran/Visualec",
+  "score_rank": null,
+  "title": "Frontend lint script calls an undeclared ESLint executable",
+  "url": "https://github.com/Sarveshsivasankaran/Visualec/issues/4"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T18:21:23Z",
+  "issue_number": 16,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "cloudmail-hq/cloudmail",
+  "score_rank": null,
+  "title": "People: export the list as CSV",
+  "url": "https://github.com/cloudmail-hq/cloudmail/issues/16"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-25T18:18:18Z",
+  "issue_number": 588,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "chaoss/CollectOSS",
+  "score_rank": null,
+  "title": "Add testing for functionality of inspect_without_import.py",
+  "url": "https://github.com/chaoss/CollectOSS/issues/588"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T18:16:45Z",
+  "issue_number": 205,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "samhoon000/Oribi",
+  "score_rank": null,
+  "title": "Keep analytical warnings visible when compact context is truncated",
+  "url": "https://github.com/samhoon000/Oribi/issues/205"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T17:47:20Z",
+  "issue_number": 4,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "rohan-fast-code/bankshield-humangate",
+  "score_rank": null,
+  "title": "Add attack test families: account takeover through password reset, and gift card fraud",
+  "url": "https://github.com/rohan-fast-code/bankshield-humangate/issues/4"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T17:28:20Z",
+  "issue_number": 607,
   "language": null,
   "pickup_kind": null,
   "repo_name": "erkamyaman/rust-anything",
   "score_rank": null,
-  "title": "enable help and docs say only TS/JS and Python, but PowerShell units can be switched on too",
-  "url": "https://github.com/erkamyaman/rust-anything/issues/432"
+  "title": "Risk guide tells Python, Go and Ruby users how JS indexes strings",
+  "url": "https://github.com/erkamyaman/rust-anything/issues/607"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T18:25:20Z",
-  "issue_number": 27,
+  "created_at": "2026-11-25T17:21:09Z",
+  "issue_number": 9,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "BrunoMiguens/translating-products-skill",
+  "repo_name": "yairbarak22/RuecAI_Tutor",
   "score_rank": null,
-  "title": "Translation review (pl) for the scope of a deletion warning",
-  "url": "https://github.com/BrunoMiguens/translating-products-skill/issues/27"
+  "title": "כפתור \"תרגול על מה שטעיתי\" בסוף חידון",
+  "url": "https://github.com/yairbarak22/RuecAI_Tutor/issues/9"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T18:24:57Z",
-  "issue_number": 29,
+  "created_at": "2026-11-25T17:13:20Z",
+  "issue_number": 23,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "Amadeus-22/tekel",
+  "repo_name": "Dampper/damper-frontend",
   "score_rank": null,
-  "title": "test(e2e): add scenarios for clock skew, price spike and the Klever block feed",
-  "url": "https://github.com/Amadeus-22/tekel/issues/29"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-24T18:17:48Z",
-  "issue_number": 682,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "Sub-Rosa-Issue/sub-rosa-issue",
-  "score_rank": null,
-  "title": "security(high/easy): cap receipt CLI output file size before overwrite",
-  "url": "https://github.com/Sub-Rosa-Issue/sub-rosa-issue/issues/682"
- },
- {
-  "comment_count": 2,
-  "created_at": "2026-11-24T18:16:58Z",
-  "issue_number": 38,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "Fortexa-stellar/Forttexa",
-  "score_rank": null,
-  "title": "[High][Easy] Prevent spreadsheet formulas in audit CSV exports",
-  "url": "https://github.com/Fortexa-stellar/Forttexa/issues/38"
+  "title": "Explain each alert code on the status page",
+  "url": "https://github.com/Dampper/damper-frontend/issues/23"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T18:13:58Z",
-  "issue_number": 81,
+  "created_at": "2026-11-25T17:12:06Z",
+  "issue_number": 13,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "swigerb/gh-ledger",
+  "repo_name": "Dampper/damper-frontend",
   "score_rank": null,
-  "title": "Breaker and budget alerts tell extension users to run gh-ledger …, which isn't on their PATH",
-  "url": "https://github.com/swigerb/gh-ledger/issues/81"
+  "title": "Sortable columns in the pools table",
+  "url": "https://github.com/Dampper/damper-frontend/issues/13"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T17:57:53Z",
-  "issue_number": 10720,
+  "created_at": "2026-11-25T17:10:24Z",
+  "issue_number": 16,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "RaspberryPiFoundation/blockly",
+  "repo_name": "Dampper/damper-contracts",
   "score_rank": null,
-  "title": "Non-copyable blocks should not be duplicatable",
-  "url": "https://github.com/RaspberryPiFoundation/blockly/issues/10720"
+  "title": "Reject a zero `resolution` in the constructor",
+  "url": "https://github.com/Dampper/damper-contracts/issues/16"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T17:54:19Z",
-  "issue_number": 102,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "ydflow/Trail",
-  "score_rank": null,
-  "title": "[Good first issue] 支持用「我来处理」认领 Issue",
-  "url": "https://github.com/ydflow/Trail/issues/102"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-24T17:46:06Z",
-  "issue_number": 204,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "nnennandukwe/policyNIM",
-  "score_rank": null,
-  "title": "Clarify that pipx and uv tool are alternative ways to install PolicyNIM",
-  "url": "https://github.com/nnennandukwe/policyNIM/issues/204"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-24T17:29:46Z",
-  "issue_number": 91,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "ydflow/Trail",
-  "score_rank": null,
-  "title": "[Good first issue] 修复自动化计划在 UTC 以西的星期标签",
-  "url": "https://github.com/ydflow/Trail/issues/91"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-24T17:13:58Z",
-  "issue_number": 665,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "Sub-Rosa-Issue/sub-rosa-issue",
-  "score_rank": null,
-  "title": "web(high/easy): add clickjacking and content-type security headers",
-  "url": "https://github.com/Sub-Rosa-Issue/sub-rosa-issue/issues/665"
- },
- {
-  "comment_count": 6,
-  "created_at": "2026-11-24T17:13:15Z",
-  "issue_number": 27,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "Fortexa-stellar/Forttexa",
-  "score_rank": null,
-  "title": "[High][Easy] Reject unknown fields in decision and payment payloads",
-  "url": "https://github.com/Fortexa-stellar/Forttexa/issues/27"
- },
- {
-  "comment_count": 6,
-  "created_at": "2026-11-24T17:13:12Z",
-  "issue_number": 26,
-  "language": null,
-  "pickup_kind": "comment",
-  "repo_name": "Fortexa-stellar/Forttexa",
-  "score_rank": null,
-  "title": "[High][Easy] Require HTTPS for production Horizon and blocklist endpoints",
-  "url": "https://github.com/Fortexa-stellar/Forttexa/issues/26"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-24T17:12:59Z",
-  "issue_number": 20,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "Fortexa-stellar/Forttexa",
-  "score_rank": null,
-  "title": "[High][Easy] Mark wallet authentication responses as non-cacheable",
-  "url": "https://github.com/Fortexa-stellar/Forttexa/issues/20"
- },
- {
-  "comment_count": 3,
-  "created_at": "2026-11-24T17:10:17Z",
-  "issue_number": 323,
+  "created_at": "2026-11-25T17:07:22Z",
+  "issue_number": 234,
   "language": null,
   "pickup_kind": "assignment",
-  "repo_name": "Query402/Query402",
+  "repo_name": "ViktorJurczenko/amber",
   "score_rank": null,
-  "title": "[High][Easy] Bound agent catalog response size",
-  "url": "https://github.com/Query402/Query402/issues/323"
+  "title": "Calendar popups: a day's appointments and one appointment's details",
+  "url": "https://github.com/ViktorJurczenko/amber/issues/234"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T17:06:43Z",
-  "issue_number": 54,
+  "created_at": "2026-11-25T17:04:15Z",
+  "issue_number": 7,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "KenSuenobu/rust-pushrod",
+  "repo_name": "Crustaxis/Exam_producer",
   "score_rank": null,
-  "title": "pushrod: [4.7] LevelIndicatorWidget (NSLevelIndicator)",
-  "url": "https://github.com/KenSuenobu/rust-pushrod/issues/54"
+  "title": "Crear CHANGELOG.md con lo incluido en la v0.1",
+  "url": "https://github.com/Crustaxis/Exam_producer/issues/7"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T17:06:30Z",
-  "issue_number": 48,
+  "created_at": "2026-11-25T16:48:07Z",
+  "issue_number": 11,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "KenSuenobu/rust-pushrod",
+  "repo_name": "erdellll/preflight",
   "score_rank": null,
-  "title": "pushrod: [4.1] ProgressIndicatorWidget: determinate bar and indeterminate mode",
-  "url": "https://github.com/KenSuenobu/rust-pushrod/issues/48"
+  "title": "New check: missing-lockfile",
+  "url": "https://github.com/erdellll/preflight/issues/11"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T16:14:55Z",
+  "created_at": "2026-11-25T16:47:07Z",
   "issue_number": 1,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "VIT-Typing-Club/typingstats-discordbot",
+  "repo_name": "erdellll/preflight",
   "score_rank": null,
-  "title": "feat: add compare_graph command (-compare_graph / -cg)",
-  "url": "https://github.com/VIT-Typing-Club/typingstats-discordbot/issues/1"
+  "title": "New check: firebase-rules-open",
+  "url": "https://github.com/erdellll/preflight/issues/1"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T15:59:39Z",
-  "issue_number": 27,
+  "created_at": "2026-11-25T16:44:30Z",
+  "issue_number": 9,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "louvain-ai/louvain-engine",
+  "repo_name": "blixtrade/solana-bubble-map",
   "score_rank": null,
-  "title": "Show each reader's grants in ./engine status",
-  "url": "https://github.com/louvain-ai/louvain-engine/issues/27"
- },
- {
-  "comment_count": 2,
-  "created_at": "2026-11-24T15:31:56Z",
-  "issue_number": 298,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "Query402/Query402",
-  "score_rank": null,
-  "title": "[High][Easy] Add bounded timeouts to agent paid-query requests",
-  "url": "https://github.com/Query402/Query402/issues/298"
+  "title": "Document all environment variables and the --json fields in the README",
+  "url": "https://github.com/blixtrade/solana-bubble-map/issues/9"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T15:27:44Z",
-  "issue_number": 5,
+  "created_at": "2026-11-25T16:31:29Z",
+  "issue_number": 15,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "Lokrajjoshi/multiverse-signal-runner",
+  "repo_name": "ops-universe/mcpOps",
   "score_rank": null,
-  "title": "Add a browser smoke-test checklist to CI documentation",
-  "url": "https://github.com/Lokrajjoshi/multiverse-signal-runner/issues/5"
+  "title": "Replace template package metadata with project-specific identity",
+  "url": "https://github.com/ops-universe/mcpOps/issues/15"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T15:04:43Z",
-  "issue_number": 1429,
+  "created_at": "2026-11-25T16:20:52Z",
+  "issue_number": 931,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "Cylo-Traders/Agrocylo-Global",
+  "repo_name": "ClawBio/ClawBio",
   "score_rank": null,
-  "title": "[Frontend] Service worker is shipped but never registered",
-  "url": "https://github.com/Cylo-Traders/Agrocylo-Global/issues/1429"
+  "title": "[Metadata] struct-predictor: add tags to SKILL.md frontmatter",
+  "url": "https://github.com/ClawBio/ClawBio/issues/931"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T14:53:30Z",
-  "issue_number": 31,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "necc-hub/new_energy_coder_club",
-  "score_rank": null,
-  "title": "[gfi] 修复 2025 ROBOCON 赛季主页内部链接",
-  "url": "https://github.com/necc-hub/new_energy_coder_club/issues/31"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-24T14:51:44Z",
-  "issue_number": 367,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "abhi478jeetur-rgb/env-saaf",
-  "score_rank": null,
-  "title": "Tests: pin the CLI `--json` output contract with regression tests",
-  "url": "https://github.com/abhi478jeetur-rgb/env-saaf/issues/367"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-24T14:50:37Z",
-  "issue_number": 357,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "abhi478jeetur-rgb/env-saaf",
-  "score_rank": null,
-  "title": "Feature: add an `exports` map to package.json",
-  "url": "https://github.com/abhi478jeetur-rgb/env-saaf/issues/357"
- },
- {
-  "comment_count": 4,
-  "created_at": "2026-11-24T14:33:44Z",
-  "issue_number": 645,
-  "language": null,
-  "pickup_kind": "comment",
-  "repo_name": "Refract-Protocol/refract-contracts",
-  "score_rank": null,
-  "title": "`xtask operator` swallows the underlying error, so a screen reader hears only a generic failure",
-  "url": "https://github.com/Refract-Protocol/refract-contracts/issues/645"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-24T14:31:33Z",
-  "issue_number": 624,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "Refract-Protocol/refract-contracts",
-  "score_rank": null,
-  "title": "`common::registry` panics on a missing key while its sibling returns `Option`",
-  "url": "https://github.com/Refract-Protocol/refract-contracts/issues/624"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-24T14:22:42Z",
-  "issue_number": 323,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "hannahro15/Musical-Match-Saga",
-  "score_rank": null,
-  "title": "Add the missing tests and raise the coverage thresholds",
-  "url": "https://github.com/hannahro15/Musical-Match-Saga/issues/323"
- },
- {
-  "comment_count": 1,
-  "created_at": "2026-11-24T14:12:04Z",
+  "created_at": "2026-11-25T16:00:21Z",
   "issue_number": 3,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "carmenlareo/proyect-crud-equipo3",
+  "repo_name": "zed-dz/phonevault",
   "score_rank": null,
-  "title": "Permisos equipo ( falta Valentina)",
-  "url": "https://github.com/carmenlareo/proyect-crud-equipo3/issues/3"
+  "title": "Hash many phone files in one adb call",
+  "url": "https://github.com/zed-dz/phonevault/issues/3"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T14:09:34Z",
-  "issue_number": 112,
+  "created_at": "2026-11-25T15:43:31Z",
+  "issue_number": 49,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "Software-Engineering-USP/CultHub",
+  "repo_name": "erkamyaman/rea-games",
   "score_rank": null,
-  "title": "Quem vai: contagem de presenças e ajustes visuais da lista",
-  "url": "https://github.com/Software-Engineering-USP/CultHub/issues/112"
- },
- {
-  "comment_count": 2,
-  "created_at": "2026-11-24T13:41:06Z",
-  "issue_number": 642,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "georgegoldman/Soroban-ZK-Std",
-  "score_rank": null,
-  "title": "feat(gas-ux): add one-click \"Copy Rust Snippet\" and \"Copy stellar CLI Command\" buttons to frontend GasCalculator",
-  "url": "https://github.com/georgegoldman/Soroban-ZK-Std/issues/642"
- },
- {
-  "comment_count": 3,
-  "created_at": "2026-11-24T13:40:45Z",
-  "issue_number": 635,
-  "language": null,
-  "pickup_kind": "comment",
-  "repo_name": "georgegoldman/Soroban-ZK-Std",
-  "score_rank": null,
-  "title": "feat(errors): implement no_std core::fmt::Display for ZkError and ZkContractError with descriptive messages",
-  "url": "https://github.com/georgegoldman/Soroban-ZK-Std/issues/635"
- },
- {
-  "comment_count": 2,
-  "created_at": "2026-11-24T13:40:26Z",
-  "issue_number": 629,
-  "language": null,
-  "pickup_kind": "comment",
-  "repo_name": "georgegoldman/Soroban-ZK-Std",
-  "score_rank": null,
-  "title": "docs(readme): fix outdated zk-soroban crate references and dead ASP_Integration.md link in root README.md",
-  "url": "https://github.com/georgegoldman/Soroban-ZK-Std/issues/629"
+  "title": "Give screen readers the score and state on the Bricks and Paddles play pages",
+  "url": "https://github.com/erkamyaman/rea-games/issues/49"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T13:34:11Z",
-  "issue_number": 80,
+  "created_at": "2026-11-25T15:37:53Z",
+  "issue_number": 22,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "alejandroramirezucb/RescatApp",
+  "repo_name": "KartikeyG-world/pycode-intelligence-workbench",
   "score_rank": null,
-  "title": "Ocultar al comercio el código de rescate del cliente en pedidos",
-  "url": "https://github.com/alejandroramirezucb/RescatApp/issues/80"
+  "title": "docs(architecture): document analyzer capabilities and supported Python patterns",
+  "url": "https://github.com/KartikeyG-world/pycode-intelligence-workbench/issues/22"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T13:12:09Z",
-  "issue_number": 91,
+  "created_at": "2026-11-25T15:35:03Z",
+  "issue_number": 107,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "openXC7/prjxray",
+  "repo_name": "Benjmhart/keybind-find",
   "score_rank": null,
-  "title": "run_fuzzer.py should log free disk space with load and memory",
-  "url": "https://github.com/openXC7/prjxray/issues/91"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-24T13:10:39Z",
-  "issue_number": 71,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "openXC7/prjxray",
-  "score_rank": null,
-  "title": "Document how to run the looping pip fuzzers (make vs make run)",
-  "url": "https://github.com/openXC7/prjxray/issues/71"
- },
- {
-  "comment_count": 0,
-  "created_at": "2026-11-24T13:04:18Z",
-  "issue_number": 53,
-  "language": null,
-  "pickup_kind": null,
-  "repo_name": "JoeyHammoth/Swipeline",
-  "score_rank": null,
-  "title": "Extend the docs link check to root and package Markdown",
-  "url": "https://github.com/JoeyHammoth/Swipeline/issues/53"
+  "title": "Test it on a real GNOME setup",
+  "url": "https://github.com/Benjmhart/keybind-find/issues/107"
  },
  {
   "comment_count": 1,
-  "created_at": "2026-11-24T13:02:04Z",
-  "issue_number": 4806,
-  "language": null,
-  "pickup_kind": "comment",
-  "repo_name": "hiero-ledger/hiero-sdk-js",
+  "created_at": "2026-11-25T15:25:46Z",
+  "issue_number": 34649,
+  "language": "TypeScript",
+  "pickup_kind": null,
+  "repo_name": "lingdojo/kana-dojo",
   "score_rank": null,
-  "title": "[Good First Issue]: Exclude the deprecated AccountBalanceQuery from coverage",
-  "url": "https://github.com/hiero-ledger/hiero-sdk-js/issues/4806"
+  "title": "[good first issue, hacktoberfest] 🍱 Add new Learner Mistake 882 (good-first-issue)",
+  "url": "https://github.com/lingdojo/kana-dojo/issues/34649"
  },
  {
   "comment_count": 0,
-  "created_at": "2026-11-24T12:41:48Z",
-  "issue_number": 79,
+  "created_at": "2026-11-25T15:10:27Z",
+  "issue_number": 13047,
   "language": null,
   "pickup_kind": null,
-  "repo_name": "TMHSDigital/Spackle",
+  "repo_name": "mxsm/rocketmq-rust",
   "score_rank": null,
-  "title": "Run outcome stays completed when the budget runs out on the last investigation",
-  "url": "https://github.com/TMHSDigital/Spackle/issues/79"
+  "title": "[Refactor♻️] Use async fn for the TopicRateSource dashboard queries",
+  "url": "https://github.com/mxsm/rocketmq-rust/issues/13047"
+ },
+ {
+  "comment_count": 1,
+  "created_at": "2026-11-25T14:40:52Z",
+  "issue_number": 34639,
+  "language": "TypeScript",
+  "pickup_kind": null,
+  "repo_name": "lingdojo/kana-dojo",
+  "score_rank": null,
+  "title": "[good first issue, hacktoberfest] 🍣 Add new Example Sentence 930 (good-first-issue)",
+  "url": "https://github.com/lingdojo/kana-dojo/issues/34639"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T14:34:52Z",
+  "issue_number": 11976,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "ChurchCRM/CRM",
+  "score_rank": null,
+  "title": "Mark a family inactive when its last active person is deceased or deactivated",
+  "url": "https://github.com/ChurchCRM/CRM/issues/11976"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T14:13:52Z",
+  "issue_number": 1441,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "mario-andreschak/FLUJO",
+  "score_rank": null,
+  "title": "Try the contributor guide on Linux or macOS and fix what is wrong",
+  "url": "https://github.com/mario-andreschak/FLUJO/issues/1441"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T14:11:13Z",
+  "issue_number": 1447,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "cubrid-lab/sqlalchemy-cubrid",
+  "score_rank": null,
+  "title": "docs: synchronize the Russian README with the English README",
+  "url": "https://github.com/cubrid-lab/sqlalchemy-cubrid/issues/1447"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T14:03:21Z",
+  "issue_number": 190,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "josdem/py-vetlog-buddy",
+  "score_rank": null,
+  "title": "Generate CSV file with all rabies vaccines applied by month",
+  "url": "https://github.com/josdem/py-vetlog-buddy/issues/190"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T13:59:00Z",
+  "issue_number": 188,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "exterminatorrat/NdlessAI",
+  "score_rank": null,
+  "title": "Fix four stale ROADMAP.md paths and architecture.md's token id ranges",
+  "url": "https://github.com/exterminatorrat/NdlessAI/issues/188"
+ },
+ {
+  "comment_count": 0,
+  "created_at": "2026-11-25T13:57:50Z",
+  "issue_number": 13,
+  "language": null,
+  "pickup_kind": null,
+  "repo_name": "Gobserva-Cloud/vigia-peru",
+  "score_rank": null,
+  "title": "Guía para conectar el MCP de Vigía en distintos clientes de IA",
+  "url": "https://github.com/Gobserva-Cloud/vigia-peru/issues/13"
  }
 ]

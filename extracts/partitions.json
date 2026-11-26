@@ -1,197 +1,5 @@
 [
  {
-  "partition_date": "2026-10-26",
-  "partition_hour": 0,
-  "rows_kept": 11436,
-  "rows_read": 83118,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 1,
-  "rows_kept": 10779,
-  "rows_read": 80077,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 2,
-  "rows_kept": 10997,
-  "rows_read": 87793,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 3,
-  "rows_kept": 10432,
-  "rows_read": 87463,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 4,
-  "rows_kept": 11555,
-  "rows_read": 90235,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 5,
-  "rows_kept": 11562,
-  "rows_read": 89038,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 6,
-  "rows_kept": 12248,
-  "rows_read": 85759,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 7,
-  "rows_kept": 10958,
-  "rows_read": 77818,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 8,
-  "rows_kept": 9428,
-  "rows_read": 60557,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 9,
-  "rows_kept": 6457,
-  "rows_read": 32255,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 10,
-  "rows_kept": 3043,
-  "rows_read": 7214,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 11,
-  "rows_kept": 2551,
-  "rows_read": 2728,
-  "rows_rejected": 1,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 12,
-  "rows_kept": 2400,
-  "rows_read": 2598,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 13,
-  "rows_kept": 2688,
-  "rows_read": 2917,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 14,
-  "rows_kept": 3137,
-  "rows_read": 3345,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 15,
-  "rows_kept": 2622,
-  "rows_read": 2780,
-  "rows_rejected": 1,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 16,
-  "rows_kept": 3188,
-  "rows_read": 3331,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 17,
-  "rows_kept": 2777,
-  "rows_read": 2953,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 18,
-  "rows_kept": 3588,
-  "rows_read": 3979,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 19,
-  "rows_kept": 3257,
-  "rows_read": 3446,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 20,
-  "rows_kept": 4237,
-  "rows_read": 4505,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 21,
-  "rows_kept": 3419,
-  "rows_read": 3601,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 22,
-  "rows_kept": 3272,
-  "rows_read": 3438,
-  "rows_rejected": 0,
-  "status": "ok"
- },
- {
-  "partition_date": "2026-10-26",
-  "partition_hour": 23,
-  "rows_kept": 3245,
-  "rows_read": 3405,
-  "rows_rejected": 1,
-  "status": "ok"
- },
- {
   "partition_date": "2026-10-27",
   "partition_hour": 0,
   "rows_kept": 3058,
@@ -5756,6 +5564,198 @@
   "partition_hour": 23,
   "rows_kept": 3035,
   "rows_read": 3210,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 0,
+  "rows_kept": 2979,
+  "rows_read": 3110,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 1,
+  "rows_kept": 2774,
+  "rows_read": 2898,
+  "rows_rejected": 1,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 2,
+  "rows_kept": 3005,
+  "rows_read": 3134,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 3,
+  "rows_kept": 3152,
+  "rows_read": 3311,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 4,
+  "rows_kept": 3151,
+  "rows_read": 3316,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 5,
+  "rows_kept": 3463,
+  "rows_read": 3634,
+  "rows_rejected": 1,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 6,
+  "rows_kept": 3399,
+  "rows_read": 3578,
+  "rows_rejected": 1,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 7,
+  "rows_kept": 3444,
+  "rows_read": 3638,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 8,
+  "rows_kept": 3918,
+  "rows_read": 4116,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 9,
+  "rows_kept": 4070,
+  "rows_read": 4315,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 10,
+  "rows_kept": 4186,
+  "rows_read": 4409,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 11,
+  "rows_kept": 3779,
+  "rows_read": 3982,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 12,
+  "rows_kept": 3967,
+  "rows_read": 4225,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 13,
+  "rows_kept": 4101,
+  "rows_read": 4342,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 14,
+  "rows_kept": 4403,
+  "rows_read": 4623,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 15,
+  "rows_kept": 3850,
+  "rows_read": 4054,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 16,
+  "rows_kept": 3581,
+  "rows_read": 3774,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 17,
+  "rows_kept": 3745,
+  "rows_read": 3926,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 18,
+  "rows_kept": 3695,
+  "rows_read": 3891,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 19,
+  "rows_kept": 3931,
+  "rows_read": 4097,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 20,
+  "rows_kept": 3823,
+  "rows_read": 4037,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 21,
+  "rows_kept": 4946,
+  "rows_read": 16749,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 22,
+  "rows_kept": 4502,
+  "rows_read": 9488,
+  "rows_rejected": 0,
+  "status": "ok"
+ },
+ {
+  "partition_date": "2026-11-25",
+  "partition_hour": 23,
+  "rows_kept": 4661,
+  "rows_read": 13887,
   "rows_rejected": 0,
   "status": "ok"
  }
